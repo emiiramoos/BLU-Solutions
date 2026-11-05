@@ -1,0 +1,2583 @@
+{
+  "source": {
+    "version": 5,
+    "commit": "e6814d07d25cad235433f8c6c84ae77bcf0b2531"
+  },
+  "files": [
+    {
+      "path": "dist/assets/blu.svg",
+      "bytes": 18749,
+      "sha256": "82a61f25568f95a2e8381da96904a1124bb29a7e1b3400e5f2d6c18be5f542f5"
+    },
+    {
+      "path": "dist/assets/catalog.json",
+      "bytes": 257969,
+      "sha256": "2cfec05a2db592233b88eeaa1abbce0cbce23d651425991cdcfa316a1ab74492"
+    },
+    {
+      "path": "dist/assets/catalogos/gimnasios.pdf",
+      "bytes": 7312084,
+      "sha256": "2405ffc52ead8b3d63939620d3a524bd28888141c1fa569ce3cb2be8c25d01a9"
+    },
+    {
+      "path": "dist/assets/catalogos/habitaciones.pdf",
+      "bytes": 2248448,
+      "sha256": "563879e9a9b564cb51715b7fadf5e1a402a8ef0cdf653d498d37dfdb48505480"
+    },
+    {
+      "path": "dist/assets/catalogos/nardi-contract-1-30.pdf",
+      "bytes": 4941604,
+      "sha256": "4a4ce31180611cad0324acddb627a52ac0829d38407e7fa6c7e5eda21aff3e9d"
+    },
+    {
+      "path": "dist/assets/catalogos/nardi-contract-121-150.pdf",
+      "bytes": 3289970,
+      "sha256": "ec975448f507d3d3de8476c02acb055bbe42dcfc8178974b619d8b3f3f42c5ac"
+    },
+    {
+      "path": "dist/assets/catalogos/nardi-contract-151-169.pdf",
+      "bytes": 1292186,
+      "sha256": "adb7dd34043fe7e5c1e94e89138375238ab1238b70f5f7eaf574423be68216bc"
+    },
+    {
+      "path": "dist/assets/catalogos/nardi-contract-31-60.pdf",
+      "bytes": 2497270,
+      "sha256": "60255311235c86b2deaa3dd57d6f80ba0313d39a3d50c810211b307d1dc97bac"
+    },
+    {
+      "path": "dist/assets/catalogos/nardi-contract-61-90.pdf",
+      "bytes": 1827050,
+      "sha256": "9cc5390fd58cb5b5a29f39cb2382f69344fb276795423bbec1898a588931acb4"
+    },
+    {
+      "path": "dist/assets/catalogos/nardi-contract-91-120.pdf",
+      "bytes": 2790163,
+      "sha256": "bc3a8c93933b7816a53c6aecf3517c7f5e970aafd26b44076eb64915b12dd45e"
+    },
+    {
+      "path": "dist/assets/catalogos/nardi-new.pdf",
+      "bytes": 402328,
+      "sha256": "fca328cd51ce586a5f85732ed216c312580a4c29b8715fd32d9c89c19feb08c3"
+    },
+    {
+      "path": "dist/assets/catalogos/nardi-outdoor-1-30.pdf",
+      "bytes": 5253903,
+      "sha256": "93c3329d956aed7a1609b89b1a8dd77a2e16d4f2f53b35c0c31eacfa5ee1c05c"
+    },
+    {
+      "path": "dist/assets/catalogos/nardi-outdoor-31-60.pdf",
+      "bytes": 4471141,
+      "sha256": "bd28051f8cfc9f9b9d8c7054c24c9fe77a46e5cf23475d599a380425030b2925"
+    },
+    {
+      "path": "dist/assets/catalogos/nardi-outdoor-61-90.pdf",
+      "bytes": 3707690,
+      "sha256": "4581eee834f634449e234c8cf4215424499bdd67ec05156821b3933bbfa0c5d1"
+    },
+    {
+      "path": "dist/assets/catalogos/nardi-outdoor-91-105.pdf",
+      "bytes": 1219273,
+      "sha256": "4780e305a9142e95560c6c1be73512347559e2ddea7138a18904c3bccc32ec3f"
+    },
+    {
+      "path": "dist/assets/catalogos/nardi-sunday.pdf",
+      "bytes": 1377057,
+      "sha256": "970c918d5fb3586fd700be91825d225bce07b0960a7d5dbb9f972156aee374f5"
+    },
+    {
+      "path": "dist/assets/catalogos/restaurantes.pdf",
+      "bytes": 2029931,
+      "sha256": "c8a5ace48cb7b67db7cece158f6e040252b39f871be7f60f8ddef40ddc157dd0"
+    },
+    {
+      "path": "dist/assets/contact.webp",
+      "bytes": 382374,
+      "sha256": "6ce91a6d15f63c9337ca6e17491efb05eb77597be337a8f1b31d5c884c430744"
+    },
+    {
+      "path": "dist/assets/gym/BR1000.webp",
+      "bytes": 71884,
+      "sha256": "cedfaee76ccc24a4f07c6e603a3ca0602e3d7cf5453091e9db99f77797b4806f"
+    },
+    {
+      "path": "dist/assets/gym/BU1000.webp",
+      "bytes": 53620,
+      "sha256": "2531595a25d3517c14d26321573a1c0c10edd1fb9ee34c13eceb41df7a573441"
+    },
+    {
+      "path": "dist/assets/gym/EC1000.webp",
+      "bytes": 54442,
+      "sha256": "f3ae905deeea34112d5a1b0b831386b38b7a2123b577b6c00b24a6c20b22c1cc"
+    },
+    {
+      "path": "dist/assets/gym/ER1000R.webp",
+      "bytes": 48544,
+      "sha256": "91d1a7de7af09573f9f4365157a4e15c6a35433dc4354b817ae9544208d682ba"
+    },
+    {
+      "path": "dist/assets/gym/ERV1000R.webp",
+      "bytes": 37606,
+      "sha256": "663ecd409de077edfdbcb00a9738ec11431617028194efd2ef60d176d7e98f8f"
+    },
+    {
+      "path": "dist/assets/gym/EV1000.webp",
+      "bytes": 46870,
+      "sha256": "2f4b3902cad1ac7776a5f4f6b913581b2142aae3ee07066bb6dbcd023c4fcd71"
+    },
+    {
+      "path": "dist/assets/gym/FW700CLOLYBMP.webp",
+      "bytes": 62840,
+      "sha256": "bcf21f81af25db9a83cd9b26b6147b76ede48fc2645c4435f06a94f3a7540fa6"
+    },
+    {
+      "path": "dist/assets/gym/G290.webp",
+      "bytes": 38306,
+      "sha256": "8d5ab0d0b308ae8166feeebff558712d7c23b52366989fad83fccea73fd6e0c0"
+    },
+    {
+      "path": "dist/assets/gym/G371CB.webp",
+      "bytes": 48306,
+      "sha256": "871c655d7082146bcbdb9152928c316a59cd18ffe24711b889cf0af37f36a2f9"
+    },
+    {
+      "path": "dist/assets/gym/G588.webp",
+      "bytes": 37992,
+      "sha256": "4082a4c0929f0657c0bcd68c248608da8d405b280eb153b1fc39551830e254db"
+    },
+    {
+      "path": "dist/assets/gym/G669.webp",
+      "bytes": 40734,
+      "sha256": "38775c01bb3145ae820a0abc91de99cb1e807a2b2afcfad55af3f3da7cd4c5c4"
+    },
+    {
+      "path": "dist/assets/gym/G699.webp",
+      "bytes": 58102,
+      "sha256": "776237eb3cec2ca336a8e59976fb785d2bacdc1e0c01c3895264ffc429de4af8"
+    },
+    {
+      "path": "dist/assets/gym/G788.webp",
+      "bytes": 67194,
+      "sha256": "29775999c3682f1c1cf5e62cdd93c1f9d63d3ff55f7156adcb0f12052d5d5eec"
+    },
+    {
+      "path": "dist/assets/gym/G815R.webp",
+      "bytes": 40292,
+      "sha256": "04ff08ce00ee660e34af5f6f55e4555c2c04cde2e691c1e687368690169e9909"
+    },
+    {
+      "path": "dist/assets/gym/G818R.webp",
+      "bytes": 39790,
+      "sha256": "361df3ac6e438687f1a0c9984507c1732a798ad5a07651ac57019790066a3665"
+    },
+    {
+      "path": "dist/assets/gym/H720R.webp",
+      "bytes": 34560,
+      "sha256": "ee55bbc1f5ced129b0c81d5e7482a6c0efdf335f3edd99c1a60712f2d47664ac"
+    },
+    {
+      "path": "dist/assets/gym/H775R.webp",
+      "bytes": 42270,
+      "sha256": "494a69ec22be22b8240475517f87fe6b652f7af3ea2982a2a49f3166f6e5f184"
+    },
+    {
+      "path": "dist/assets/gym/H899.webp",
+      "bytes": 41628,
+      "sha256": "3b3bf14cd8a0783e6e85d3819dd3cc2c20508b09a46c294d3acfec49f747b971"
+    },
+    {
+      "path": "dist/assets/gym/H920E.webp",
+      "bytes": 37058,
+      "sha256": "4da264cfb7c65814354ca974de854736745ae621a9a0936f1bc582fab59e6c7f"
+    },
+    {
+      "path": "dist/assets/gym/H925.webp",
+      "bytes": 30346,
+      "sha256": "eac6c562b5cc3f8dd6ce7d40a3a0633f3f5bcae4ed695ee754734b21382bef6f"
+    },
+    {
+      "path": "dist/assets/gym/H925BM-H925ANT.webp",
+      "bytes": 50384,
+      "sha256": "4be1d1a789b29bed71041b1a1a041d635393424e5086c2185156f2ae79fdfa8b"
+    },
+    {
+      "path": "dist/assets/gym/H926.webp",
+      "bytes": 22726,
+      "sha256": "485073deda18283923215d731a9748564798686dcc9803dea18ddd96e10d7b84"
+    },
+    {
+      "path": "dist/assets/gym/H936.webp",
+      "bytes": 23078,
+      "sha256": "a0d5ab4bbd702f1518a837c5080dad0ba9f4a59bf7809f95a8e07ada59e068e3"
+    },
+    {
+      "path": "dist/assets/gym/H940.webp",
+      "bytes": 34686,
+      "sha256": "ec54e402af2f0cbd79394393f1f4137fe1adaed988b670ebb2f0e9b884dc408a"
+    },
+    {
+      "path": "dist/assets/gym/H945.webp",
+      "bytes": 25976,
+      "sha256": "40b3f6b0cf14c0767affb2cc61e5d4e481b0ff4b1f3ebea16b511ba1bcc27567"
+    },
+    {
+      "path": "dist/assets/gym/H945BT-H945ANT.webp",
+      "bytes": 50560,
+      "sha256": "9bc2bb680add1330fbbe5589706444b0e672860bcc6b72da14cf725f040214ad"
+    },
+    {
+      "path": "dist/assets/gym/IC958Y10.webp",
+      "bytes": 40142,
+      "sha256": "00e39dff49dc39e61c02acb6c12e99ac28c1138f998f8d676f343e5a4ec31378"
+    },
+    {
+      "path": "dist/assets/gym/IC959Y10.webp",
+      "bytes": 40940,
+      "sha256": "0deefdd3f088015047fd435b8c550658a970687567e9fcbe6ff921b4cce34d25"
+    },
+    {
+      "path": "dist/assets/gym/IFBR.webp",
+      "bytes": 20602,
+      "sha256": "3c821e433aaf2f9f5a07c285d680507ffe70c438f22eda0a87382e36a326ce64"
+    },
+    {
+      "path": "dist/assets/gym/IR1303B.webp",
+      "bytes": 38532,
+      "sha256": "04ea4251a81e8bfd12e21810c86fea937cb532d31b5ecfd7079afc5c0c2a8111"
+    },
+    {
+      "path": "dist/assets/gym/IR2021.webp",
+      "bytes": 39524,
+      "sha256": "ba87341798352197249df24ba1dfa767add455308c0a2bf1319d5546625cf31d"
+    },
+    {
+      "path": "dist/assets/gym/IR91030B.webp",
+      "bytes": 38312,
+      "sha256": "b04d7f5ee1aa72a662e74a89c3635457f8fe3f37835421ed9a4e02f03cbbb666"
+    },
+    {
+      "path": "dist/assets/gym/IR91054A.webp",
+      "bytes": 45948,
+      "sha256": "f15472ae048de155938e8d24d77652a1310233bd20694883d88cef1ae1b9d45b"
+    },
+    {
+      "path": "dist/assets/gym/IR92004sN.webp",
+      "bytes": 20426,
+      "sha256": "777976f63cb4238b505efef07d45c708a038c945ff5b630b8036b691f0feda06"
+    },
+    {
+      "path": "dist/assets/gym/IR92007HN.webp",
+      "bytes": 34334,
+      "sha256": "79fa5d96322594a021ca8b1da0662ef15ee82ec8dcd9f3613dd31ab87dd233b2"
+    },
+    {
+      "path": "dist/assets/gym/IR92027B.webp",
+      "bytes": 29442,
+      "sha256": "a5e77c05141c8bec23d404d15eea587fa5cf78c9ba4de520cf020c48422b7141"
+    },
+    {
+      "path": "dist/assets/gym/IR92303S.webp",
+      "bytes": 17902,
+      "sha256": "9490e8f1bcf79ff5537399a545e553399cca2d457a076902bf9125298531780c"
+    },
+    {
+      "path": "dist/assets/gym/IR92304S.webp",
+      "bytes": 19970,
+      "sha256": "84eb696c91bd1b6ceb0772d4dfbc1b933ea628328454ee27c2735c1d18ec175c"
+    },
+    {
+      "path": "dist/assets/gym/IR92316.webp",
+      "bytes": 24922,
+      "sha256": "b804d4e061ae326b169235a164b0cfd5d91370157633abe88cd0eb3e38c55f0e"
+    },
+    {
+      "path": "dist/assets/gym/IR94028.webp",
+      "bytes": 31512,
+      "sha256": "c15b8b99c82172f5330c5c0a45c7e4a94e1c8aa2d5452c374ad35d003e2c0c88"
+    },
+    {
+      "path": "dist/assets/gym/IR94031.webp",
+      "bytes": 10510,
+      "sha256": "166f403dc8117582d1c3f79bf2b55191175fa790f5254bb0afbd9094e3a231cd"
+    },
+    {
+      "path": "dist/assets/gym/IR94046.webp",
+      "bytes": 15390,
+      "sha256": "033545098452d0823efd9a6f669c921d5a7e141ac6b19e76d2bf19fbaf146e38"
+    },
+    {
+      "path": "dist/assets/gym/IR94047.webp",
+      "bytes": 11806,
+      "sha256": "0452a4e63cee826512bc1c5cef5ebd9d7c8e2e79ec6b394274df05445a054a68"
+    },
+    {
+      "path": "dist/assets/gym/IR94051.webp",
+      "bytes": 9346,
+      "sha256": "2c80119f2d7102b19a4cc7a04180844e613a72b14ae9e6fb94dd4a1e0fb0b969"
+    },
+    {
+      "path": "dist/assets/gym/IR94068.webp",
+      "bytes": 43132,
+      "sha256": "98be99d28f09c6f2c39cbdea8cf3029095929373fb4c2806b1d4d63f74baff00"
+    },
+    {
+      "path": "dist/assets/gym/IR94083.webp",
+      "bytes": 26042,
+      "sha256": "13c3460ad45cc500d90cb5afbe4326a90ce0d60ec0367a91f5bebb59f0f846cd"
+    },
+    {
+      "path": "dist/assets/gym/IR94085C.webp",
+      "bytes": 12546,
+      "sha256": "7da696f8c942d69f08e879be0d81c4598e7914c4a0aefada15513c9e8dccec6e"
+    },
+    {
+      "path": "dist/assets/gym/IR94087.webp",
+      "bytes": 20074,
+      "sha256": "3e465c85eee93812a97fcba152b97e7932c924a6eb97642c99d0ee32db71b166"
+    },
+    {
+      "path": "dist/assets/gym/IR94186C.webp",
+      "bytes": 7114,
+      "sha256": "bbbf5c53d8060b5042d1b5c9dd9bab74edeffe9f7b97afe490aa45003a3ad6d1"
+    },
+    {
+      "path": "dist/assets/gym/IR95015.webp",
+      "bytes": 7762,
+      "sha256": "742b13100ac73e89d6fc7b3d85798725773c2699c1f9a065aae6217cd66f5418"
+    },
+    {
+      "path": "dist/assets/gym/IR95016.webp",
+      "bytes": 10098,
+      "sha256": "2bae6b8104a9b6d2e7b918da04b311135f9be6aed24fdf81602f481b83bf23ed"
+    },
+    {
+      "path": "dist/assets/gym/IR95017.webp",
+      "bytes": 10752,
+      "sha256": "97696c1efcb53be0377b8240757c3e1af718c4f31ed07568d708534099596fb4"
+    },
+    {
+      "path": "dist/assets/gym/IR95019.webp",
+      "bytes": 13010,
+      "sha256": "6aebc4aa59d397bacb23030b62cacf6357e1571b6f6582254d53cb1e5010f230"
+    },
+    {
+      "path": "dist/assets/gym/IR95020.webp",
+      "bytes": 9878,
+      "sha256": "72f276aca4f9623776fb28f1178e7a81ed551a59076ce6433a28c38dba0bb3fc"
+    },
+    {
+      "path": "dist/assets/gym/IR95021.webp",
+      "bytes": 22380,
+      "sha256": "d605523b08079938b344cfa3d97f18115bede23a5c442d5c57df90e298925729"
+    },
+    {
+      "path": "dist/assets/gym/IR95022.webp",
+      "bytes": 20330,
+      "sha256": "e311b9597ff04bd1449fea87734e1442e80d2ba645568824ab6444f10e61a25a"
+    },
+    {
+      "path": "dist/assets/gym/IR95023.webp",
+      "bytes": 18846,
+      "sha256": "0cae43c6f3eb90e7566f89aecda0337c7c6db7cde27d75e6186d18b2d314ec8e"
+    },
+    {
+      "path": "dist/assets/gym/IR95024.webp",
+      "bytes": 13666,
+      "sha256": "65d1e55f0b1caa01157f0b0abbcbb9d75160cf4df025a314a7fa208d38b340a7"
+    },
+    {
+      "path": "dist/assets/gym/IR95025.webp",
+      "bytes": 31246,
+      "sha256": "ab7b729781b43419de80612e56ae10972dc7b22802a4c48b02864e3d69ef98e9"
+    },
+    {
+      "path": "dist/assets/gym/IR95026.webp",
+      "bytes": 28246,
+      "sha256": "30689b1b77597ee1c49e33c3da4cb6ffcf41fb3db02b2a67174d5a167a7de594"
+    },
+    {
+      "path": "dist/assets/gym/IR95026B.webp",
+      "bytes": 30550,
+      "sha256": "997b103079a3617a089d0ac3686cec194bb06c505985f8b59cf3e0279952ab0e"
+    },
+    {
+      "path": "dist/assets/gym/IR95069.webp",
+      "bytes": 27478,
+      "sha256": "a46320cc00e120eca824e54456ec12a76afc1a2cba5f0e5a854c911fe8ca2dfa"
+    },
+    {
+      "path": "dist/assets/gym/IR95104.webp",
+      "bytes": 63592,
+      "sha256": "b0f322814a468022931d02b32ee3134e4842497f46456d72690f1d2af6c55688"
+    },
+    {
+      "path": "dist/assets/gym/IR95501.webp",
+      "bytes": 66810,
+      "sha256": "ca5e8ca5568e9bb8b52363edf5775d9b4b7d7f848e8058885d20c5fd6f459786"
+    },
+    {
+      "path": "dist/assets/gym/IR96027.webp",
+      "bytes": 16182,
+      "sha256": "91967688c407cc4ffe9ab608419f95f3b1a572d11c038367584d7873ed5c4098"
+    },
+    {
+      "path": "dist/assets/gym/IR96041B.webp",
+      "bytes": 52218,
+      "sha256": "85f0b3de1a73baacf08d4a30c3cc30c49e787ed31baa7aa0d37de65d22e1df51"
+    },
+    {
+      "path": "dist/assets/gym/IR96045.webp",
+      "bytes": 30060,
+      "sha256": "dea4f806fe7705fd41861f68421eb10b9e3b627f33ba79bc23b95946f65066c6"
+    },
+    {
+      "path": "dist/assets/gym/IR96046.webp",
+      "bytes": 19260,
+      "sha256": "a3cabe087a488297ad743e9e70b3483582e9bd7ba5ecda661a8c3c7da534e0e6"
+    },
+    {
+      "path": "dist/assets/gym/IR97123.webp",
+      "bytes": 32288,
+      "sha256": "8d8b894005fefda9a98fe90343524b5e4143f5609787cfb0aa6bf7ddff05933d"
+    },
+    {
+      "path": "dist/assets/gym/IR97180.webp",
+      "bytes": 28424,
+      "sha256": "219df26380d481c1accfec5693b868795bb941f1b2caf650809f0f0ad0b82ae5"
+    },
+    {
+      "path": "dist/assets/gym/IR97422.webp",
+      "bytes": 31906,
+      "sha256": "f6852d756686d292b8e3f399b1b0f2c52437d06b99b3b1022777c72cd76a6b4b"
+    },
+    {
+      "path": "dist/assets/gym/IR97447.webp",
+      "bytes": 52998,
+      "sha256": "33a39f84dc74364a1bb083e9e81253cb343d210a205b60b20a43cd839fbe22e0"
+    },
+    {
+      "path": "dist/assets/gym/IR97506.webp",
+      "bytes": 33818,
+      "sha256": "1663f0f0ea710665a9c542b83983179910052f0a0e5ae5b3eca444231d68e5b9"
+    },
+    {
+      "path": "dist/assets/gym/IR97510.webp",
+      "bytes": 19634,
+      "sha256": "d030b06312e6f41a8a730a67dfdd9bd398147ff3478b1c7a799e021133250205"
+    },
+    {
+      "path": "dist/assets/gym/IR97630.webp",
+      "bytes": 28798,
+      "sha256": "b29842de639ca1aa84dc9885bf48a1191854dd947086961c51367471b60a7bf7"
+    },
+    {
+      "path": "dist/assets/gym/IR97801B.webp",
+      "bytes": 31102,
+      "sha256": "4c31f113b2e9451a0ba53c8e049d894a01b103b0f6f5cebc95d22c2a95367d01"
+    },
+    {
+      "path": "dist/assets/gym/IR97801FS.webp",
+      "bytes": 36938,
+      "sha256": "d762cea4ab4480ae7cd0db86ec79b69dfbc288d9562d798ce5252d91c75f7392"
+    },
+    {
+      "path": "dist/assets/gym/IRTP01.webp",
+      "bytes": 44236,
+      "sha256": "3376a4653bffee9a326a366d102a98b7abecc6cc2cc0593c8b3548ba9ac5eddb"
+    },
+    {
+      "path": "dist/assets/gym/IT7027.webp",
+      "bytes": 24440,
+      "sha256": "b1ba07297118fdc4a377ecf94a5dd2b07ecf0b29e0786dc123894915dda2ddbb"
+    },
+    {
+      "path": "dist/assets/gym/L010B.webp",
+      "bytes": 45532,
+      "sha256": "fe511fb4e3e5f57db4b4dbcfe478ecfe356dd51b46b49f1dadb967b872422ec8"
+    },
+    {
+      "path": "dist/assets/gym/L020B.webp",
+      "bytes": 42322,
+      "sha256": "f2bb72faafa45e41582d9ad5f27f5449d371d8fd0c039f858141238f1cd01f33"
+    },
+    {
+      "path": "dist/assets/gym/L030B.webp",
+      "bytes": 46750,
+      "sha256": "518cfcda0eb53214b9a0dda53ca21fe79a91452f4aa7edf1de61c099dfd7b2a9"
+    },
+    {
+      "path": "dist/assets/gym/L050B.webp",
+      "bytes": 54312,
+      "sha256": "7d1c6d60cf0b704af7e0b4627d1e26483b8db09f6e37de480d1e238b799ca1c7"
+    },
+    {
+      "path": "dist/assets/gym/L070B.webp",
+      "bytes": 26014,
+      "sha256": "f002a8191807708fa2ddf3b6db1d5005b5e909fab994313971bd80bda343e632"
+    },
+    {
+      "path": "dist/assets/gym/L080B.webp",
+      "bytes": 40668,
+      "sha256": "065feb0f8bcf7d20514cb14aef22be42fab62af1086de734214e52f019de2f66"
+    },
+    {
+      "path": "dist/assets/gym/L090B.webp",
+      "bytes": 32356,
+      "sha256": "3601f804f4f13d358c1f17ff0a56f07a6bea75ae7768d61d8c320b8e45a4389b"
+    },
+    {
+      "path": "dist/assets/gym/L110B.webp",
+      "bytes": 30180,
+      "sha256": "853f431b4d2c1d5e9db1c86f727114eaa4bb05b66badda259fb93bb149a76db8"
+    },
+    {
+      "path": "dist/assets/gym/L130B.webp",
+      "bytes": 30086,
+      "sha256": "d1e4c6068ae72b17f03dc751502fc36993cf92a8662e0bec4aa1389200b4b32b"
+    },
+    {
+      "path": "dist/assets/gym/L140B.webp",
+      "bytes": 28300,
+      "sha256": "7d2fc7746a8459c63dd3f089200e5061a208964052654bd9443a78d254bad2d1"
+    },
+    {
+      "path": "dist/assets/gym/L150B.webp",
+      "bytes": 30210,
+      "sha256": "545ac5ed078f6d142fc1ee7185e9fbf8a0052c68a720fc9ee59e3ff7b0ea5131"
+    },
+    {
+      "path": "dist/assets/gym/L160B.webp",
+      "bytes": 23742,
+      "sha256": "1f0160712a5edfe740f159627a06ef5abb337c8f76fe05cba67d7b0e93d445d3"
+    },
+    {
+      "path": "dist/assets/gym/L170B.webp",
+      "bytes": 56650,
+      "sha256": "2a63fe6794ddf854afbe38b3bbfb8cc07ab10cd024557b221c032d7d4cb54bf2"
+    },
+    {
+      "path": "dist/assets/gym/L210B.webp",
+      "bytes": 44724,
+      "sha256": "a73e0bc001c1301720587efb38391f00defaf5d9cc3d66ac094681f5c5f6af49"
+    },
+    {
+      "path": "dist/assets/gym/L250B.webp",
+      "bytes": 44510,
+      "sha256": "a32503d0007c93287e05f63d2b41f89ec07b34a20756a55f192e8e3fd464f41f"
+    },
+    {
+      "path": "dist/assets/gym/L270B.webp",
+      "bytes": 28016,
+      "sha256": "929ba44185ab1fa64c27ece18b244532f72f7ef03ca804e703b434be9002285a"
+    },
+    {
+      "path": "dist/assets/gym/L290B.webp",
+      "bytes": 34208,
+      "sha256": "8025c8248e49ccc164db69a66b4a0ac52f6d7de6d2f7a0ed61a3cb0c8e9b8596"
+    },
+    {
+      "path": "dist/assets/gym/L310B.webp",
+      "bytes": 41098,
+      "sha256": "063de65ecc3f4c840584b319634393a3950d096ba8d633f9106d45064fedd1fd"
+    },
+    {
+      "path": "dist/assets/gym/L330B.webp",
+      "bytes": 35338,
+      "sha256": "ad52b396481cd8eba8dc2e270e8ba94edb705d24ab58162bc83203b98797461c"
+    },
+    {
+      "path": "dist/assets/gym/L340B.webp",
+      "bytes": 34716,
+      "sha256": "00d9d6e4ea45b4fa7781a05acde2837b9c07a69346b32f6363a705ae8b09290f"
+    },
+    {
+      "path": "dist/assets/gym/L350BB.webp",
+      "bytes": 34892,
+      "sha256": "a078f7aba67a1f1c3e87eb76291b597976313f225f84d27b0f489e51a376543d"
+    },
+    {
+      "path": "dist/assets/gym/L360FS-FKS.webp",
+      "bytes": 52168,
+      "sha256": "f84e791134760120b129500a1e82b1be5591eda77f081d8e491797d6a2d5cbeb"
+    },
+    {
+      "path": "dist/assets/gym/L365B.webp",
+      "bytes": 58696,
+      "sha256": "828d7479f971f6cd8c9576675980efe894129261119e0b551776b8934a24b9ea"
+    },
+    {
+      "path": "dist/assets/gym/L370B.webp",
+      "bytes": 45004,
+      "sha256": "9d007c53f989072a511258c06f1855a6f48748c73cd8c1f9b4206dc718cf27fe"
+    },
+    {
+      "path": "dist/assets/gym/L410B.webp",
+      "bytes": 35420,
+      "sha256": "6f60fe87b039215ddea35593a86cf0c5d1942a5c2a17c0d073fe63c7139362d2"
+    },
+    {
+      "path": "dist/assets/gym/L430B.webp",
+      "bytes": 48334,
+      "sha256": "2dd6a724adc59d2a8dc5f9ef235fdeaf7834d056cce39d76968f56778b075651"
+    },
+    {
+      "path": "dist/assets/gym/L450B.webp",
+      "bytes": 29518,
+      "sha256": "cf77c7a5e22a46f0b817af0c7d77b2182d422d72610abef9e24ae3bddcdc6cb9"
+    },
+    {
+      "path": "dist/assets/gym/L480B.webp",
+      "bytes": 59070,
+      "sha256": "9b0fd4c3238bf57c592ec960a629897919799e4bfb0de70d6a1f91236a6bfad4"
+    },
+    {
+      "path": "dist/assets/gym/L480Bx2.webp",
+      "bytes": 55342,
+      "sha256": "949a4923b12d62c717c260711f728c15977aa4404bdecf9e5d3285a8b6f4a712"
+    },
+    {
+      "path": "dist/assets/gym/L485B.webp",
+      "bytes": 49360,
+      "sha256": "57f55336ed68bf5d88923353986099134d9482c5c719f0a40032889558f676f4"
+    },
+    {
+      "path": "dist/assets/gym/L490B.webp",
+      "bytes": 27258,
+      "sha256": "211897befc70ad334ac16dd033f5fadf8883e8e222b885d2077d2ce0208d3718"
+    },
+    {
+      "path": "dist/assets/gym/L510B.webp",
+      "bytes": 36928,
+      "sha256": "43dd5cbc4adefd89c38f8687af9488cbcb3404bd949194ba8bcd67cae395a938"
+    },
+    {
+      "path": "dist/assets/gym/L535B.webp",
+      "bytes": 24424,
+      "sha256": "b2f0ef862ac5c2ea9048b8fe613f86d33bfb92f198b921d60b85add7c3ed9dd5"
+    },
+    {
+      "path": "dist/assets/gym/L540B.webp",
+      "bytes": 39634,
+      "sha256": "d1e8478c5fe48bf9792d6197c09567e74e91820e424c7a93d7b0f184632ffb0e"
+    },
+    {
+      "path": "dist/assets/gym/L550B.webp",
+      "bytes": 37122,
+      "sha256": "fe43c9b7158879c237664c8b1747dcc172883f413c52859bd15e6a0260127df1"
+    },
+    {
+      "path": "dist/assets/gym/L610B.webp",
+      "bytes": 40876,
+      "sha256": "f1286efd83ceee66876ea609aae768f2fb2f25b3dbfde92438a8cade1be21ee1"
+    },
+    {
+      "path": "dist/assets/gym/L800BB.webp",
+      "bytes": 22880,
+      "sha256": "7cb92011883cea0e48d8a6f74258b687d96c8f75b9f17cea758661b9d816c950"
+    },
+    {
+      "path": "dist/assets/gym/L805BB.webp",
+      "bytes": 41102,
+      "sha256": "8af4e5922ef8cd647894f97592be86860dbb8e1e3a1bd35f561367b2ae56d119"
+    },
+    {
+      "path": "dist/assets/gym/L810BB.webp",
+      "bytes": 25444,
+      "sha256": "ce860b95cdbf91c510210a51f36f7feac6c0c1690dcea5b969464e2304133c40"
+    },
+    {
+      "path": "dist/assets/gym/L815BB.webp",
+      "bytes": 35906,
+      "sha256": "877993d0db30818fa429ca79acc154e4b504ddde5b200792c487bba6871b30d3"
+    },
+    {
+      "path": "dist/assets/gym/L820BB.webp",
+      "bytes": 44680,
+      "sha256": "7ea9a797354365dcab56f7da664135b5b5ff6eacba045e778a0f55780f77cede"
+    },
+    {
+      "path": "dist/assets/gym/L825BB.webp",
+      "bytes": 28064,
+      "sha256": "e09236e01983cad8c99cf14d587e85191ce6af57b1541b4fad99be96845d0e93"
+    },
+    {
+      "path": "dist/assets/gym/L826BB.webp",
+      "bytes": 28876,
+      "sha256": "6217afc9efbd78b5bc34fe77fe99fa5bbba5a25bc9d7c3f9a1d36b59f15757dd"
+    },
+    {
+      "path": "dist/assets/gym/L830BB.webp",
+      "bytes": 31808,
+      "sha256": "6a7522abc560eeb564eddb0307979c45cc287784ea00fc0d894814a07c8613a9"
+    },
+    {
+      "path": "dist/assets/gym/L835BB.webp",
+      "bytes": 24822,
+      "sha256": "e663b04327a080c8b4edf23a2267ab56fef513789c46a16f08502354b3a705df"
+    },
+    {
+      "path": "dist/assets/gym/L840BB.webp",
+      "bytes": 28068,
+      "sha256": "23de4b7a8abe56cfbf8686cb6aaad77e605b7a5147466e10b51ea871e6eee6f4"
+    },
+    {
+      "path": "dist/assets/gym/L845BB.webp",
+      "bytes": 15738,
+      "sha256": "a8b1aab3b175e9075fe530a02c11ff40676e94a63e4e229ab0f1668d72fcbad4"
+    },
+    {
+      "path": "dist/assets/gym/L850BB.webp",
+      "bytes": 20948,
+      "sha256": "541dfa379a161aeec833355a82c1d58967c611e9e18eb743696372c5655e0689"
+    },
+    {
+      "path": "dist/assets/gym/L855BB.webp",
+      "bytes": 34950,
+      "sha256": "50ac36a7e11a3ea613b6efb5f70b680afd535b3aafa25d9c1d0bf3893ebcde92"
+    },
+    {
+      "path": "dist/assets/gym/L860BB.webp",
+      "bytes": 21054,
+      "sha256": "471cea09d08a333e891c3d5c049e4d29ce878b6303dbbf8964befde56cf78b46"
+    },
+    {
+      "path": "dist/assets/gym/L862.webp",
+      "bytes": 27354,
+      "sha256": "86c70d893813a6ce3ee9ce2b5466450ef9bc2f15cc446fa24c7a5a6d256ec648"
+    },
+    {
+      "path": "dist/assets/gym/L870BB.webp",
+      "bytes": 31532,
+      "sha256": "87d9e30a236853a10e4e65b4e849edd5385559ec06661b31eb70fe8632c7b897"
+    },
+    {
+      "path": "dist/assets/gym/L875BB.webp",
+      "bytes": 42104,
+      "sha256": "2f1ec5a25ae287f08ba5d15db67cd0c0c2d3accceb0055731646a9ddb84f381e"
+    },
+    {
+      "path": "dist/assets/gym/L880BB.webp",
+      "bytes": 35162,
+      "sha256": "9824e5605b162313ce0826bf6e0af127362fd2ca263674a47bb7c2884a81b586"
+    },
+    {
+      "path": "dist/assets/gym/L885BB.webp",
+      "bytes": 39332,
+      "sha256": "9130087c724635f409983fccae081e0b03ef1d1edb6720660541f31e1a595369"
+    },
+    {
+      "path": "dist/assets/gym/L900BB.webp",
+      "bytes": 21440,
+      "sha256": "107356d25721b1bd36e1a748d68f9c5ea516078960699738dbe3c699a4d0bb96"
+    },
+    {
+      "path": "dist/assets/gym/LD400BB.webp",
+      "bytes": 34680,
+      "sha256": "71aedd3b1f3079cc5679e1ff6253d9c65f47d636912cddaaecd2e51caaca61fb"
+    },
+    {
+      "path": "dist/assets/gym/LKT8.webp",
+      "bytes": 26586,
+      "sha256": "196221365a5574fd59f5480bff5679d00142f18a04d3987541bdda1f98f227d9"
+    },
+    {
+      "path": "dist/assets/gym/M010.webp",
+      "bytes": 34228,
+      "sha256": "7f625eb5b6ce48d43d188643eed2575134da0dbd908eecefe41b035c03a8b12c"
+    },
+    {
+      "path": "dist/assets/gym/M030.webp",
+      "bytes": 28888,
+      "sha256": "204311da856fff3c093e04e90abeab3c991248e44ce37de856689a84c2207e20"
+    },
+    {
+      "path": "dist/assets/gym/M050.webp",
+      "bytes": 43070,
+      "sha256": "e685f47a7099f58fb3fa5d009c3343d26c8c550b7d6657dc04005dc8a2f9f7bd"
+    },
+    {
+      "path": "dist/assets/gym/M070.webp",
+      "bytes": 40164,
+      "sha256": "3e8a2f235080ef249b4bd836e8d58e3c20f345abc944e307f32e252692c1cee3"
+    },
+    {
+      "path": "dist/assets/gym/M090.webp",
+      "bytes": 31196,
+      "sha256": "13bd1d238b9d8d4d75a4dcb998f3482c86b7870c0983310eac58bb920beec1f5"
+    },
+    {
+      "path": "dist/assets/gym/M130.webp",
+      "bytes": 37592,
+      "sha256": "595bdc4f763cd6e625f913cb93ef98707b275f686888dcc56758466693ec249d"
+    },
+    {
+      "path": "dist/assets/gym/M160.webp",
+      "bytes": 35694,
+      "sha256": "1f1e79d3d85abe2916994479d71069894db773ee9548c932f5087991876bbfaf"
+    },
+    {
+      "path": "dist/assets/gym/M170.webp",
+      "bytes": 35042,
+      "sha256": "a563191b34b58f0520aa22d6f7237abeee34891dd98e5d0a4015cf98abc9a732"
+    },
+    {
+      "path": "dist/assets/gym/M230.webp",
+      "bytes": 33006,
+      "sha256": "6183d8b38c33d574940203b94d63c397cd5a9738b3e73e3ab19cbce4b5f07412"
+    },
+    {
+      "path": "dist/assets/gym/M250.webp",
+      "bytes": 28662,
+      "sha256": "0e2c3402c5117aa199205bc5e9b45d29aa62f7cd7233f0009222cad0c3f513e9"
+    },
+    {
+      "path": "dist/assets/gym/M270.webp",
+      "bytes": 29796,
+      "sha256": "39d16010e7158dce2c39641ce959dff58e28b1380efc3903dc04bcc690809e6c"
+    },
+    {
+      "path": "dist/assets/gym/M290.webp",
+      "bytes": 41300,
+      "sha256": "7843a5c3becf5543c0473d4c8eefe991a39c8ecdd3f215b2ca256126eeec0719"
+    },
+    {
+      "path": "dist/assets/gym/M310.webp",
+      "bytes": 26212,
+      "sha256": "0d07f0541d818b78a170ce7e13c1924456767fff134028c551ffb4527349c243"
+    },
+    {
+      "path": "dist/assets/gym/M330.webp",
+      "bytes": 35830,
+      "sha256": "366634d07937d7b4c2c6c3335ae32737b741c8546794859420f2b75d8097f2b5"
+    },
+    {
+      "path": "dist/assets/gym/M370.webp",
+      "bytes": 34742,
+      "sha256": "79bcd6076ef9c814651d1cf731b3e1dc5aeda28a4c637c80a81f1cc0f15ee3c8"
+    },
+    {
+      "path": "dist/assets/gym/M420.webp",
+      "bytes": 47502,
+      "sha256": "0afc580b7b33f2768b685331a567c9809fe78d57f99e27c0d99327a13dd33d30"
+    },
+    {
+      "path": "dist/assets/gym/M450.webp",
+      "bytes": 35218,
+      "sha256": "ed30549b1bdb8f5c20b81680d09c0dac46abaa669b8c628820da18b00ab2327a"
+    },
+    {
+      "path": "dist/assets/gym/M490.webp",
+      "bytes": 37530,
+      "sha256": "94821a42ab82e5e5c02fbddbbb6f6943b2a782bccc5faf94e9b310a1526287d0"
+    },
+    {
+      "path": "dist/assets/gym/M510.webp",
+      "bytes": 31080,
+      "sha256": "e1c26bb33f65a0fdb2e2df57fb2f3f183249984826e964c85651f77e6121b553"
+    },
+    {
+      "path": "dist/assets/gym/M550.webp",
+      "bytes": 29276,
+      "sha256": "c4fcd694ddb6ebb37c2ed386e22646120292e62a14ab1307201e37b3f3df29d8"
+    },
+    {
+      "path": "dist/assets/gym/MAGSYS-C01.webp",
+      "bytes": 34870,
+      "sha256": "f216d73c30efb0aad3b9ee3a92b947549be8d503ee23d9726cacb817bad75d6a"
+    },
+    {
+      "path": "dist/assets/gym/MAGSYS-C02.webp",
+      "bytes": 30412,
+      "sha256": "d3ba973b0561e40f3d3e0698c791423c1182f6bc6638dc0ee039942df4ab9292"
+    },
+    {
+      "path": "dist/assets/gym/MAGSYS-C03.webp",
+      "bytes": 12530,
+      "sha256": "1b3f22823c72ba42c0664d1126c7da54e4f71a6a4a441591bda3bff51e6ec6d3"
+    },
+    {
+      "path": "dist/assets/gym/MAGSYS.webp",
+      "bytes": 16676,
+      "sha256": "22dd38049fa991132fcab73766561e4398578efd2c10303bbe024b883fadff75"
+    },
+    {
+      "path": "dist/assets/gym/OLYGRIP.webp",
+      "bytes": 56692,
+      "sha256": "c7862c28d6f93750de736aa63a26d28db50947a942b69f83fa6976f03af7c7a3"
+    },
+    {
+      "path": "dist/assets/gym/PL070B.webp",
+      "bytes": 68830,
+      "sha256": "0eae6de89995c05f95fb763900d185e2b080d7a435cb75081d7700b1e698b7b8"
+    },
+    {
+      "path": "dist/assets/gym/PL075B.webp",
+      "bytes": 57678,
+      "sha256": "b2483de59469430f52cdf39d81d59563961cf6ada7f11801f89e0b9f2306cd02"
+    },
+    {
+      "path": "dist/assets/gym/PL080B.webp",
+      "bytes": 53134,
+      "sha256": "5921f572c2a1a4eb42caf8a83a8b3b743e3a784e7e67c6965ee4d0939654d136"
+    },
+    {
+      "path": "dist/assets/gym/PL090B.webp",
+      "bytes": 21772,
+      "sha256": "71243897883b57c9710f759d8b3f8077903ebdd10d4e77b90cb8f75c56093769"
+    },
+    {
+      "path": "dist/assets/gym/PL110B.webp",
+      "bytes": 52984,
+      "sha256": "f5c55cbde89622e2c2a636214b4a8351fc442a0bfad1b9c4050cce53af078ca0"
+    },
+    {
+      "path": "dist/assets/gym/PL130B.webp",
+      "bytes": 56566,
+      "sha256": "735849f884daf7146421fb2025344b303b4db355c1e35cbeec380263b04248bf"
+    },
+    {
+      "path": "dist/assets/gym/PL155B.webp",
+      "bytes": 53730,
+      "sha256": "3f11d821a030428ca4fa722277854825897487b9176cd3f04d575496f67ab887"
+    },
+    {
+      "path": "dist/assets/gym/PL200B.webp",
+      "bytes": 67164,
+      "sha256": "3e36a5dd43fd7c5c1234f4bf12d90357a0abaf3b5c55b3d05c6dc6377e755bb0"
+    },
+    {
+      "path": "dist/assets/gym/PL250B.webp",
+      "bytes": 35498,
+      "sha256": "e92310d61125eed48e8b23c3d34b6fb3633407fb59eafcd9d2d74d6fb778c148"
+    },
+    {
+      "path": "dist/assets/gym/PL255B.webp",
+      "bytes": 39242,
+      "sha256": "dc5082749d5ea017d026d0d0867198d5b487f01779bfae902766354661c58f68"
+    },
+    {
+      "path": "dist/assets/gym/PL300B.webp",
+      "bytes": 62506,
+      "sha256": "296159959e569ec23fd25666ae07f9bce6d304125e96d21eaf744c968934e577"
+    },
+    {
+      "path": "dist/assets/gym/PL310B.webp",
+      "bytes": 57550,
+      "sha256": "86e66cb97b98490f82fa27ffe9000deca7f7706282cd0568342f96a70fd7a7d0"
+    },
+    {
+      "path": "dist/assets/gym/PL320B.webp",
+      "bytes": 47494,
+      "sha256": "fe025dc449770f81e7f18a1ef5b0c03567e853a6d90ac083148b7edfbe99587e"
+    },
+    {
+      "path": "dist/assets/gym/PL330B.webp",
+      "bytes": 47048,
+      "sha256": "832f230c6a8d3f9c2c5940defb6347b29b68313125bc16b6e37bbd68baca062a"
+    },
+    {
+      "path": "dist/assets/gym/PL340B.webp",
+      "bytes": 53398,
+      "sha256": "0ebbab8656839cf71d476dfc352dd211a47f1bf2fe84b89c087659d98bc9cdd6"
+    },
+    {
+      "path": "dist/assets/gym/PL350B.webp",
+      "bytes": 34178,
+      "sha256": "5ffb323ca6b8d2940418a13b5e68c35d099f5b892c6d47afcfb05f7f7cefb244"
+    },
+    {
+      "path": "dist/assets/gym/PL490B.webp",
+      "bytes": 28750,
+      "sha256": "748e42cd288d2411bd5dfbfd9b0e5335fdd1925092fdfb2262d51256a9e24234"
+    },
+    {
+      "path": "dist/assets/gym/PL700B.webp",
+      "bytes": 69578,
+      "sha256": "b54eb3272b62c2344ef8b9ed412e5785e33601c7b6e8c0231c5140b08532a241"
+    },
+    {
+      "path": "dist/assets/gym/PUDB.webp",
+      "bytes": 42066,
+      "sha256": "7b74e9a2034dba2c5babead6c30b112437ef48c127e659758af4acc7ca575590"
+    },
+    {
+      "path": "dist/assets/gym/R899.webp",
+      "bytes": 26732,
+      "sha256": "2b0865349607d5b29f896159856116d6e3ceed30c3b7db656bdffe69cb0acf43"
+    },
+    {
+      "path": "dist/assets/gym/RHEX.webp",
+      "bytes": 26088,
+      "sha256": "b795aba9109eb9752cbc93b463e679a96466b71c2bb86bc1672d4446190c3a2e"
+    },
+    {
+      "path": "dist/assets/gym/RW1000.webp",
+      "bytes": 38502,
+      "sha256": "0d53a3b317f03de4aed8f1f0ec043a5af10de657f145a69cbae1beb68f0183ed"
+    },
+    {
+      "path": "dist/assets/gym/SC1000.webp",
+      "bytes": 45948,
+      "sha256": "bc6ff2359018dde7d6f311c1695caebb86eea72f496b60fca6562dd51e83314f"
+    },
+    {
+      "path": "dist/assets/gym/ST1000.webp",
+      "bytes": 37178,
+      "sha256": "b6b804a369de1c1190b0db2a04af5591c4f4cb8532f80f51e66619fbd9970bac"
+    },
+    {
+      "path": "dist/assets/gym/TR1000.webp",
+      "bytes": 78438,
+      "sha256": "96e7caf53c98fd6d74afa828a3c1a99aa09d056752834264703c3512dbb299ad"
+    },
+    {
+      "path": "dist/assets/gym/TR800.webp",
+      "bytes": 54334,
+      "sha256": "ec59edd2767b156b24bd56be5e5d032ef41ddde5d94c1c18ff02902a0a0a9c67"
+    },
+    {
+      "path": "dist/assets/gym/VF1405.webp",
+      "bytes": 24374,
+      "sha256": "ba4a8bbe8f769f9edc3191e3db7c57d6aa95c05684da2082492399eef1c0b52e"
+    },
+    {
+      "path": "dist/assets/gym/VF81111.webp",
+      "bytes": 42378,
+      "sha256": "7f1d617014a2790846c17c8ec2eecb160a597b488df3a670aab633a1d03c4b69"
+    },
+    {
+      "path": "dist/assets/gym/VF81903.webp",
+      "bytes": 35180,
+      "sha256": "7d1f14199a45643488820d3a5c86b841c4a4452493f97ee502e82e1817189952"
+    },
+    {
+      "path": "dist/assets/gym/VF91028B.webp",
+      "bytes": 72846,
+      "sha256": "e439386bf5eb594392cf8189668d12bc43763040665b06cf67fcca84c4aa6510"
+    },
+    {
+      "path": "dist/assets/gym/VF94186Z.webp",
+      "bytes": 7396,
+      "sha256": "aa7f439fd9cb1b3a0db8e31b8e97ac7620a01096e0282c7d32392d97345e7bc7"
+    },
+    {
+      "path": "dist/assets/gym/VF95120.webp",
+      "bytes": 76674,
+      "sha256": "d1fc6ace15640dc08ca41ef829ea8fad8632dc556b026b3b99a5aca8b9861aa6"
+    },
+    {
+      "path": "dist/assets/gym/VF95121.webp",
+      "bytes": 38100,
+      "sha256": "f29ca09bca02cd529d59f5662568bca78a29198f7b343acaabcd5c22c3d65280"
+    },
+    {
+      "path": "dist/assets/gym/VF96065.webp",
+      "bytes": 20238,
+      "sha256": "185e86c885d67f640522b5c4c8d892af9405d2f944189e6970f87a95e39676cf"
+    },
+    {
+      "path": "dist/assets/gym/VF97303.webp",
+      "bytes": 35902,
+      "sha256": "b0753b85671422a29927a7290eaf2eca79f527817d8864b7e3eda248707fd3b9"
+    },
+    {
+      "path": "dist/assets/gym/VF97319.webp",
+      "bytes": 42198,
+      "sha256": "abfceba5d626334080cd17f596096eecf2fd00729e9f533006db887191f2e77b"
+    },
+    {
+      "path": "dist/assets/gym/VF97555E.webp",
+      "bytes": 31906,
+      "sha256": "e247199b9e4dcc6f7e8c04b5f13c79bf1b8b19c00f1fba483575022c5b1e5313"
+    },
+    {
+      "path": "dist/assets/gym/VF97635D.webp",
+      "bytes": 41014,
+      "sha256": "68fec1ac9b766918e64b55e831bbdd95b62d6cae9661c1b57bedb93778ecb40c"
+    },
+    {
+      "path": "dist/assets/gym/VF97660.webp",
+      "bytes": 24974,
+      "sha256": "2e87e9972696274b64e78ca00f45d1018300790e3596722dd880a65c30ccaabd"
+    },
+    {
+      "path": "dist/assets/gym/VF97778.webp",
+      "bytes": 28368,
+      "sha256": "8f6e845d2204eed2afcf5598201eb89114ab37286d667deac64fe147564f040d"
+    },
+    {
+      "path": "dist/assets/gym/VF97841D.webp",
+      "bytes": 38906,
+      "sha256": "6ffe67f5832aee2286096be1d90fd223ef2136f3b2231496892cc9c7c6fb9b43"
+    },
+    {
+      "path": "dist/assets/gym/VF97842.webp",
+      "bytes": 46772,
+      "sha256": "bdb1c88a96ac5770fc71b9bba87e683231137c4df8a53e62e7bfacba2c0bcae4"
+    },
+    {
+      "path": "dist/assets/gym/VF97864.webp",
+      "bytes": 50812,
+      "sha256": "313e36b0ebd2637b3663960424a1298e8d6b107ba33faf2fdcab876eecb4f0fb"
+    },
+    {
+      "path": "dist/assets/gym/VFDR1432.webp",
+      "bytes": 17898,
+      "sha256": "c72108adfb0aabc8e467cd9cfc58db9aaf9edbc5ec592f0fa9cdc877d4168ecc"
+    },
+    {
+      "path": "dist/assets/gym/VFDR1506B.webp",
+      "bytes": 83022,
+      "sha256": "9733e4d97252f8441be7e6cd6e146f9552859b524e269fe103ca927da05fa25c"
+    },
+    {
+      "path": "dist/assets/gym/VFDR1801.webp",
+      "bytes": 76034,
+      "sha256": "0daec37560b2264278e7f0a1f5f71abde77a0f41f48f015b88390c666f5b1c5c"
+    },
+    {
+      "path": "dist/assets/gym/VFDR1802.webp",
+      "bytes": 60426,
+      "sha256": "436f13f74fd071677f58aaf59556e34ee638a7943891248e6712c97f2f5a3e05"
+    },
+    {
+      "path": "dist/assets/gym.webp",
+      "bytes": 526264,
+      "sha256": "37737be94449b44671e86669f83149b340e60c5f18cf129102f46ea368d1ee67"
+    },
+    {
+      "path": "dist/assets/habitaciones.webp",
+      "bytes": 305106,
+      "sha256": "246737987fa3192806628aa92d69aa1d8e5ddbccbf1a523481aa9b68e6991ead"
+    },
+    {
+      "path": "dist/assets/nardi/alfa.webp",
+      "bytes": 782364,
+      "sha256": "0ee8b7734501fb670ca8f14ffa305843e379db8e794c553b261822327b8da6d4"
+    },
+    {
+      "path": "dist/assets/nardi/alloro-140-extensible.webp",
+      "bytes": 4830,
+      "sha256": "23995f7415cc1d8f94e84b097eecf0582fecd17e2aab0f54d10e60214513389d"
+    },
+    {
+      "path": "dist/assets/nardi/alloro-210-extensible.webp",
+      "bytes": 5632,
+      "sha256": "81096e400784063e5e2e35b1290c0596e422697b525acb0ef8a0282a6a242664"
+    },
+    {
+      "path": "dist/assets/nardi/arredo-maximo-lumiere-40.webp",
+      "bytes": 1474,
+      "sha256": "00e4471497204993fe87e50a5591fe5497ee01b655b0173bab7406d3854fc694"
+    },
+    {
+      "path": "dist/assets/nardi/arredo-maximo-lumiere-40x40.webp",
+      "bytes": 1166,
+      "sha256": "2227f102c57c2032d7665a7a95947b26062c8686efb1a8ff76af04a8bc87dae1"
+    },
+    {
+      "path": "dist/assets/nardi/arredo-maximo-lumiere-50x30.webp",
+      "bytes": 1066,
+      "sha256": "3341e25c5a3042ceebd15aa92376d278af36ff04f9de7acdb12bd0a8cd9f8596"
+    },
+    {
+      "path": "dist/assets/nardi/atlantico.webp",
+      "bytes": 421096,
+      "sha256": "70170feab5bd549deb48370d6c1d935ebd42b9c1fc733ce2636d7b1af59c5705"
+    },
+    {
+      "path": "dist/assets/nardi/base-break.webp",
+      "bytes": 3452,
+      "sha256": "5e70b863d6f862ed01f3028c4f8202737f0ee30a1aac4097f470bf0cd4ba04cb"
+    },
+    {
+      "path": "dist/assets/nardi/base-calice-alu-high.webp",
+      "bytes": 4114,
+      "sha256": "cd6e5e898813e33e2ee283167afaed27a323a824948034e7db5f995b641a14b9"
+    },
+    {
+      "path": "dist/assets/nardi/base-calice-alu.webp",
+      "bytes": 4130,
+      "sha256": "513bc60fd407064c78ebd122758f50081ce60866e2fc4a23d5b301d9b56b091c"
+    },
+    {
+      "path": "dist/assets/nardi/base-clip.webp",
+      "bytes": 44924,
+      "sha256": "be3c0dbedd9ecfd2a5d28af4cad8bb2c9ec887073fec5e4dcac8a33b7fd83657"
+    },
+    {
+      "path": "dist/assets/nardi/base-fiore-high.webp",
+      "bytes": 3988,
+      "sha256": "f8855d995e9a250cf64b332d8b425f652217dbc0f23bd165a6af5cce2e6d9957"
+    },
+    {
+      "path": "dist/assets/nardi/base-fiore.webp",
+      "bytes": 3726,
+      "sha256": "f384a1c4bc49f08341d80aea5c02826ed1429d7281bf7aab85f14f4832da3357"
+    },
+    {
+      "path": "dist/assets/nardi/base-flute.webp",
+      "bytes": 3706,
+      "sha256": "93e538e53f9ce8ee9b6c3426b9f3bdcfbbb1a5890431baa9524eb9ad683e0612"
+    },
+    {
+      "path": "dist/assets/nardi/base-frasca-high-fix.webp",
+      "bytes": 8270,
+      "sha256": "5fc192faf45100f3a2b193dc93c682acdcd2b92c262f3d5bd55cea74d80193fc"
+    },
+    {
+      "path": "dist/assets/nardi/base-frasca-high-folding.webp",
+      "bytes": 8106,
+      "sha256": "5ac001fd5fd201c186fa3b8deb4f4c9c4d0257b0fbfc11f478dc2f25d9a6e830"
+    },
+    {
+      "path": "dist/assets/nardi/base-frasca-maxi-fix.webp",
+      "bytes": 10420,
+      "sha256": "25a94125b8e08b88d11ccc10364373751a63c0db99dd7d3fa2af05b0502f00b6"
+    },
+    {
+      "path": "dist/assets/nardi/base-frasca-mini-fix.webp",
+      "bytes": 9176,
+      "sha256": "cf253ebd95b716caef7e45af5c1bafc3b7d1e39f13cd2f33097daa17df9e45bf"
+    },
+    {
+      "path": "dist/assets/nardi/base-frasca-mini-folding.webp",
+      "bytes": 9966,
+      "sha256": "a23aa00604861e2b54cb6b2d8af42d014b7ffbd983631e86f8b91261a1170b32"
+    },
+    {
+      "path": "dist/assets/nardi/base-ibisco-high.webp",
+      "bytes": 4170,
+      "sha256": "adcbe72389e6a89dcc4b703e4a35ab3ae43473f0b9be0ebca1fbbe905f16006b"
+    },
+    {
+      "path": "dist/assets/nardi/base-ibisco.webp",
+      "bytes": 5582,
+      "sha256": "05dc3891029d651da2f377c1b07f4b4176f61dae42424969ec9c0046c60e333f"
+    },
+    {
+      "path": "dist/assets/nardi/base-scudo-double.webp",
+      "bytes": 9792,
+      "sha256": "4de199489b8bcd7ca716b2a060a537b53b07f991944f3902b5a9adfdfd888e94"
+    },
+    {
+      "path": "dist/assets/nardi/base-scudo-high.webp",
+      "bytes": 4280,
+      "sha256": "ed40cff1eb9f7f56b31bcf626a706509999940661e6cdef6f87fee64a129f069"
+    },
+    {
+      "path": "dist/assets/nardi/base-scudo.webp",
+      "bytes": 6164,
+      "sha256": "cc77b11b2b5b2bb99bdd037b24e9c9fc875b82c1c3d436e33ffbd119ef73e38d"
+    },
+    {
+      "path": "dist/assets/nardi/bit.webp",
+      "bytes": 84930,
+      "sha256": "149b515b00204d736d5f0f2b21a438b3f20d64cd61d1f4ac7bdc807ea62bd7bb"
+    },
+    {
+      "path": "dist/assets/nardi/bora-bistrot.webp",
+      "bytes": 49768,
+      "sha256": "d0f59230ba349d5cbac293fa883b38e5913b526c5a1138756f6c5962dab94530"
+    },
+    {
+      "path": "dist/assets/nardi/bora.webp",
+      "bytes": 13996,
+      "sha256": "02956b8cf4bd7946e803464c43041f107585d752282792b4d70f034f9fc28ab2"
+    },
+    {
+      "path": "dist/assets/nardi/bracciolo-atlantico.webp",
+      "bytes": 9858,
+      "sha256": "4f0549da72e3ef16afd1a8ffc7dbeaff62b163c3ce9c78e1fa208fb1a89b230b"
+    },
+    {
+      "path": "dist/assets/nardi/cassia-armchair.webp",
+      "bytes": 388724,
+      "sha256": "7079eb9754d207aec7fbac099787b4c52b64b11d01aa22cdca712a55f6ff7025"
+    },
+    {
+      "path": "dist/assets/nardi/cassia-bistrot.webp",
+      "bytes": 292590,
+      "sha256": "d59d0a0dd26217e78557c3f6b57ce5737698316e05488117b1c4120b4084f0f3"
+    },
+    {
+      "path": "dist/assets/nardi/cassia-stool-mini.webp",
+      "bytes": 10156,
+      "sha256": "4f1c5004c311c45a3686d9438b659e43563b2e0251ca728380fc3b64880c7d5e"
+    },
+    {
+      "path": "dist/assets/nardi/cassia-stool.webp",
+      "bytes": 26288,
+      "sha256": "e9129b989ddfaf71fdd73aca73ab4903b826247bfb479c2c077730604d11997f"
+    },
+    {
+      "path": "dist/assets/nardi/clip-70.webp",
+      "bytes": 55888,
+      "sha256": "99cc245b828c9e8dd3d05716de397d918c8cfd0ca7cd4e4671b9f5c2452c3c18"
+    },
+    {
+      "path": "dist/assets/nardi/clip-80.webp",
+      "bytes": 29494,
+      "sha256": "21581580a7ea74b5ed955a12ba6940d2b66673dfeac7ec3464ec8972981fdfbf"
+    },
+    {
+      "path": "dist/assets/nardi/clip-mat-70.webp",
+      "bytes": 2706,
+      "sha256": "5de6802fc81c0ee1305f2f5c37137d56f998c1055e1308500aec3ab210f72210"
+    },
+    {
+      "path": "dist/assets/nardi/clip-mat-80.webp",
+      "bytes": 2712,
+      "sha256": "d5a0ff67c0d407c00c4cf26fca1f2ac16d456d5b2ecee5d6d35c510283a739cc"
+    },
+    {
+      "path": "dist/assets/nardi/combo-60.webp",
+      "bytes": 14308,
+      "sha256": "2c7ec3f3d302d9db627ee7818f3b6b37d000fdf53bcf4a5c52cc1f6e97594a60"
+    },
+    {
+      "path": "dist/assets/nardi/combo-70.webp",
+      "bytes": 32324,
+      "sha256": "9e7347e98c7765823106ef0a5454764756546f397e142fea2715db3f4b47e202"
+    },
+    {
+      "path": "dist/assets/nardi/costa-bistrot.webp",
+      "bytes": 11496,
+      "sha256": "624bdd30321637d8c9f875af5e0830b1d213fa738f01b349f193e7f05c419310"
+    },
+    {
+      "path": "dist/assets/nardi/costa.webp",
+      "bytes": 13320,
+      "sha256": "1320577e905efd970940886276874213571ea2e2dc3d40551d01fb59ad71154b"
+    },
+    {
+      "path": "dist/assets/nardi/cover-l.webp",
+      "bytes": 8562,
+      "sha256": "4b88d56a8a8b10011f8fa78997869a0e2c68c2e6f69e32e9bff3b9c65ca6fa33"
+    },
+    {
+      "path": "dist/assets/nardi/cover-m.webp",
+      "bytes": 7348,
+      "sha256": "99365f751f0f9e8407528af269157065f263c0b2a5ccc97f3848c3f14930228c"
+    },
+    {
+      "path": "dist/assets/nardi/cover-maximo-l.webp",
+      "bytes": 11600,
+      "sha256": "4ead1e0b07b1649eee6418f5f002fed1d692c4de4c38d4224f85cb0fd9700c83"
+    },
+    {
+      "path": "dist/assets/nardi/cover-maximo-m.webp",
+      "bytes": 9070,
+      "sha256": "918db2004e7dcd60f08f52edc66a45657933e0ab293d0fd2ba54cfe8bb15e066"
+    },
+    {
+      "path": "dist/assets/nardi/cover-maximo-s.webp",
+      "bytes": 7214,
+      "sha256": "460cbb9f63966ad5077c5bf7d365062298af571a55cc2744668a00912db1a67b"
+    },
+    {
+      "path": "dist/assets/nardi/cover-s.webp",
+      "bytes": 5624,
+      "sha256": "4ae928fe28f300cf41ce3b844556a6b0e6d479550b011579145dec728aaea943"
+    },
+    {
+      "path": "dist/assets/nardi/cover-xl.webp",
+      "bytes": 12042,
+      "sha256": "d27a31ac61be483e6db1978ffa19886c958869cf10717ed4a8178b1adf9d6dc1"
+    },
+    {
+      "path": "dist/assets/nardi/cube-120x70.webp",
+      "bytes": 4046,
+      "sha256": "37259548bf74dbd212cb57635d7e74d16ab94bd6c1c958aa79b6572bc26b5d1f"
+    },
+    {
+      "path": "dist/assets/nardi/cube-140x80.webp",
+      "bytes": 3926,
+      "sha256": "ded313af60d345b1ae23437c9a95a8a22992269de0057cc229578a570d799b8e"
+    },
+    {
+      "path": "dist/assets/nardi/cube-70.webp",
+      "bytes": 2990,
+      "sha256": "743a85770470383185586a678295b84acc1d23ed9432ff8c028bd2b9a2733274"
+    },
+    {
+      "path": "dist/assets/nardi/cube-80.webp",
+      "bytes": 29394,
+      "sha256": "cbc17252211c722559c74a65d55e3f087980e86529faf2160959d30507079059"
+    },
+    {
+      "path": "dist/assets/nardi/cuscino-arredo-maximo-50x50.webp",
+      "bytes": 1352,
+      "sha256": "d6b5f6bfba7938589ce7b3dfc1d176f5c210b68a6fc1ed5edbc0b95d2e87f6e1"
+    },
+    {
+      "path": "dist/assets/nardi/cuscino-arredo-maximo-60x40.webp",
+      "bytes": 1310,
+      "sha256": "13f4c5ce1c74b24349893e3cb337b8166f8ba36c87129080c3930f6bc830cc44"
+    },
+    {
+      "path": "dist/assets/nardi/cuscino-arredo-maximo-70x30.webp",
+      "bytes": 1066,
+      "sha256": "2853a89551edbb4b6ee5e79e444b4abdd3a71f6149c0a4f67c0fe21d1eeefdac"
+    },
+    {
+      "path": "dist/assets/nardi/cuscino-bit.webp",
+      "bytes": 742,
+      "sha256": "f6a177f311ef57b1cafec91e95e0f298a715b7379920a5e43166b397bfc9cbfd"
+    },
+    {
+      "path": "dist/assets/nardi/cuscino-cassia-armchair.webp",
+      "bytes": 1058,
+      "sha256": "b3bdabe730487dcc4fbcf8a27383b993a78db9b7bbb088e918241c0cac365d61"
+    },
+    {
+      "path": "dist/assets/nardi/cuscino-cassia-bistrot.webp",
+      "bytes": 986,
+      "sha256": "687f8d104c858acc155c2bdeb7fd36579abccba4de694b01bb8d2a6af16e0eb2"
+    },
+    {
+      "path": "dist/assets/nardi/cuscino-darsena.webp",
+      "bytes": 1852,
+      "sha256": "d1340f91bad3aa8ab930445ed181c745f3fec627f5059312f9352acc8b4bf252"
+    },
+    {
+      "path": "dist/assets/nardi/cuscino-doga-armchair.webp",
+      "bytes": 558,
+      "sha256": "a13d5e75857d34743900d91d5c877637cc3c3ff88777c05027536b6d90da8b31"
+    },
+    {
+      "path": "dist/assets/nardi/cuscino-doga-bistrot.webp",
+      "bytes": 720,
+      "sha256": "1fbba05cdcfc8235e7933f6712a1e8634d4ca835bd309995be88cfc6e7f40d8b"
+    },
+    {
+      "path": "dist/assets/nardi/cuscino-doga-relax.webp",
+      "bytes": 1390,
+      "sha256": "187186207fbaaf45ef8d8028dce3663cfadb72bb72a7276e15ea56b369155160"
+    },
+    {
+      "path": "dist/assets/nardi/cuscino-folio-comfort.webp",
+      "bytes": 3676,
+      "sha256": "5494abd602bbd5220881da90273da5ea03a9304cd4dca4f0fa6be591a6a41cf7"
+    },
+    {
+      "path": "dist/assets/nardi/cuscino-net-bench.webp",
+      "bytes": 1292,
+      "sha256": "b60a040bfa44b80b8b40651d6b51f4a8b04901c38007b3bdd4e92f20b788434c"
+    },
+    {
+      "path": "dist/assets/nardi/cuscino-net-relax.webp",
+      "bytes": 1294,
+      "sha256": "d9907a6c7e5f44e93796083faa307d9873239add7fbdbbc8a56c8612872c144e"
+    },
+    {
+      "path": "dist/assets/nardi/cuscino-net.webp",
+      "bytes": 1186,
+      "sha256": "f9ba4aa871c7b21bbeb19635eebe5ae2474c3df4c99a6dd33872b8be69a81084"
+    },
+    {
+      "path": "dist/assets/nardi/cuscino-passepartout.webp",
+      "bytes": 2406,
+      "sha256": "7cb45e2a83513e388e7a60ce9e576d8ebf43d9f2853abf8c3fcf87e34690a0c4"
+    },
+    {
+      "path": "dist/assets/nardi/cuscino-plano.webp",
+      "bytes": 1514,
+      "sha256": "daec23cd80d8d46aca09dec7aa2764c78e9c990f9987d06001da54d7b037b4c6"
+    },
+    {
+      "path": "dist/assets/nardi/cuscino-poggiatesta-folio.webp",
+      "bytes": 1852,
+      "sha256": "ea1c9ade9180d2887d9356d3131e70a9bffc523d8376e9acd8b8e0039664c524"
+    },
+    {
+      "path": "dist/assets/nardi/cuscino-poggiatesta-net-lounge.webp",
+      "bytes": 974,
+      "sha256": "597a2b291d0c77501b80f07d46198206572588fcbddf7ac5331a410498f59769"
+    },
+    {
+      "path": "dist/assets/nardi/cuscino-rettangolare.webp",
+      "bytes": 1864,
+      "sha256": "f5d144552ebbd91ac379b8e58f727f675007b0f934cf61d5c00188b82ff462a0"
+    },
+    {
+      "path": "dist/assets/nardi/cuscino-rio-bench.webp",
+      "bytes": 768,
+      "sha256": "3a1035b76acf3b6edd976dd698f1cd64ebcd489e15124a43b016eafa5de62afe"
+    },
+    {
+      "path": "dist/assets/nardi/cuscino-schienale-angolo-komodo.webp",
+      "bytes": 2092,
+      "sha256": "6e9ea5df9013f6584d2517e5e7daf1ba2282e31deb57fc99d3c8efc4da65e4a1"
+    },
+    {
+      "path": "dist/assets/nardi/cuscino-schienale-angolo-maximo.webp",
+      "bytes": 1358,
+      "sha256": "7249ffec37f65235bf3129c5f53dae01a5d85de2ff4de248f6fb36ca3ab2fbc3"
+    },
+    {
+      "path": "dist/assets/nardi/cuscino-schienale-komodo.webp",
+      "bytes": 2072,
+      "sha256": "25beea03758cf117d6afd00410dd2dcba59aac63eeb5d394e0888d5a83740693"
+    },
+    {
+      "path": "dist/assets/nardi/cuscino-schienale-maximo.webp",
+      "bytes": 1048,
+      "sha256": "c9963925abc3360bad22a2162729ff4efd14097fb93e5c912b04d7afc40b731f"
+    },
+    {
+      "path": "dist/assets/nardi/cuscino-shell.webp",
+      "bytes": 3124,
+      "sha256": "37c5b5678576cc133909c5486a932a24f0c4bb42ab1061533049b0cf419cb69b"
+    },
+    {
+      "path": "dist/assets/nardi/cuscino-tiberina.webp",
+      "bytes": 780,
+      "sha256": "6a1d1fb42b6acfaa5261dd23f2398b60c602455f22d587e97ba3751296e7709d"
+    },
+    {
+      "path": "dist/assets/nardi/cuscino-trill-armchair.webp",
+      "bytes": 958,
+      "sha256": "f3031ce06b7e910fb209561dc989bd1a3162a3f6f878864dd398a534fb7edd59"
+    },
+    {
+      "path": "dist/assets/nardi/cuscino-trill-bistrot.webp",
+      "bytes": 690,
+      "sha256": "19f5b826940f0ab743f1b7e16a843619abafd647cfe9f97b5b0f8b49dcb62512"
+    },
+    {
+      "path": "dist/assets/nardi/darsena.webp",
+      "bytes": 61786,
+      "sha256": "3f7dd116fa9575db8797fe43591d43d9c9ff511cec834b6f2607309680c73ecc"
+    },
+    {
+      "path": "dist/assets/nardi/doga-armchair.webp",
+      "bytes": 43980,
+      "sha256": "bc008603eb55491f2553d31a931c2db77ac4f432d840d67b1173e41e230bf0e0"
+    },
+    {
+      "path": "dist/assets/nardi/doga-bench.webp",
+      "bytes": 8784,
+      "sha256": "f517892ab93f2f3b44b4ae08f83dd0c6e32f7f738b943fbd018c3f0016ae9264"
+    },
+    {
+      "path": "dist/assets/nardi/doga-bistrot.webp",
+      "bytes": 33016,
+      "sha256": "fcb0b0791fb4497f4bed79131a9a78d9b33620401654dd8d3c29a46fdd389177"
+    },
+    {
+      "path": "dist/assets/nardi/doga-relax.webp",
+      "bytes": 12088,
+      "sha256": "dab7b833238bcb3235bb8406d5406ad929072f05d14b2be3c5ef6216e81851e5"
+    },
+    {
+      "path": "dist/assets/nardi/doga-stool-mini.webp",
+      "bytes": 10956,
+      "sha256": "bc76ce50839480373982a91f4c98c530e02077bfa56a6449d9dca348ced3a2bd"
+    },
+    {
+      "path": "dist/assets/nardi/doga-stool.webp",
+      "bytes": 30482,
+      "sha256": "aad830d2a3da8ba5838fab8924b0dd1b1207ccee58c9b00ccb05577d588bd793"
+    },
+    {
+      "path": "dist/assets/nardi/doga-table.webp",
+      "bytes": 6294,
+      "sha256": "895eb37ce85d45cf35a94d6e51f192474b2108040e92456a14f8ced231789204"
+    },
+    {
+      "path": "dist/assets/nardi/eden.webp",
+      "bytes": 18096,
+      "sha256": "3c184241ac01e8944c68dbabc3d1535cfcee35a4f78cecc485fbb3419b11daba"
+    },
+    {
+      "path": "dist/assets/nardi/erica.webp",
+      "bytes": 8332,
+      "sha256": "45f25c8add6d8a448967a63773556d2c0d791b77a67081f348f4c3527bf915db"
+    },
+    {
+      "path": "dist/assets/nardi/faro-mini.webp",
+      "bytes": 9066,
+      "sha256": "11495cc688a64273c462413553a3b30c4b2218f3d5fe21d6ae57b3c840b1242d"
+    },
+    {
+      "path": "dist/assets/nardi/faro.webp",
+      "bytes": 8900,
+      "sha256": "31205fe02c50d19876187daa00fb9757e7140f83c8156e172d8dbcb3198181b2"
+    },
+    {
+      "path": "dist/assets/nardi/folio.webp",
+      "bytes": 720150,
+      "sha256": "ebb97b12ef1019e672fa4f61d53b85b0b3d5f9589c000573d2d5aa6cccbb3b98"
+    },
+    {
+      "path": "dist/assets/nardi/kit-combo-high.webp",
+      "bytes": 13456,
+      "sha256": "98e98a3d2c6f35caaea9cecd8d1870b58f9a04d34dd891b8f2635a8c4704e2f3"
+    },
+    {
+      "path": "dist/assets/nardi/kit-cube-120x70-high.webp",
+      "bytes": 2642,
+      "sha256": "74a1a8b171e55c9659f793757895dfb825bd8380b01cb02d7a6e9d1ef9a17b86"
+    },
+    {
+      "path": "dist/assets/nardi/kit-cube-140x80-high.webp",
+      "bytes": 2598,
+      "sha256": "9394804a3bea04dc73527e53e9fd5c022dba507908c55cea79246095c7b722f3"
+    },
+    {
+      "path": "dist/assets/nardi/kit-cube-70-high.webp",
+      "bytes": 2060,
+      "sha256": "22b815fffea7cb4d0bbde0fe41b45876b46db62d5c1c25df23539b9958ed45e6"
+    },
+    {
+      "path": "dist/assets/nardi/kit-cube-80-high.webp",
+      "bytes": 2262,
+      "sha256": "4d89110d68f584e597da43edace1808f95a7a5b677ae2181576ec325bf0369da"
+    },
+    {
+      "path": "dist/assets/nardi/kit-folio-rocking.webp",
+      "bytes": 26026,
+      "sha256": "3336574c3f4b932a9aa8d4b7b7dec398949d2e2d578e56fc4ba1e9ecf659ce6e"
+    },
+    {
+      "path": "dist/assets/nardi/komodo-5.webp",
+      "bytes": 30320,
+      "sha256": "67e881cc7251436226310c42ac8b8e2df044c177d212cfb6ec469997fe39b462"
+    },
+    {
+      "path": "dist/assets/nardi/komodo-bracciolo.webp",
+      "bytes": 4754,
+      "sha256": "1ce1e62b160717a3c440d63b0d5af3e3e7a7bf6e73f32802c314e43ff51694a1"
+    },
+    {
+      "path": "dist/assets/nardi/komodo-elemento-angolo.webp",
+      "bytes": 8860,
+      "sha256": "23d83f014fba3ff4cc1bde083ca6f9e9ed349baf3126655a6b0d8d50de0ca25e"
+    },
+    {
+      "path": "dist/assets/nardi/komodo-elemento-centrale.webp",
+      "bytes": 6986,
+      "sha256": "ca44eab2f408d6d87133d74037f1d7663168f4bb3c7bb7f6bd03fbd4cbf04473"
+    },
+    {
+      "path": "dist/assets/nardi/komodo-elemento-terminale.webp",
+      "bytes": 9836,
+      "sha256": "fa6a849f3dd87dc3a3bf345c541247eaaf5a17b5f595eb684365e5f77dbf4e57"
+    },
+    {
+      "path": "dist/assets/nardi/komodo-ombra-2.webp",
+      "bytes": 13018,
+      "sha256": "b1da6b6dbfd52437b1ff608458731fe178473aa8edd8b60a1ad125673379893e"
+    },
+    {
+      "path": "dist/assets/nardi/komodo-ombra-3.webp",
+      "bytes": 31320,
+      "sha256": "bdc2baea88290a15ce0e0e752ee8963b86dca59525cb9d709517fb087dfbcc20"
+    },
+    {
+      "path": "dist/assets/nardi/komodo-poltrona.webp",
+      "bytes": 44820,
+      "sha256": "9f054021f030fdf8e3964216cd78df9e35a73bede5ca1639cf68f4d40d059638"
+    },
+    {
+      "path": "dist/assets/nardi/komodo-pouf.webp",
+      "bytes": 2242,
+      "sha256": "1ee293343b2d365d467a05b4d459e6422784b4a404ae31172780214364ee770e"
+    },
+    {
+      "path": "dist/assets/nardi/komodo-schienale.webp",
+      "bytes": 6514,
+      "sha256": "e9f771ced03b531b0b26e74ea10f9ab148a2d5835f4f7d360f6777fa740fa93e"
+    },
+    {
+      "path": "dist/assets/nardi/komodo-tavolino-vetro.webp",
+      "bytes": 424930,
+      "sha256": "a428dcb59123fcc6cb039f75742e0307808da38a84282c4a85a462624b159849"
+    },
+    {
+      "path": "dist/assets/nardi/komodo-tavolino.webp",
+      "bytes": 836686,
+      "sha256": "f2fe08a18663a48bc7cb86ce495c2d8625bd181f4eac9167d8e910cf65e4382a"
+    },
+    {
+      "path": "dist/assets/nardi/libeccio.webp",
+      "bytes": 32916,
+      "sha256": "9d25b2b63e1618ead752165f517d05cd852969700469c388a331dd7b9b867c1a"
+    },
+    {
+      "path": "dist/assets/nardi/lido-mini.webp",
+      "bytes": 11266,
+      "sha256": "323d1d2a684fc3b8d44ea07b94df032e7f6a6837f0626f57f8df0101fe2105e6"
+    },
+    {
+      "path": "dist/assets/nardi/lido.webp",
+      "bytes": 11492,
+      "sha256": "8474a7e8b4d5a080a540a3418e1925eb8ac2c924a9cdd2542e7d0a6e69a588e3"
+    },
+    {
+      "path": "dist/assets/nardi/maximo-4.webp",
+      "bytes": 9244,
+      "sha256": "c77465401fa22963a71c694885b24cad2756be74fc68a116f23a6d17e97808f6"
+    },
+    {
+      "path": "dist/assets/nardi/maximo-5.webp",
+      "bytes": 34242,
+      "sha256": "cad505a9aff7a85ab6d709660e7a6046737a74e6d82d083d4101bb9b18d9857c"
+    },
+    {
+      "path": "dist/assets/nardi/maximo-bracciolo.webp",
+      "bytes": 3518,
+      "sha256": "f3394a6c04ea0e76bca2c15c87b328bc1585e669ef6416cfa4463143059bb33a"
+    },
+    {
+      "path": "dist/assets/nardi/maximo-elemento-angolo.webp",
+      "bytes": 8660,
+      "sha256": "71ab36eca8a85ad3e1af3882653a93f2d6a35c2b50449fc9bfff4b9273685bcd"
+    },
+    {
+      "path": "dist/assets/nardi/maximo-elemento-centrale.webp",
+      "bytes": 6692,
+      "sha256": "433d51f9106e825492e96bc2d22aa2d0538827c8f626d4399071b0ecf13005ac"
+    },
+    {
+      "path": "dist/assets/nardi/maximo-elemento-terminale.webp",
+      "bytes": 7650,
+      "sha256": "f1f66041a598276159306e6d14fcfbfd4af165f9aeb0687f9ce202ee6e1d6d0e"
+    },
+    {
+      "path": "dist/assets/nardi/maximo-poltrona.webp",
+      "bytes": 560672,
+      "sha256": "ae0a30e8a74c38fb563f70d9d71c6e2126d3eb99dfcd9d1544eb321335dfcb5d"
+    },
+    {
+      "path": "dist/assets/nardi/maximo-portaoggetti.webp",
+      "bytes": 9044,
+      "sha256": "3adb687f347e647cc9b88eb4f3aeec578ac134e3f328d0446466a08f75e037b9"
+    },
+    {
+      "path": "dist/assets/nardi/maximo-pouf.webp",
+      "bytes": 2396,
+      "sha256": "578de4e8b39c18456428a2b64a77e045b32c8cf5af7fda34fca9b80452fc48e4"
+    },
+    {
+      "path": "dist/assets/nardi/maximo-schienale.webp",
+      "bytes": 3906,
+      "sha256": "7d460e8a452ec5f08bdd6779718a08d6188bac9900476543584889f39aeab12d"
+    },
+    {
+      "path": "dist/assets/nardi/maximo-tavolino-33.webp",
+      "bytes": 68922,
+      "sha256": "0ef5dffd0a909ac397f035169ada3f00e4cda2a4325ee6b837c0231ea3b7181c"
+    },
+    {
+      "path": "dist/assets/nardi/maximo-tavolino-60-maxi.webp",
+      "bytes": 4592,
+      "sha256": "4578683524ce9792b8e7acfa675ec2d501ab4fe3963f3095991ff0714be90e47"
+    },
+    {
+      "path": "dist/assets/nardi/maximo-tavolino-60-mini.webp",
+      "bytes": 4110,
+      "sha256": "09e45712c1c4e435df77ddb1de2b4f3c368ee1f2aa9fc1abec43f4eec9fc9cfc"
+    },
+    {
+      "path": "dist/assets/nardi/maximo-tavolino-70-maxi.webp",
+      "bytes": 4658,
+      "sha256": "ef6cf0e183946bbc17b40934e685166fa338227a3616123ce80a40729611ff1e"
+    },
+    {
+      "path": "dist/assets/nardi/maximo-tavolino-70-mini.webp",
+      "bytes": 4262,
+      "sha256": "879028a004ce27107845066504f0a20e9b2c48da48df5551f8a990c7b4319555"
+    },
+    {
+      "path": "dist/assets/nardi/maximo-tavolino-80.webp",
+      "bytes": 873394,
+      "sha256": "cb5b3185959d510c451d0f1d47f49beb50646137165c86cd6799b40cfbc8dd87"
+    },
+    {
+      "path": "dist/assets/nardi/net-bench.webp",
+      "bytes": 195296,
+      "sha256": "9c7a962b11fe8acf6322c7749a0c1b11b7f526ad0531543ae07246c1a80a482e"
+    },
+    {
+      "path": "dist/assets/nardi/net-lounge.webp",
+      "bytes": 13074,
+      "sha256": "a7ae7f98bdbec80ad7d7e259081ae4ba9cf6de58dd44f067b3d2bf90943b8e65"
+    },
+    {
+      "path": "dist/assets/nardi/net-relax.webp",
+      "bytes": 90366,
+      "sha256": "eb30d5569de0b9f78862f3d8f9ad53d8b844b201b08802f15d4035c9bb6ce8d0"
+    },
+    {
+      "path": "dist/assets/nardi/net-stool-mini.webp",
+      "bytes": 10022,
+      "sha256": "477aa0254d6b2c56dab50758ee65050711f5b0ea0886028875d40a85333c89bb"
+    },
+    {
+      "path": "dist/assets/nardi/net-stool.webp",
+      "bytes": 10864,
+      "sha256": "1223e79048090c94be38821b1a140fa14b2fa36bc5da8e3cc279acf16a38f880"
+    },
+    {
+      "path": "dist/assets/nardi/net-table-100.webp",
+      "bytes": 18146,
+      "sha256": "9e7ed26c0dbd9cde7291778c0e1ecbaca4259e1f29c5d44f8284a84bf504bdb4"
+    },
+    {
+      "path": "dist/assets/nardi/net-table-40.webp",
+      "bytes": 8384,
+      "sha256": "76dc795799e4c9e4cce29d6c837fa1fd7c1940f60e0cab4c2184eb06a5ff04d6"
+    },
+    {
+      "path": "dist/assets/nardi/net.webp",
+      "bytes": 13680,
+      "sha256": "d2d8e29e6c16d6c697dae5eafe50a0200ae5195f9532c19870d1a905d7472543"
+    },
+    {
+      "path": "dist/assets/nardi/omega.webp",
+      "bytes": 318648,
+      "sha256": "4372bd3f2276ca11006ef7c633f51d3341458240a6d0c504dc092648029e6c79"
+    },
+    {
+      "path": "dist/assets/nardi/palma.webp",
+      "bytes": 41496,
+      "sha256": "cb4c0f9e7e0a59a6378cdb56c8951a2e31b9fbc2e46246151f1c0f9e88395bd0"
+    },
+    {
+      "path": "dist/assets/nardi/parasole.webp",
+      "bytes": 8172,
+      "sha256": "642e3bb337d76f1f977b9b326f8118f86e8ee55ab1d680f5b6f2462456836c73"
+    },
+    {
+      "path": "dist/assets/nardi/piano-laminato.webp",
+      "bytes": 9958,
+      "sha256": "8d9f2a08b292b85d277b2da19ef2817d953c8df7f6726153347a30472ce425b7"
+    },
+    {
+      "path": "dist/assets/nardi/piave-120x70-high.webp",
+      "bytes": 1094,
+      "sha256": "fc2a6b8356ca8a50ad17912e8131b1f592c0d3fd6122b9a8d6724c8c4dbe97bf"
+    },
+    {
+      "path": "dist/assets/nardi/piave-120x70.webp",
+      "bytes": 1074,
+      "sha256": "2f19b89aa8540cb96ab1ec70326f06a32e21d5958c7f62184a5033ba9c419774"
+    },
+    {
+      "path": "dist/assets/nardi/piave-140x80.webp",
+      "bytes": 1076,
+      "sha256": "f00dc0ee0ea5fff3395c1f3b24bd12ac94e88bc874c7e75362322c83ae177778"
+    },
+    {
+      "path": "dist/assets/nardi/piave-160x90.webp",
+      "bytes": 292590,
+      "sha256": "d59d0a0dd26217e78557c3f6b57ce5737698316e05488117b1c4120b4084f0f3"
+    },
+    {
+      "path": "dist/assets/nardi/piave-70-high.webp",
+      "bytes": 1068,
+      "sha256": "f90a7d533db481599d89160fe103ad5ffd638b3f63897363842cee8f3e551ee6"
+    },
+    {
+      "path": "dist/assets/nardi/piave-70.webp",
+      "bytes": 964,
+      "sha256": "bf40d1009f188d8dd6479d1dffb6f3e2e911c8f6608bee82b533aa01b7f3face"
+    },
+    {
+      "path": "dist/assets/nardi/piave-80.webp",
+      "bytes": 82886,
+      "sha256": "778f8d6ee789a05fe79fd48b3268d85f8a52dfc4789216150aff5b9e699fab23"
+    },
+    {
+      "path": "dist/assets/nardi/piave-90.webp",
+      "bytes": 1008,
+      "sha256": "b6f86ba4d99cf17ec4a95d108e94b758a63fc25ce6339dd34fd355ae64bd75fd"
+    },
+    {
+      "path": "dist/assets/nardi/plano.webp",
+      "bytes": 752942,
+      "sha256": "a2a338fff24062533067bb9d147d40ec5c19229a45f007c9ecb196a80aa2dac6"
+    },
+    {
+      "path": "dist/assets/nardi/poggio.webp",
+      "bytes": 8274,
+      "sha256": "6457d0177fff318f0899f958c372f5ea439aafce0f5df15808e63de6bbaa76ad"
+    },
+    {
+      "path": "dist/assets/nardi/pop.webp",
+      "bytes": 421096,
+      "sha256": "70170feab5bd549deb48370d6c1d935ebd42b9c1fc733ce2636d7b1af59c5705"
+    },
+    {
+      "path": "dist/assets/nardi/rio-140-extensible.webp",
+      "bytes": 464450,
+      "sha256": "0558edda49c4f2b2089a3af0abc77fae9f6dca5cde70c17dd3dd85e5289b897b"
+    },
+    {
+      "path": "dist/assets/nardi/rio-210-extensible.webp",
+      "bytes": 3820,
+      "sha256": "cf1407a6a9138b75a2d42fda03f10080a5a26e16c32625b24668b2c2541caa1b"
+    },
+    {
+      "path": "dist/assets/nardi/rio-alu-140-extensible.webp",
+      "bytes": 3408,
+      "sha256": "20de59d0fb105f98c3e67aa837d925b7b930725cfce8895faec1d946a051e034"
+    },
+    {
+      "path": "dist/assets/nardi/rio-alu-210-extensible.webp",
+      "bytes": 713838,
+      "sha256": "bc3bab4d250ad36db87326febb159acd184a70d46e63446a51e05bf49a68d050"
+    },
+    {
+      "path": "dist/assets/nardi/rio-alu-210-fix.webp",
+      "bytes": 519946,
+      "sha256": "9e438d291db5fd9e8a5c4fdab61d9603099d1bf80f78fdb97474cf1909c3d882"
+    },
+    {
+      "path": "dist/assets/nardi/rio-bench-alu.webp",
+      "bytes": 519946,
+      "sha256": "9e438d291db5fd9e8a5c4fdab61d9603099d1bf80f78fdb97474cf1909c3d882"
+    },
+    {
+      "path": "dist/assets/nardi/riva-bistrot.webp",
+      "bytes": 7998,
+      "sha256": "30b005ea0cca91a2f4f3e24ae14f40baa4d5438c85afb9a5f0a40314f88a3185"
+    },
+    {
+      "path": "dist/assets/nardi/riva.webp",
+      "bytes": 14098,
+      "sha256": "22e49676b34de23ebf38187823819fc0d3001627240aa0fe75b05bd522c5916e"
+    },
+    {
+      "path": "dist/assets/nardi/sipario-2.webp",
+      "bytes": 77878,
+      "sha256": "ad663956eb7e27b8098637c57965dde416611c275c1b28f6e1f4f458b7c51a49"
+    },
+    {
+      "path": "dist/assets/nardi/sipario-3.webp",
+      "bytes": 329306,
+      "sha256": "3f6916044a04263f841c61923262aa32f3f897845b27868ef43ccf4d4c360787"
+    },
+    {
+      "path": "dist/assets/nardi/sipario-chiusura.webp",
+      "bytes": 620,
+      "sha256": "74f1c41afe6cf01bb8cbb601d4d2afbea1b423bb133dfdd78a713cf69337fec1"
+    },
+    {
+      "path": "dist/assets/nardi/sipario-kit-clips.webp",
+      "bytes": 2292,
+      "sha256": "b3d40e621196b421ad54220cbbb2bff618f82c7f9742939b3592545aa1ff7fe7"
+    },
+    {
+      "path": "dist/assets/nardi/sipario-modulo.webp",
+      "bytes": 14444,
+      "sha256": "d16e4b226663942f2771cda4a2b04f83bbb6c3c2ec4fddeca915a140bb0ccccd"
+    },
+    {
+      "path": "dist/assets/nardi/sipario-vaso.webp",
+      "bytes": 5266,
+      "sha256": "d5e0ccfa039200ed6f64a797f2b89dec1b645449da2a3410ae48e63876c60c92"
+    },
+    {
+      "path": "dist/assets/nardi/spritz.webp",
+      "bytes": 5410,
+      "sha256": "4211d60b3cb5d2a4063e8d755440fed5fca69cc451d34e0e4bc3b0bf91a1f8e6"
+    },
+    {
+      "path": "dist/assets/nardi/stack-maxi.webp",
+      "bytes": 10904,
+      "sha256": "23b9e3ab5dfd32719a400097a79f8ebef9ee5a8c0d558431795b5c357a751600"
+    },
+    {
+      "path": "dist/assets/nardi/stack-mini.webp",
+      "bytes": 15974,
+      "sha256": "be3cee9f19ac27671092769e30331acdd97d0ad409728be7c0916a32bc8d2ff4"
+    },
+    {
+      "path": "dist/assets/nardi/step.webp",
+      "bytes": 31856,
+      "sha256": "d32cead37b59638fd04b86515f1331958462a106ce1ad525432cdaa135ae385d"
+    },
+    {
+      "path": "dist/assets/nardi/telo-mare-net-lounge.webp",
+      "bytes": 512,
+      "sha256": "7ab023a522faba7a83422242d5ab8ac2f641f27154e694b5a63ab13cbf0deb98"
+    },
+    {
+      "path": "dist/assets/nardi/tevere-147-extensible.webp",
+      "bytes": 6524,
+      "sha256": "1f795a0e33df86e99d5b4771c7552902e8f1c3ff2505f5093da0288166e352fd"
+    },
+    {
+      "path": "dist/assets/nardi/tevere-210-extensible.webp",
+      "bytes": 300064,
+      "sha256": "3bdb552e137bd077690b261af0c394e7ae690f26d502c94ed9515a8f58b311af"
+    },
+    {
+      "path": "dist/assets/nardi/tevere-lam-147-extensible.webp",
+      "bytes": 2030,
+      "sha256": "a79d3c0e2188de5200f3d5768399465399293639574e1f5c4f50f411d0bc58b3"
+    },
+    {
+      "path": "dist/assets/nardi/tevere-lam-210-extensible.webp",
+      "bytes": 2202,
+      "sha256": "e94066961b516b55a300ef38c835c49066b9661313836744578dcc223465ec36"
+    },
+    {
+      "path": "dist/assets/nardi/tiberina-armchair.webp",
+      "bytes": 12316,
+      "sha256": "15523fc2f320e1c0b1db2bc98ca515ac90351ef54dac5d52ac81e9438ae1b372"
+    },
+    {
+      "path": "dist/assets/nardi/tiberina-bistrot.webp",
+      "bytes": 32468,
+      "sha256": "36817d11b41360d9407a66febd48f3a4dfade0a40ba64bdb24827193d4ec262d"
+    },
+    {
+      "path": "dist/assets/nardi/trill-armchair.webp",
+      "bytes": 762502,
+      "sha256": "e8d06b5095350105c86153433ba84ee9904caa471947955469f50a3c74c6017c"
+    },
+    {
+      "path": "dist/assets/nardi/trill-bistrot.webp",
+      "bytes": 11292,
+      "sha256": "a8623c33135c30eacae782bdf640572b85c788a3ff19ff020a308c6e95fe3f7a"
+    },
+    {
+      "path": "dist/assets/nardi/trill-stool-mini.webp",
+      "bytes": 9006,
+      "sha256": "5ddb8356e16eb6e50cbf5a33ba616c366e44fd67b945f0fd0676fca40ab68aa9"
+    },
+    {
+      "path": "dist/assets/nardi/trill-stool.webp",
+      "bytes": 32940,
+      "sha256": "acca9b7451c1798c48b98e0aada0342367545832e7a64d08c67b65aabd968f2c"
+    },
+    {
+      "path": "dist/assets/nardi/tropico.webp",
+      "bytes": 18778,
+      "sha256": "850db0c81aab14b11d3c007e2e194d5d6014bddc4d5002d96bf815f197bb0822"
+    },
+    {
+      "path": "dist/assets/nardi-dining.webp",
+      "bytes": 924812,
+      "sha256": "de8bc1ef64c019c5d51b7359fc60fbb9372df23e2c58e31e4409b35a14b77c99"
+    },
+    {
+      "path": "dist/assets/nardi-outdoor.webp",
+      "bytes": 1508782,
+      "sha256": "c62c5d7d17d3a11a001429aad30331140f60b88078e27025d5246f4adc568782"
+    },
+    {
+      "path": "dist/assets/nardi-terrace.webp",
+      "bytes": 502608,
+      "sha256": "42ebf625765647e0278496fd01f231dcda8ae5a42b44f8d666c31e87c3066357"
+    },
+    {
+      "path": "dist/assets/portada.webp",
+      "bytes": 252906,
+      "sha256": "255fc22c44537c50308c66f02d4383f2e5553601a9af56636c237c97f9e63efe"
+    },
+    {
+      "path": "dist/assets/process.webp",
+      "bytes": 282206,
+      "sha256": "314aa9e83e2361f17a000806e5eaae76a6dff76cc8d4fcf5f0c2ae0c8389812b"
+    },
+    {
+      "path": "dist/assets/products/h02-1.webp",
+      "bytes": 185764,
+      "sha256": "d5457e5da381c7ecbee0388f2d75a71dd8899e03a29e183bf86de0b6d5409573"
+    },
+    {
+      "path": "dist/assets/products/h02-2.webp",
+      "bytes": 137226,
+      "sha256": "d228baf0ea2e8fa7fba529ea90b4c1ead0a6654fce7d771367aa511c30ffcee9"
+    },
+    {
+      "path": "dist/assets/products/h03-1.webp",
+      "bytes": 9812,
+      "sha256": "b629750e3119a141af134646fc3e85e9f86635ea7b83d69687e5b8c0f52fd435"
+    },
+    {
+      "path": "dist/assets/products/h03-2.webp",
+      "bytes": 16688,
+      "sha256": "22ea59865cac6ef9e3767b08a2c224c696637991fa088e2a42b4e08f4fb554a3"
+    },
+    {
+      "path": "dist/assets/products/h03-3.webp",
+      "bytes": 12062,
+      "sha256": "18ac61abd74625c7dce7535b680a9a04b42a13799050479e6f7de57fd659c915"
+    },
+    {
+      "path": "dist/assets/products/h04-1.webp",
+      "bytes": 51310,
+      "sha256": "608db03c9754c4bf85a105a00c55f6a0556559f2c390532997061896be7f2916"
+    },
+    {
+      "path": "dist/assets/products/h04-2.webp",
+      "bytes": 16246,
+      "sha256": "2e74ebce654f2d14d35caf516ddafb952ae989051ffe575c75828730acb880b6"
+    },
+    {
+      "path": "dist/assets/products/h04-3.webp",
+      "bytes": 16196,
+      "sha256": "2cf3b5590b92935d81d9b7b354527f3264482060e53ab8fb6cd36c3a91460cf2"
+    },
+    {
+      "path": "dist/assets/products/h05-1.webp",
+      "bytes": 13906,
+      "sha256": "e452478664d6acbfea176e5eea911481cf88daf93407890224dfb95de6bfc7bb"
+    },
+    {
+      "path": "dist/assets/products/h05-2.webp",
+      "bytes": 70310,
+      "sha256": "88ed83ab47cbd26ff83a6b273a4f82a121fc8003b0ed1324a1cce2ad8af60e4d"
+    },
+    {
+      "path": "dist/assets/products/h05-3.webp",
+      "bytes": 16408,
+      "sha256": "59ede4a377ccb31edfbc5c9d8f9980997d835917cc139ba7da45f0947b3e9aa2"
+    },
+    {
+      "path": "dist/assets/products/h06-1.webp",
+      "bytes": 9356,
+      "sha256": "719a4d0c99d8541d87956cf43b6f2c77b2490a5da48450d8127e265a340f9dd9"
+    },
+    {
+      "path": "dist/assets/products/h06-2.webp",
+      "bytes": 54988,
+      "sha256": "9defe48b94227f22ce746657c69bb32bdcf26dc64ca1e3abf84314d9c19cf55c"
+    },
+    {
+      "path": "dist/assets/products/h06-3.webp",
+      "bytes": 10700,
+      "sha256": "4048a2eef03098af8178925e96906d93e7d4ef655d53407dc2248a28390123f1"
+    },
+    {
+      "path": "dist/assets/products/h07-1.webp",
+      "bytes": 11208,
+      "sha256": "627b950ce6ac93340a7c7cdeccf993707b3982cfcf318de1ef7837f8a01c9459"
+    },
+    {
+      "path": "dist/assets/products/h07-2.webp",
+      "bytes": 6600,
+      "sha256": "c75be18cf6922c4ccab571c2445d9ccc04122bc0c84c352cdd962dad0eb16c15"
+    },
+    {
+      "path": "dist/assets/products/h07-3.webp",
+      "bytes": 14848,
+      "sha256": "bed91b322bc64f3f90f6ec5980088571d0a2dcabad342ed3a692244fe2404b6c"
+    },
+    {
+      "path": "dist/assets/products/h08-1.webp",
+      "bytes": 12804,
+      "sha256": "fd06f78c1207a0ea15da7d12f248900bec3312c6bb9d7d9882db00ba6a9275eb"
+    },
+    {
+      "path": "dist/assets/products/h08-2.webp",
+      "bytes": 10694,
+      "sha256": "fd2a35fd324655aa9d44174806fb4f4dff536a04d05cad574feb36502cbb7fbb"
+    },
+    {
+      "path": "dist/assets/products/h08-3.webp",
+      "bytes": 74570,
+      "sha256": "43c4cd223ce19d00d6bbd1e6ea61ce71ffe8a094574812bc553df9a20a303d6c"
+    },
+    {
+      "path": "dist/assets/products/h09-1.webp",
+      "bytes": 19914,
+      "sha256": "8bff8de12110854855dda90eefbd44c94e86df2d83e5e0f1805cb249550e5d0f"
+    },
+    {
+      "path": "dist/assets/products/h09-2.webp",
+      "bytes": 20402,
+      "sha256": "06cfe277ba0f3c3174480f4e65649f82961d312742d494f078c49d8bd2edb1e3"
+    },
+    {
+      "path": "dist/assets/products/h09-3.webp",
+      "bytes": 12484,
+      "sha256": "5259f6cb401b3076ea73448101340f10c9cf3fcabf037a9672ab40cca5a89d4b"
+    },
+    {
+      "path": "dist/assets/products/h10-1.webp",
+      "bytes": 17562,
+      "sha256": "2070fc31216d08851e320a0644c893705a2adfd966334532f5e725ccd0889034"
+    },
+    {
+      "path": "dist/assets/products/h10-2.webp",
+      "bytes": 18094,
+      "sha256": "337c18d6e16ed7443a82d29613c3c32a6e5ae4cbe93f293684a91176b53e837f"
+    },
+    {
+      "path": "dist/assets/products/h10-3.webp",
+      "bytes": 4970,
+      "sha256": "57b6e57b414c042c5f0d17fbc223e1f67c6ec8aaa6edd7c2600814228615a1f6"
+    },
+    {
+      "path": "dist/assets/products/h11-1.webp",
+      "bytes": 9572,
+      "sha256": "d40565d683ff88dd703f7c5f91a65e92d84228c1530babe0edbed2c86b34622e"
+    },
+    {
+      "path": "dist/assets/products/h11-2.webp",
+      "bytes": 41156,
+      "sha256": "02295962b14adf791d612c7c02138be1ca85930b618de8a78de357775cd22535"
+    },
+    {
+      "path": "dist/assets/products/h11-3.webp",
+      "bytes": 25206,
+      "sha256": "fa4eb74ca95ba1a6d7c5a9d60982704223f37b3a7b130938956e2de0efc116c1"
+    },
+    {
+      "path": "dist/assets/products/h12-1.webp",
+      "bytes": 5890,
+      "sha256": "bc7aa712a53ca54380f624cd4df780ab89aef93f34af0391920213083a621b24"
+    },
+    {
+      "path": "dist/assets/products/h12-2.webp",
+      "bytes": 9042,
+      "sha256": "a682b93cf9d7926a8a128919088ae45bbe778f2cf1313112d53a5857d5ad46c6"
+    },
+    {
+      "path": "dist/assets/products/h12-3.webp",
+      "bytes": 4182,
+      "sha256": "c49d0c6720b3167e019babf35dfff0d91ca59724481084713d8656d400d5d347"
+    },
+    {
+      "path": "dist/assets/products/h13-1.webp",
+      "bytes": 9398,
+      "sha256": "d76b0a6e607c5b4aeaef86ad8ff4ef7954d05a6b85e10c62ff654a3a71e60a16"
+    },
+    {
+      "path": "dist/assets/products/h14-1.webp",
+      "bytes": 54066,
+      "sha256": "029d4199eedbb9bb73f2e9e944d6671b86b01d02073e223a029aa94c8580df64"
+    },
+    {
+      "path": "dist/assets/products/h15-1.webp",
+      "bytes": 15722,
+      "sha256": "75989a4f8c6ac641a1347e1a789bd177d55e0264dd8fa66dd81962c0be5b7bd8"
+    },
+    {
+      "path": "dist/assets/products/h15-2.webp",
+      "bytes": 20770,
+      "sha256": "1bbfbf672e16fdb108b88b7c62f26f7f8ac6d8507a451bd3a3167e078e2fe90e"
+    },
+    {
+      "path": "dist/assets/products/h15-3.webp",
+      "bytes": 17048,
+      "sha256": "39967edee21f95fc7ea80f68db36f8ef3fbc8fbc2762c4f796d461292e9b0935"
+    },
+    {
+      "path": "dist/assets/products/r02-1.webp",
+      "bytes": 16408,
+      "sha256": "59ede4a377ccb31edfbc5c9d8f9980997d835917cc139ba7da45f0947b3e9aa2"
+    },
+    {
+      "path": "dist/assets/products/r02-2.webp",
+      "bytes": 13906,
+      "sha256": "e452478664d6acbfea176e5eea911481cf88daf93407890224dfb95de6bfc7bb"
+    },
+    {
+      "path": "dist/assets/products/r02-3.webp",
+      "bytes": 70310,
+      "sha256": "88ed83ab47cbd26ff83a6b273a4f82a121fc8003b0ed1324a1cce2ad8af60e4d"
+    },
+    {
+      "path": "dist/assets/products/r03-1.webp",
+      "bytes": 8752,
+      "sha256": "44e27147f4d0bda89136c3e6630b1a7943005afeeb1f6d7ec6ce29fb3bbedacc"
+    },
+    {
+      "path": "dist/assets/products/r03-2.webp",
+      "bytes": 15670,
+      "sha256": "5177e06ad3095e338cdbc908f0ecd6026f443363dfb39f3748effeca3ec3cb04"
+    },
+    {
+      "path": "dist/assets/products/r03-3.webp",
+      "bytes": 7602,
+      "sha256": "8c8df9148bc4fbb5ac27382f63bf64f0db1e6e210c759240215521119f3127f3"
+    },
+    {
+      "path": "dist/assets/products/r04-1.webp",
+      "bytes": 8374,
+      "sha256": "9cda3c3d88ec8c887aa78a190842dc7ce71f1c2fd0695b3357af689d53cac0ba"
+    },
+    {
+      "path": "dist/assets/products/r04-2.webp",
+      "bytes": 12492,
+      "sha256": "af494ee5a66db19c949239b2d15220529e534b63f62c6cc58a01bcf6f34cda0c"
+    },
+    {
+      "path": "dist/assets/products/r04-3.webp",
+      "bytes": 6010,
+      "sha256": "c8c752ec175fa7cef7b2486d4ebcd7a5f328edb9d543bd80d08c7f5ebcdfab5d"
+    },
+    {
+      "path": "dist/assets/products/r05-1.webp",
+      "bytes": 11720,
+      "sha256": "c44035c3c3f75ae804ab1646db1ac10bfeb81fcd030be58d20edeb1ed97522ac"
+    },
+    {
+      "path": "dist/assets/products/r05-2.webp",
+      "bytes": 18144,
+      "sha256": "7b057ee3555c833de25280ae29c9abbdc6ad1f8673b451a314176ff9c9c9d15e"
+    },
+    {
+      "path": "dist/assets/products/r05-3.webp",
+      "bytes": 21254,
+      "sha256": "52edae67cc973b8eb05d721d28fcef0cb2a5daa3a557289ee0e2e855fe04da3b"
+    },
+    {
+      "path": "dist/assets/products/r06-1.webp",
+      "bytes": 11494,
+      "sha256": "5329da51a6491366998dbac9af3aa283d04914f4f18e40db643ad022abe7e071"
+    },
+    {
+      "path": "dist/assets/products/r06-2.webp",
+      "bytes": 11742,
+      "sha256": "81992ea798ccf12ce082acd545d4479818ceed4ea5c87190f977e86b1a327c03"
+    },
+    {
+      "path": "dist/assets/products/r06-3.webp",
+      "bytes": 8972,
+      "sha256": "18cfac844a1170cf9fa4b79381e38a5264d91b2c6d79e6907264424c6dca9ee3"
+    },
+    {
+      "path": "dist/assets/products/r07-1.webp",
+      "bytes": 38956,
+      "sha256": "ebf81b3718c897a2e317633ebae062e449f2ed294f90422a02ffaf627a108863"
+    },
+    {
+      "path": "dist/assets/products/r08-1.webp",
+      "bytes": 17820,
+      "sha256": "82be8e7dccb78cbee41d56478bd405db5ed67beee7dd82aed8c19e0df6237b59"
+    },
+    {
+      "path": "dist/assets/products/r08-2.webp",
+      "bytes": 6390,
+      "sha256": "36c52eaedf5b8c522e9ca03810c5af451fccba9d3c273f027928979715875803"
+    },
+    {
+      "path": "dist/assets/products/r08-3.webp",
+      "bytes": 166454,
+      "sha256": "41a470d7d5de643c139b07601f9f685affcd9016cb7c2bee713377545981f575"
+    },
+    {
+      "path": "dist/assets/products/r09-1.webp",
+      "bytes": 24208,
+      "sha256": "8f6c85400c10bde0b311b0b6a970c93c7b3a42fb1776d3b51942c07e9b013443"
+    },
+    {
+      "path": "dist/assets/products/r09-2.webp",
+      "bytes": 10488,
+      "sha256": "32b7a4007737ac76fe3442b3c393ad7394d11730c6ce4a3251b0a1e1cfd13fec"
+    },
+    {
+      "path": "dist/assets/products/r09-3.webp",
+      "bytes": 10712,
+      "sha256": "06618dc718d8a0ee68a2fee38d8df8441ccb09f081a2828160ed92919fdd0f39"
+    },
+    {
+      "path": "dist/assets/products/r10-1.webp",
+      "bytes": 9004,
+      "sha256": "d1a67fb500205df1c8c96d4df8f936af71ae035caf613d71f04e88b6fa35e2f1"
+    },
+    {
+      "path": "dist/assets/products/r10-2.webp",
+      "bytes": 14582,
+      "sha256": "145f8d2a54280362bba7af9befd765ebd71e7e98c957132cc2f5f5a29cc9d977"
+    },
+    {
+      "path": "dist/assets/products/r10-3.webp",
+      "bytes": 22280,
+      "sha256": "bb052f810f2fcb3039faf8b10828bf28497ea19ef711b544c21f872a392e91d3"
+    },
+    {
+      "path": "dist/assets/products/r11-1.webp",
+      "bytes": 8134,
+      "sha256": "a98816ac0179a9128c0afc4d21e20a6ac994626c1d0fa8a7e994263783ed44eb"
+    },
+    {
+      "path": "dist/assets/products/r11-2.webp",
+      "bytes": 20460,
+      "sha256": "66871fb673242e130822d3ef755ccefb29e1e812499df398361dd110db1df179"
+    },
+    {
+      "path": "dist/assets/products/r11-3.webp",
+      "bytes": 10188,
+      "sha256": "0126ef4231b43c0c07368775732943ce02929fec6e9deb79267b2f4b61e91063"
+    },
+    {
+      "path": "dist/assets/products/r12-1.webp",
+      "bytes": 48300,
+      "sha256": "5eb9eef96838f155ac593472438503dd269b40286404eab7d3b12542d769cc0f"
+    },
+    {
+      "path": "dist/assets/products/r12-2.webp",
+      "bytes": 14618,
+      "sha256": "5176dcf95a54346c693eced068e77e1ab07d4d15afe0edfbd0c933b2972262b3"
+    },
+    {
+      "path": "dist/assets/products/r13-1.webp",
+      "bytes": 14956,
+      "sha256": "f2d42f7b3124416d1dd424c1ae5aacb38b4b0f8587b0547f0f6e3ec867026a26"
+    },
+    {
+      "path": "dist/assets/products/r13-2.webp",
+      "bytes": 11602,
+      "sha256": "6bfed016e77e3c523e5e6cab8a125d80a3fd05317b5f08e5f6adcfcee5f355af"
+    },
+    {
+      "path": "dist/assets/products/r14-1.webp",
+      "bytes": 22318,
+      "sha256": "df66dd78ab0e1a175eaf6104e41d6fd1f87d971f0b4215ef0eea00b7ff6c20b7"
+    },
+    {
+      "path": "dist/assets/products/r14-2.webp",
+      "bytes": 15824,
+      "sha256": "186cda0ed2232480164ef100ef0a63aaac4638523c8d22437d1e4854e8a20003"
+    },
+    {
+      "path": "dist/assets/restaurante.webp",
+      "bytes": 425632,
+      "sha256": "111a1dbc494d559f9b3258501df0de46bf0148dbf6c0b8aadb8054d01d830037"
+    },
+    {
+      "path": "dist/assets/rooms.webp",
+      "bytes": 457904,
+      "sha256": "09a2b012a6c5e81d28f54dcf9bcfd9f23f708dce1e59f1ca2d780eb0d8eeb864"
+    },
+    {
+      "path": "dist/assets/senalamientos/01.webp",
+      "bytes": 438024,
+      "sha256": "2a161c4bcfea9fae561c69b732b5c6e17e98070ba5bf1470a11615d8de3a9e4d"
+    },
+    {
+      "path": "dist/assets/senalamientos/02.webp",
+      "bytes": 253898,
+      "sha256": "b7b086abf29f0384e1fcdd2b9fc0906ceb8f821872739b0b6c34c5d31570e89e"
+    },
+    {
+      "path": "dist/assets/senalamientos/04.webp",
+      "bytes": 286142,
+      "sha256": "15f42f0181e6c317895a7f1eeafb5b7c2ebe68bceada3003586a38635f2aa855"
+    },
+    {
+      "path": "dist/assets/senalamientos/08.webp",
+      "bytes": 230802,
+      "sha256": "4fe97de7d207e6ff7f2cfe5356b83443fd55ab72518dd704ff023596b358c3a3"
+    },
+    {
+      "path": "dist/assets/senalamientos/09.webp",
+      "bytes": 300942,
+      "sha256": "5b109d1ddcc49558797134ead2e9cfae5e77334f703f82f6bbe960c605ecf412"
+    },
+    {
+      "path": "dist/assets/senalamientos/10.webp",
+      "bytes": 395376,
+      "sha256": "7472d111cdeafbe5f9d37c1d46c503493ebc4d1b8c25bc32ad507ed1d341d4a8"
+    },
+    {
+      "path": "dist/assets/senalamientos/11.webp",
+      "bytes": 352206,
+      "sha256": "e896145747b1ad5455c844c86c6cdbe85c804f54a0070add1a47e5a1feadff23"
+    },
+    {
+      "path": "dist/assets/senalamientos/13.webp",
+      "bytes": 105950,
+      "sha256": "13cea22a22a88f2a9934a3c2dbce06523754fea3085a901380f6f65ef7537ab4"
+    },
+    {
+      "path": "dist/assets/senalamientos/14.webp",
+      "bytes": 75606,
+      "sha256": "dd93cc9581d1b79253abfe9388ff1c9e9cbab5bd84a63298d6ce6e65e0dfc98b"
+    },
+    {
+      "path": "dist/assets/senalamientos/17.webp",
+      "bytes": 426270,
+      "sha256": "0750c606697262cdc46901e880664393de9d655fcdd9bd4f86a8b34ad715c99b"
+    },
+    {
+      "path": "dist/assets/senalamientos/18.webp",
+      "bytes": 205830,
+      "sha256": "042847c3d6a1625ee010fc9efd3f6d160ba0f1cf447a0148e4399b3eb49e710c"
+    },
+    {
+      "path": "dist/assets/senalamientos/19.webp",
+      "bytes": 326758,
+      "sha256": "3bfd298f70f1dad020c18fd9f8684bc93abf54ec7dd4cebec8c7f51338614984"
+    },
+    {
+      "path": "dist/assets/senalamientos/20.webp",
+      "bytes": 543276,
+      "sha256": "d2f626654ad4bb3010c82574b7c140cd83678a3d8ca7fb682e20b93871f0f2ad"
+    },
+    {
+      "path": "dist/assets/senalamientos/21.webp",
+      "bytes": 228260,
+      "sha256": "846263568d0cf34199fc87dcbe8c61e630f6ab950c007f69bfeb46ce008999eb"
+    },
+    {
+      "path": "dist/assets/senalamientos/23.webp",
+      "bytes": 467960,
+      "sha256": "7fee2c294914462e464eb6f69339b0e0db8f9d1ed1c4118d31b44b6c73cf99ce"
+    },
+    {
+      "path": "dist/assets/senalamientos/30.webp",
+      "bytes": 491790,
+      "sha256": "23a86c7d720e1418693d730a83d913911ab4777591e212b2c0f78d229b946361"
+    },
+    {
+      "path": "dist/assets/senalamientos/33.webp",
+      "bytes": 322910,
+      "sha256": "74d4f4bb1a1a25c50b697360cc971b226c70ded51b157ba813216e9e3942ad69"
+    },
+    {
+      "path": "dist/assets/senalamientos/34.webp",
+      "bytes": 369022,
+      "sha256": "9d199336a93ea74814877c88a0b9bd357909e0293f83da5b92f340e2932ae6fa"
+    },
+    {
+      "path": "dist/assets/senalamientos/37.webp",
+      "bytes": 209844,
+      "sha256": "029f959707cf729fe0eb5814f125149631c424ff9d9867186cfe586485256726"
+    },
+    {
+      "path": "dist/assets/senalamientos/42.webp",
+      "bytes": 392848,
+      "sha256": "4a5045a6890a663b8235a1762601049697135a54ce6216ffcf9ecc46cad942e1"
+    },
+    {
+      "path": "dist/assets/senalamientos-portada.webp",
+      "bytes": 533468,
+      "sha256": "f98d5a53884180ef15a6d84ea7c492b571b6c97de68da84131c122399a1d9738"
+    },
+    {
+      "path": "dist/assets/story.webp",
+      "bytes": 406698,
+      "sha256": "61b4bb15e8c54be6343913cc4107ccc1c51a68adf35ddc428d000c82323f3a06"
+    },
+    {
+      "path": "dist/contacto.html",
+      "bytes": 6777,
+      "sha256": "067e817b33e2762a4f16adb8dd41aefd3766099ca45c03af52ff35ed64263d59"
+    },
+    {
+      "path": "dist/index.html",
+      "bytes": 11615,
+      "sha256": "06abcc396fd6c89b0e0a8f05f7289ae518d1b6392161e1fc8071cc773c3de596"
+    },
+    {
+      "path": "dist/site.js",
+      "bytes": 9088,
+      "sha256": "e2781995e16b1ad11960f2f366a97ca488a579624660d85bdb5786087d50525a"
+    },
+    {
+      "path": "dist/style.css",
+      "bytes": 21840,
+      "sha256": "5d9bcedf77f0652fc9769d1664f6a57b2061dbff5d9c8ecb7f4276869c632b04"
+    }
+  ]
+}

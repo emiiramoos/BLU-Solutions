@@ -1,0 +1,10 @@
+{
+  "name": "blu-solutions",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sitio estático y catálogo comercial de BLU Solutions",
+  "scripts": {
+    "check": "node --check dist/site.js && node scripts/verify.mjs"
+  },
+  "engines": { "node": ">=20" }
+}
