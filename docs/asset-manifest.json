@@ -2566,8 +2566,8 @@
     },
     {
       "path": "dist/index.html",
-      "bytes": 11615,
-      "sha256": "06abcc396fd6c89b0e0a8f05f7289ae518d1b6392161e1fc8071cc773c3de596"
+      "bytes": 11631,
+      "sha256": "80a3e87d37f3f8bc8b2c110cb858365c4acaa727a832f7c227817ab0eae2f663"
     },
     {
       "path": "dist/site.js",
@@ -2576,8 +2576,8 @@
     },
     {
       "path": "dist/style.css",
-      "bytes": 21840,
-      "sha256": "5d9bcedf77f0652fc9769d1664f6a57b2061dbff5d9c8ecb7f4276869c632b04"
+      "bytes": 21982,
+      "sha256": "c2788b774d265accfe792ed446591ce316da02147b59320955aba25ac5c49da1"
     }
   ]
 }

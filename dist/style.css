@@ -28,7 +28,5 @@ header{position:absolute;z-index:30;left:3vw;right:3vw;top:20px;height:104px;pad
 @media(prefers-reduced-motion:reduce){.softReveal{opacity:1;transform:none}.karaoke span{animation:none;color:#183d46}}
 
 
-/* Fix text rendering on the hero heading */
-h1, h1 span { letter-spacing: -0.025em; overflow: visible; }
-h1 span { background: none !important; color: #edf0ee !important; -webkit-text-fill-color: #edf0ee !important; animation: none !important; }
-h1 span em { color: #b8c4c4 !important; -webkit-text-fill-color: #b8c4c4 !important; }
+/* Give italic glyphs room inside the animated text paint area. */
+.hero h1 span{padding:.14em .16em;margin:-.14em -.16em;overflow:visible}
