@@ -7,6 +7,7 @@ Sitio y catálogo comercial de BLU Solutions. Incluye 482 referencias de habitac
 - `dist/index.html`: página principal y catálogo.
 - `dist/contacto.html`: formulario de contacto.
 - `dist/site.js` y `dist/style.css`: interacciones y presentación.
+- `dist/hero.js`, `dist/hero.css` y `dist/assets/hero/`: portada de diez escenas con transición continua, alternancia del logo (15 segundos) y tres frases (11 segundos cada una), cristal interactivo en escritorio y navegación al desplazarse. Respeta movimiento reducido y detiene la reproducción cuando la pestaña está oculta.
 - `dist/assets/catalog.json`: fichas de productos.
 - `dist/assets/`: imágenes, tipografías y catálogos PDF.
 
@@ -28,7 +29,7 @@ La publicación actual en ChatGPT Sites se administra por separado. Subir cambio
 
 ## Verificación del respaldo
 
-Con Node.js 20 o posterior, ejecutar `npm run check`. No requiere instalar dependencias. La comprobación revisa sintaxis JavaScript, 482 fichas, imágenes, enlaces locales y las huellas SHA-256 de los 515 archivos del sitio. También se ejecuta en GitHub Actions con cada cambio.
+Con Node.js 20 o posterior, ejecutar `npm run check`. No requiere instalar dependencias. La comprobación revisa sintaxis JavaScript, el ciclo y las transiciones de la portada, 482 fichas, imágenes, enlaces locales y las huellas SHA-256 de los 527 archivos del sitio. También se ejecuta en GitHub Actions con cada cambio.
 
 `docs/asset-manifest.json` registra tamaños, huellas y procedencia de la versión 5 publicada en Sites, commit `e6814d07d25cad235433f8c6c84ae77bcf0b2531`. El respaldo contiene 494 imágenes WebP y 15 PDF. Los archivos de `dist/` se conservan completos y los atributos de Git preservan sus bytes al descargarlos.
 

@@ -1,0 +1,32 @@
+/* Full-bleed introduction. The original site below remains independent. */
+.immersive-hero{height:100svh;min-height:620px;max-height:none;display:block;position:relative;isolation:isolate;background:#243d46 url('assets/portada.webp') center/cover;overflow:hidden;color:#fff}
+.heroSlides,.heroVeil{position:absolute;inset:0;pointer-events:none}
+.hero-slide{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;z-index:0;filter:blur(.8px) brightness(.67) saturate(.86);transform:scale(1.01);transition:opacity 1.2s ease;will-change:opacity}
+.hero-slide.is-current{opacity:1;z-index:1}.hero-slide.is-entering{opacity:1;z-index:2}
+.heroVeil{z-index:3;background:linear-gradient(180deg,#0a24371a,transparent 35%,#071d3159)}
+.heroFocus{position:absolute;z-index:4;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:32px;padding:100px 24px;opacity:var(--intro-opacity,1);transform:translateY(var(--intro-lift,0px));will-change:opacity,transform}
+.heroMessage{position:relative;width:min(100%,900px);height:clamp(220px,23vw,330px);display:grid;place-items:center;text-align:center}
+.heroBrand{position:absolute;inset:0;display:grid;place-items:center;opacity:1;transition:opacity 1.3s ease,transform 1.7s cubic-bezier(.2,.65,.3,1);transform:translateY(0) scale(1)}
+.heroLogo{position:relative;width:clamp(240px,43vw,590px);max-width:90%;aspect-ratio:1337/661}
+.heroBrand img{position:relative;display:block;width:100%;height:100%;filter:drop-shadow(0 1px 1px #fff8)}
+.heroLogoGlass{display:none}
+.heroTitle{position:absolute;inset:0;display:grid;place-content:center;margin:0!important;font:400 clamp(46px,6.2vw,102px)/1.05 Georgia,'Times New Roman',serif;letter-spacing:-.045em;text-wrap:balance;color:#fffaf1;text-shadow:0 3px 30px #071d31cc;opacity:0;transform:translateY(24px);transition:opacity 1.4s ease,transform 1.7s cubic-bezier(.2,.65,.3,1)}
+.heroTitle>span{display:block!important;white-space:pre-line}
+.heroTitle{pointer-events:none}
+.hero-ready .heroLogo{animation:brandArrival 1.7s cubic-bezier(.2,.65,.3,1) both}
+.is-message .heroBrand{opacity:0;transform:translateY(24px) scale(.98);pointer-events:none}.is-message .heroTitle{opacity:1;transform:translateY(0)}
+.heroExplore{position:relative;color:white!important;background:linear-gradient(135deg,#b3cedb40,#112e3a38)!important;border:1px solid #ffffffa0!important;box-shadow:inset 0 1px 0 #ffffffb3,0 8px 30px #071d3126!important;backdrop-filter:blur(14px) saturate(130%);-webkit-backdrop-filter:blur(14px) saturate(130%);gap:28px!important;min-height:52px;font-size:15px!important;transition:background .3s ease,transform .3s ease}
+.heroExplore:hover{background:#accddd66!important}.heroExplore span{display:inline!important;font-size:23px;font-weight:400}
+.home-header{position:fixed!important;top:16px!important;left:3vw!important;right:3vw!important;height:96px!important;z-index:50!important;opacity:0;visibility:hidden;transform:translateY(-125%);transition:opacity .45s ease,transform .65s cubic-bezier(.2,.65,.3,1),visibility .45s;background:linear-gradient(120deg,#dce9e9d9,#f1ede0c4)!important;border:1px solid #ffffffd9!important;box-shadow:inset 0 1px 0 #ffffffb3,0 10px 35px #102e3d1a!important;backdrop-filter:blur(24px) saturate(130%);-webkit-backdrop-filter:blur(24px) saturate(130%)}
+.home-header.is-visible,.home-header:focus-within{opacity:1;visibility:visible;transform:translateY(0)}
+.home-header .logo{width:120px}.home-header nav{gap:0}.home-header nav> a,.home-header nav>.catalogMenu{padding:0 28px}.home-header nav> *+*{border-left:1px solid #102e3d70}.home-header .navcta{background:#fafcf5bf!important;border-color:#fff!important;white-space:nowrap}.home-header .catalogMenu>div{top:54px}
+@keyframes brandArrival{from{opacity:0;transform:translateY(18px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}
+@media(min-width:761px) and (hover:hover) and (pointer:fine){
+ .heroLogo img{opacity:0;filter:none;transition:opacity .7s ease}
+ .heroLogoGlass{display:block;position:absolute;inset:0;mask:url('assets/blu.svg') center/contain no-repeat;-webkit-mask:url('assets/blu.svg') center/contain no-repeat;background:radial-gradient(ellipse at var(--shine-x,32%) var(--shine-y,20%),#fffffff0,transparent 38%),linear-gradient(135deg,#e9faffb3 0%,#e5f6ff38 23%,#ffffffc9 40%,#a4c8d333 48%,#ffffffb3 53%,#d2efff3d 72%,#fff9 100%);backdrop-filter:blur(9px) saturate(150%);-webkit-backdrop-filter:blur(9px) saturate(150%);filter:drop-shadow(0 1px 0 #ffffffb3) drop-shadow(0 4px 8px #04182766);transition:opacity .7s ease}
+ .heroLogo:hover img{opacity:1}.heroLogo:hover .heroLogoGlass{opacity:0}
+ .heroTitle>span{color:transparent;text-shadow:none;background:radial-gradient(ellipse at var(--shine-x,30%) var(--shine-y,20%),#fff,transparent 45%),linear-gradient(145deg,#f4fcffeb,#bed8e873 28%,#fffffff2 43%,#aec6d466 55%,#fff 68%,#e1f4ff9c);background-clip:text;-webkit-background-clip:text;-webkit-text-stroke:.6px #eefbff9c;filter:drop-shadow(0 2px 0 #ffffff26) drop-shadow(0 5px 12px #021a2c66);transition:filter .7s ease}
+}
+@media(max-width:1000px) and (min-width:761px){.home-header{padding-inline:24px!important}.home-header nav>a,.home-header nav>.catalogMenu{padding-inline:14px}.home-header nav{font-size:14px}.home-header .navcta{font-size:12px;padding:12px 17px}}
+@media(max-width:760px){.immersive-hero{min-height:580px;height:100svh}.heroFocus{padding:90px 22px;gap:22px}.heroMessage{height:250px}.heroLogo{width:min(82vw,400px)}.heroTitle{font-size:clamp(42px,10vw,68px)}.heroExplore{font-size:14px!important;padding:14px 24px}.home-header{top:12px!important;left:14px!important;right:14px!important;height:80px!important;padding:14px 18px!important}.home-header .logo{width:88px}.home-header nav{top:90px}.home-header nav>a,.home-header nav>.catalogMenu{padding:0;border:0}.home-header nav>a{padding-block:15px}.home-header .navcta{font-size:11px;padding:11px 13px}.home-header .menuToggle{margin-left:auto}}
+@media(prefers-reduced-motion:reduce){.hero-slide,.heroFocus,.heroBrand,.heroTitle,.home-header,.heroLogo,.heroLogo img,.heroLogoGlass{transition:none!important;animation:none!important}}
