@@ -69,7 +69,7 @@ all('[data-select]').forEach(btn => btn.onclick = () => {
 });
 one('#search').oninput = () => {limit=9; render()};
 one('#more').onclick = () => {limit += 12; render()};
-fetch('assets/catalog.json').then(r => {if (!r.ok) throw Error(); return r.json()}).then(data => {products=data;updateFilters();render()}).catch(() => {one('#count').textContent='No se pudo cargar el catálogo. Actualice la página para reintentar.'});
+fetch('assets/catalog.json?v=clean-20261105').then(r => {if (!r.ok) throw Error(); return r.json()}).then(data => {products=data;updateFilters();render()}).catch(() => {one('#count').textContent='No se pudo cargar el catálogo. Actualice la página para reintentar.'});
 }
 one('#ask').onclick = () => {
   location.href='contacto.html?pieza='+encodeURIComponent([one('#name').textContent,selectedModel].filter(Boolean).join(' · '));
