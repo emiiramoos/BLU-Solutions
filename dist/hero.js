@@ -18,7 +18,7 @@
   let current = 0, active = 0, busy = false, timer, revealTimer, transitionTimer;
   let paused = media.matches;
   let introElapsed = 0, introStarted = 0, showingLogo = true, phraseIndex = 0;
-  let phaseDuration = 15000;
+  let phaseDuration = 12500;
   const load = src => {
     if (!cache.has(src)) cache.set(src, new Promise((resolve, reject) => {
       const img = new Image(); img.decoding = 'async';
@@ -75,7 +75,7 @@
       }
       hero.classList.toggle('is-message', !showingLogo);
       hero.classList.toggle('is-logo', showingLogo);
-      phaseDuration = showingLogo ? 15000 : 11000;
+      phaseDuration = showingLogo ? 12500 : 8500;
       introElapsed = 0; introStarted = 0; runIntroClock();
     }, Math.max(0, phaseDuration - introElapsed));
   }
@@ -97,7 +97,7 @@
     clearTimeout(revealTimer);
     introElapsed = 0; introStarted = 0;
     if (paused) {
-      showingLogo = true; phaseDuration = 15000;
+      showingLogo = true; phaseDuration = 12500;
       hero.classList.toggle('is-message', false);
       hero.classList.toggle('is-logo', false);
     } else runIntroClock();

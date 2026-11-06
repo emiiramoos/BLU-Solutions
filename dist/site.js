@@ -20,12 +20,12 @@ const sourcingAreas = ['OS&E','FF&E','Mantelería','Cristalería','Cubertería']
 const sourcingGuides = {
   'OS&E': {
     title: 'Todo para la operación de tu espacio.',
-    intro: 'Suministros y equipo de operación para hoteles, restaurantes y otros proyectos de hospitalidad. Comparte tu lista y te ayudamos a encontrar lo que necesitas.',
+    intro: 'Conseguimos los suministros y el equipo de operación que tu proyecto necesita: vajilla, cristalería, cubertería, textiles y más. Atendemos hoteles, restaurantes y otros espacios de hospitalidad.',
     families: ['Vajilla y accesorios de mesa','Cristalería y coctelería','Cubertería y utensilios de servicio','Mantelería y servilletas','Blancos de cama y baño','Amenidades y accesorios de habitación','Utensilios de cocina','Equipo y accesorios para buffet','Carros de servicio y portaequipaje','Artículos de limpieza y housekeeping','Organizadores y accesorios de operación','Otros suministros según tu proyecto']
   },
   'FF&E': {
     title: 'Las piezas que dan forma a tu proyecto.',
-    intro: 'Mobiliario, accesorios y equipamiento para aperturas, renovaciones y reposiciones. Buscamos alternativas de acuerdo con el espacio, el diseño y las necesidades de tu operación.',
+    intro: 'Conseguimos el mobiliario, los accesorios y el equipamiento para tu proyecto de apertura, renovación o reposición. Buscamos alternativas acordes con tu espacio, el diseño y las necesidades de tu operación.',
     families: ['Camas, bases y cabeceras','Colchones','Sofás, sillones y bancas','Sillas y mesas de restaurante','Escritorios y mobiliario de habitación','Burós, cómodas y consolas','Mobiliario de lobby y áreas comunes','Mobiliario de terraza y exterior','Luminarias y accesorios decorativos','Espejos y decoración','Equipamiento de gimnasio','Otros muebles y equipos según tu proyecto']
   }
 };
@@ -38,6 +38,7 @@ function renderSourcing() {
   one('#products').hidden = !!guide;
   one('#sourcingRequest').hidden = !sourcingAreas.includes(area);
   one('.sourcingNote').hidden = !!guide;
+  one('#specificRequest').textContent = guide ? 'Solicita los productos que necesitas' : 'Cuéntanos qué necesitas y lo cotizamos';
   one('#specificRequest').href = 'contacto.html?pieza=' + encodeURIComponent('Solicitud de producto específico · ' + area) + '#formulario';
   if (!guide) return false;
   one('#sourcingEyebrow').textContent = area === 'OS&E' ? 'Operating Supplies & Equipment' : 'Furniture, Fixtures & Equipment';

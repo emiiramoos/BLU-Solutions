@@ -2687,8 +2687,8 @@
     },
     {
       "path": "dist/contacto.html",
-      "bytes": 6684,
-      "sha256": "4d0cb5369815cc2d245f18870e5b66b9465ceeaf8f342d1af78ad9392af8ed03"
+      "bytes": 6680,
+      "sha256": "61b287dbe46d976944b44e331b2db7494c6dc10f115f94dfe6fb37b7521e2f84"
     },
     {
       "path": "dist/hero.css",
@@ -2697,23 +2697,23 @@
     },
     {
       "path": "dist/hero.js",
-      "bytes": 5648,
-      "sha256": "dfcd535b7546ea0cf1977f90cc911be622df7216bded1ae13ffacf9dffb9fdac"
+      "bytes": 5647,
+      "sha256": "fdaa65c6844c639c362b71e015c06174d9c57a26b3e61e2d26699bbf7325727f"
     },
     {
       "path": "dist/index.html",
-      "bytes": 14436,
-      "sha256": "8c572efa15b43a096d94fa09c3e51ace1218fb3710cd7b7af1228e39b1a3cef0"
+      "bytes": 14324,
+      "sha256": "ce78f2dca84d347d8c790757b271bed4d442392b21ae47a2ff6691173f79b2ee"
     },
     {
       "path": "dist/site.js",
-      "bytes": 12338,
-      "sha256": "655b86a2c85be5c9e717c10b9bfd9fb533ba17fa63c69383ac441253c4d5e7a4"
+      "bytes": 12542,
+      "sha256": "55db2f7997c8c6e8a394fb10172068ed874b3fb42f26f3399b90e84755282efa"
     },
     {
       "path": "dist/style.css",
-      "bytes": 26885,
-      "sha256": "6942655543f5bf273f4229c89bd8019966c1245df1cae6181ebf832f2120eb72"
+      "bytes": 27252,
+      "sha256": "ad3a5d0ba84e4e1ce385fc3c43ea508f7b4bc64a9418a08cefe10b238eeb91b9"
     }
   ]
 }

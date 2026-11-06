@@ -7,7 +7,7 @@ Sitio y catálogo comercial de BLU Solutions. Incluye 482 referencias originales
 - `dist/index.html`: página principal y catálogo.
 - `dist/contacto.html`: formulario de contacto.
 - `dist/site.js` y `dist/style.css`: interacciones y presentación.
-- `dist/hero.js`, `dist/hero.css` y `dist/assets/hero/`: portada de diez escenas con transición continua y alternancia del logo (15 segundos) y tres frases (11 segundos cada una). Cada elemento se desvanece antes de revelar suavemente el siguiente, sin ampliaciones ni desplazamientos. Logo de cristal blanco en escritorio y móvil. Respeta movimiento reducido y detiene la reproducción cuando la pestaña está oculta.
+- `dist/hero.js`, `dist/hero.css` y `dist/assets/hero/`: portada de diez escenas con transición continua y alternancia del logo (12.5 segundos) y tres frases (8.5 segundos cada una). Cada elemento se desvanece antes de revelar suavemente el siguiente, sin ampliaciones ni desplazamientos. Logo de cristal blanco en escritorio y móvil. Respeta movimiento reducido y detiene la reproducción cuando la pestaña está oculta.
 - `dist/assets/catalog.json`: fichas de productos.
 - `dist/assets/sourcing-products.json`: nueve ejemplos ilustrativos, tres por nueva categoría; no representan modelos en stock. Los botones y el recuadro de abastecimiento llevan al formulario con el interés precargado.
 - `dist/assets/`: imágenes, tipografías y catálogos PDF.
@@ -44,4 +44,4 @@ Las cinco nuevas portadas y las nueve referencias de abastecimiento son imágene
 
 El bloque visible de contacto personal se retiró para ampliar las escenas debajo de «Hablemos de tu proyecto». El destinatario del formulario y los datos del aviso de privacidad conservan su función.
 
-Las portadas muestran únicamente sus títulos. Los controles de acción usan liquid glass y texto sin flechas decorativas. El bloque «¿Buscas algo específico?» se ubica después del catálogo y antes de la historia: reutiliza la fotografía existente de alberca y vegetación de Nardi (`assets/nardi-outdoor.webp`) con una capa oscura y el botón «Solicita tu producto». Su iluminación es tenue y se desactiva con movimiento reducido. OS&E y FF&E no muestran avisos de imágenes ilustrativas, ya que presentan listados de familias.
+Las portadas muestran únicamente sus títulos. Los controles de acción usan liquid glass y texto sin flechas decorativas. El bloque «¿Buscas algo específico?» se ubica después del catálogo y antes de la historia: reutiliza la fotografía existente de alberca y vegetación de Nardi (`assets/nardi-outdoor.webp`) con una capa oscura y el botón «Solicita tu producto». Una luz tenue recorre el borde del botón y se detiene con movimiento reducido. OS&E y FF&E presentan las familias que conseguimos y cierran con un único botón de solicitud. Mantelería, cristalería y cubertería mantienen el aviso de imágenes ilustrativas junto a su botón de cotización, sin repetir el título del bloque fotográfico.
