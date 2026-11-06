@@ -2702,18 +2702,18 @@
     },
     {
       "path": "dist/hero.css",
-      "bytes": 5871,
-      "sha256": "3ec7a1c31203361ff7df5590bdf3b540ce8de744c8277e27f570ada955ea2b6d"
+      "bytes": 6244,
+      "sha256": "54ff0e3237f3d5a2b82e27f817c4d871113af3119c70b7bf9eaadbf21fd37961"
     },
     {
       "path": "dist/hero.js",
-      "bytes": 5816,
-      "sha256": "76649fd00f650e59d06d89c4989ce6ad9022a26aa3da1c7f67227ea2d4e4bf3a"
+      "bytes": 6452,
+      "sha256": "1989d8c6575a54e43f062366ab9c07a2edd873eb3e8b196a6f80dbe97701c8a9"
     },
     {
       "path": "dist/index.html",
-      "bytes": 14688,
-      "sha256": "d578bcbc506b9736c353eb489e769c114906953412055e02e20472616a97f249"
+      "bytes": 14786,
+      "sha256": "a7a6159de8faf2f68481206bc569e5e5fbaaf577b9c5090be43507e8829745b2"
     },
     {
       "path": "dist/safety.js",

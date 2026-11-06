@@ -13,6 +13,11 @@
 .heroTitle{position:absolute;inset:0;display:grid;place-content:center;margin:0!important;font:400 clamp(46px,6.2vw,102px)/1.05 Georgia,'Times New Roman',serif;letter-spacing:-.045em;text-wrap:balance;color:#fffaf1;text-shadow:0 3px 30px #071d31cc;opacity:0;will-change:opacity}
 .heroTitle>span{display:block!important;white-space:pre-line}
 .heroTitle{pointer-events:none}
+.heroLogo{padding:0;border:0;background:none;pointer-events:auto;cursor:pointer}
+.heroLogo img,.heroLogoGlass{transition:opacity .45s ease}
+.heroLogo.is-color img{opacity:1}.heroLogo.is-color .heroLogoGlass{opacity:0}
+.is-message .heroLogo{pointer-events:none}
+@media(hover:hover) and (pointer:fine){.heroLogo:hover img{opacity:1}.heroLogo:hover .heroLogoGlass{opacity:0}}
 .hero-ready:not(.is-message):not(.is-logo) .heroBrand{animation:messageReveal 1.2s ease both}
 .is-message .heroBrand,.is-logo .heroTitle{animation:messageFade .6s ease both}
 .is-message .heroTitle,.is-logo .heroBrand{animation:messageReveal 1s .7s ease both}

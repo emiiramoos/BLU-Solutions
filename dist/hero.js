@@ -7,6 +7,22 @@
   const title = hero.querySelector('.heroTitle span');
   const phrases = ['La visión detrás\nde cada espacio.', 'Cada detalle,\nuna experiencia.', 'Espacios que inspiran.\nDetalles que importan.'];
   const media = matchMedia('(prefers-reduced-motion: reduce)');
+  const logo = hero.querySelector('.heroLogo');
+  let logoTimer;
+  const resetLogo = () => {
+    clearTimeout(logoTimer);
+    logo?.classList.remove('is-color');
+    logo?.setAttribute('aria-pressed', 'false');
+  };
+  logo?.addEventListener('click', () => {
+    const color = !logo.classList.contains('is-color');
+    resetLogo();
+    if (color) {
+      logo.classList.add('is-color');
+      logo.setAttribute('aria-pressed', 'true');
+      logoTimer = setTimeout(resetLogo, 3000);
+    }
+  });
   const scenes = [
     ['assets/hero/01.webp','50% 50%'], ['assets/hero/06.webp','60% 50%'],
     ['assets/hero/02.webp','50% 50%'], ['assets/hero/07.webp','65% 50%'],
@@ -67,6 +83,8 @@
     clearTimeout(revealTimer);
     revealTimer = setTimeout(() => {
       showingLogo = !showingLogo;
+      resetLogo();
+      if (logo) logo.disabled = !showingLogo;
       if (!showingLogo) {
         title.textContent = phrases[phraseIndex];
         phraseIndex = (phraseIndex + 1) % phrases.length;
@@ -95,6 +113,8 @@
     clearTimeout(revealTimer);
     introElapsed = 0; introStarted = 0;
     if (paused) {
+      resetLogo();
+      if (logo) logo.disabled = false;
       showingLogo = true; phaseDuration = 12500;
       hero.classList.toggle('is-message', false);
       hero.classList.toggle('is-logo', false);
@@ -111,6 +131,7 @@
   document.addEventListener('visibilitychange', () => {
     clearTimeout(timer);
     if (document.hidden) {
+      resetLogo();
       clearTimeout(revealTimer);
       if (introStarted) introElapsed += performance.now() - introStarted;
       introStarted = 0;
