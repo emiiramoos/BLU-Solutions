@@ -37,6 +37,7 @@ function renderSourcing() {
   one('#count').hidden = !!guide;
   one('#products').hidden = !!guide;
   one('#sourcingRequest').hidden = !sourcingAreas.includes(area);
+  one('.sourcingNote').hidden = !!guide;
   one('#specificRequest').href = 'contacto.html?pieza=' + encodeURIComponent('Solicitud de producto específico · ' + area) + '#formulario';
   if (!guide) return false;
   one('#sourcingEyebrow').textContent = area === 'OS&E' ? 'Operating Supplies & Equipment' : 'Furniture, Fixtures & Equipment';
