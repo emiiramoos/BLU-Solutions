@@ -2186,6 +2186,11 @@
       "sha256": "02cb1c43a3410b89acaba02429a3b6cfd17d2b86a9c1066d5fbdf30a2f09fae3"
     },
     {
+      "path": "dist/assets/portadas-limpias/restaurantes-final.webp",
+      "bytes": 114824,
+      "sha256": "e33b4ecc585f7a86fa6ed67625b285b1738f1efca1696cd1a25920d7eb117d05"
+    },
+    {
       "path": "dist/assets/portadas-limpias/restaurantes.webp",
       "bytes": 101946,
       "sha256": "f42617ad824972690f0a6dc6576b55c1011ad05accbd0bb65b7c1d88c11284fa"
@@ -2747,8 +2752,8 @@
     },
     {
       "path": "dist/index.html",
-      "bytes": 14764,
-      "sha256": "64a08f19711e8d203cdf55b156bbd19475b41f20021901f5fc902de20b13e986"
+      "bytes": 14770,
+      "sha256": "a50d35fbb98b4aee9aa985bb41088ee062acf4513149c65973d602058616269d"
     },
     {
       "path": "dist/safety.js",
