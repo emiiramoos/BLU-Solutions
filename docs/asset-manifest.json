@@ -2762,8 +2762,8 @@
     },
     {
       "path": "dist/site.js",
-      "bytes": 14969,
-      "sha256": "1351fd55a76fdb50181ad971ec571bb9ef3bf7cb647bc8a96fafd38cc379bc28"
+      "bytes": 14971,
+      "sha256": "ebca29a5ef43b5fd49394b3d32ad3af9e75a3c5c81a2bd005cbb12493c196a85"
     },
     {
       "path": "dist/style.css",
