@@ -4,7 +4,7 @@
   "private": true,
   "description": "Sitio estático y catálogo comercial de BLU Solutions",
   "scripts": {
-    "check": "node --check dist/site.js && node --check dist/hero.js && node scripts/test-hero.mjs && node scripts/verify.mjs"
+    "check": "node --check dist/safety.js && node --check dist/site.js && node --check dist/hero.js && node scripts/test-safety.mjs && node scripts/test-hero.mjs && node scripts/verify.mjs && node scripts/scan-secrets.mjs"
   },
   "engines": { "node": ">=20" }
 }

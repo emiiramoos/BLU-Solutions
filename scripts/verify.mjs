@@ -2,12 +2,17 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createHash } from 'node:crypto';
+import vm from 'node:vm';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const dist = path.join(root, 'dist');
 const errors = [];
 const catalog = JSON.parse(fs.readFileSync(path.join(dist, 'assets/catalog.json'), 'utf8'));
 const references = JSON.parse(fs.readFileSync(path.join(dist, 'assets/sourcing-products.json'), 'utf8'));
+const context = {};
+vm.runInNewContext(fs.readFileSync(path.join(dist, 'safety.js'), 'utf8'), context);
+try { context.BluSafety.catalog(catalog); context.BluSafety.catalog(references); }
+catch { errors.push('El catálogo no cumple el esquema o contiene rutas no permitidas.'); }
 function localReference(value, from) {
   if (!value || /^(?:[a-z][a-z\d+.-]*:|\/\/|#)/i.test(value)) return;
   const clean = decodeURIComponent(value.split(/[?#]/)[0]);

@@ -20,16 +20,14 @@
   let introElapsed = 0, introStarted = 0, showingLogo = true, phraseIndex = 0;
   let phaseDuration = 12500;
   const load = src => {
-    if (!cache.has(src)) cache.set(src, new Promise((resolve, reject) => {
-      const img = new Image(); img.decoding = 'async';
-      img.onload = () => img.decode().catch(() => {}).then(() => resolve(img));
-      img.onerror = () => { cache.delete(src); reject(new Error('Image unavailable')); };
-      img.src = src;
-    }));
+    if (!cache.has(src)) cache.set(src, BluSafety.loadImage(src).catch(error => { cache.delete(src); throw error; }));
     return cache.get(src);
   };
   const warm = () => {
-    for (const offset of [1, 2]) load(scenes[(current + offset) % scenes.length][0]).catch(() => {});
+    if (paused || document.hidden || (typeof navigator !== 'undefined' && navigator.connection?.saveData)) return;
+    const upcoming = scenes[(current + 1) % scenes.length][0];
+    for (const key of cache.keys()) if (cache.size > 3 && key !== scenes[current][0] && key !== upcoming) cache.delete(key);
+    load(upcoming).catch(() => {});
   };
   const schedule = () => {
     clearTimeout(timer);
@@ -120,9 +118,12 @@
   });
   updateScroll();
   const first = layers[0];
+  let started = false, startTimer;
   const start = () => {
+    if (started) return; started = true; clearTimeout(startTimer);
     hero.classList.add('hero-ready'); runIntroClock(); warm(); schedule();
   };
+  startTimer = setTimeout(start, 10000);
   if (first.complete && first.naturalWidth) first.decode().catch(() => {}).then(start);
   else { first.addEventListener('load', start, { once: true }); first.addEventListener('error', start, { once: true }); }
 })();

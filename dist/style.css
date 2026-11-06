@@ -86,3 +86,11 @@ footer button{padding:8px 13px;text-decoration:none;font-size:12px}
 @keyframes borderOrbit{to{--border-angle:360deg}}
 @media(max-width:760px){.projectRequest{min-height:550px}.projectRequestVisual{object-position:57% 64%}.projectRequest h2{font-size:clamp(48px,13vw,68px)}.projectRequest p{margin-block:24px 28px}.tabs button{padding:8px 12px}.projectRequest .primary{padding:15px 24px}}
 @media(prefers-reduced-motion:reduce){.glowButton:before{animation:none}}
+
+.catalogStatus{padding:20px;margin:24px 0;border:1px solid var(--line);border-radius:18px;background:#edf1ec;display:flex;flex-wrap:wrap;align-items:center;gap:14px}
+.catalogStatus p{flex-basis:100%;color:#516168}.catalogStatus .outline{margin:0;font-size:13px}
+button:disabled{cursor:wait;opacity:.55}
+.formFallback{border-top:1px solid var(--line);padding-top:20px;display:grid;gap:16px}
+.formFallback textarea{font-size:14px;line-height:1.6}.formActions{display:flex;flex-wrap:wrap;gap:12px}.formActions .outline{margin:0}
+.contactSlides img{position:absolute;inset:0}
+@media(max-width:760px){.formActions{align-items:flex-start;flex-direction:column}.formFallback textarea{font-size:16px}}

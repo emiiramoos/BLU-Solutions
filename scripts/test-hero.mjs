@@ -7,8 +7,9 @@ async function fixture(reduced=false,failImages=false){
  const hero=new Node('immersive-hero'),header=new Node('home-header'),title=new Node(),message=new Node(),layers=[new Node('hero-slide is-current'),new Node('hero-slide')],events={},timers=new Map();let id=0;
  const doc={hidden:false,querySelector:s=>s==='.immersive-hero'?hero:header,addEventListener:(k,fn)=>events[k]=fn};
  hero.querySelector=s=>s==='.heroTitle span'?title:message;hero.querySelectorAll=()=>layers;
- const denied=new Set(failImages?Array.from({length:9},(_,i)=>'assets/hero/'+String(i+2).padStart(2,'0')+'.webp'):[]);class Image{get src(){return this.url}set src(v){this.url=v;queueMicrotask(()=>denied.has(v)?this.onerror():this.onload())}decode(){return Promise.resolve()}}
+ const denied=new Set(failImages?Array.from({length:9},(_,i)=>'assets/hero/'+String(i+2).padStart(2,'0')+'.webp'):[]);class Image{get src(){return this.url}set src(v){this.url=v;queueMicrotask(()=>denied.has(v)?this.onerror?.():this.onload?.())}decode(){return Promise.resolve()}}
  const context={document:doc,Image,matchMedia:()=>({matches:reduced,addEventListener(){}}),performance:{now:()=>100},setTimeout:(fn,ms)=>{timers.set(++id,{fn,ms});return id},clearTimeout:i=>timers.delete(i),addEventListener:(k,fn)=>events[k]=fn,requestAnimationFrame:fn=>fn(),scrollY:0};
+ vm.runInNewContext(fs.readFileSync(new URL('../dist/safety.js',import.meta.url),'utf8'),context);
  vm.runInNewContext(fs.readFileSync(new URL('../dist/hero.js',import.meta.url),'utf8'),context);
  const flush=async()=>{for(let i=0;i<30;i++)await Promise.resolve()};await flush();
  const fire=async ms=>{const found=[...timers].find(([,t])=>t.ms===ms);assert.ok(found,'Timer '+ms);timers.delete(found[0]);await found[1].fn();await flush()};

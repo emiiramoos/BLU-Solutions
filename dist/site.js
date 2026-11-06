@@ -13,6 +13,9 @@ for (let i = 0; ribbon && i < 2; i++) {
   ribbon.append(text);
 }
 let products = [];let selectedModel='';
+const catalogSources = ['assets/catalog.json?v=clean-20261105','assets/sourcing-products.json?v=collections-20261106'];
+const catalogBuckets = new Map(catalogSources.map(url => [url, []]));
+const catalogErrors = new Set(), catalogPending = new Set();
 let area = 'Todos';
 let limit = 12; let category='',collection='',catalogSource='';
 const clean = s => s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
@@ -69,6 +72,7 @@ function showDetail(p) {
   one('#detail').showModal();
 }
 function render() {
+  updateCatalogStatus();
   if (renderSourcing()) return;
   const term = clean(one('#search').value.trim());
   const matches = products.filter(p => (area === 'Todos' || area === p.area) && (!category||category===p.category) && (!collection||collection===p.collection) && (!catalogSource||p.sourceLabels?.includes(catalogSource)) && clean([p.name,p.model,p.brand,p.category,p.collection,p.area].filter(Boolean).join(' ')).includes(term));
@@ -76,7 +80,7 @@ function render() {
     const btn = document.createElement('button');
     btn.className = 'piece';
     const img = document.createElement('img');
-    img.src = p.image; img.loading = 'lazy'; img.alt = '';
+    img.src = p.image; img.loading = 'lazy'; img.decoding = 'async'; img.alt = '';
     const label = document.createElement('small'); label.textContent = p.area + ' / ' + p.category;
     const title = document.createElement('strong'); title.textContent = p.name;
     btn.append(img,label,title);if(p.imageKind==='technical-drawing'||p.imageKind==='illustrative-reference'){const note=document.createElement('span');note.className='imageKind';note.textContent=p.imageKind==='technical-drawing'?'Ilustración técnica':'Referencia · Solicita cotización';btn.append(note)}
@@ -84,7 +88,7 @@ function render() {
     return btn;
   }));
   const referenceArea = ['Mantelería','Cristalería','Cubertería'].includes(area);
-  one('#count').textContent = matches.length ? Math.min(limit,matches.length) + ' de ' + matches.length + (referenceArea ? ' referencias ilustrativas · Productos bajo cotización' : ' piezas') : 'Sin coincidencias. Pruebe con otro nombre o área.';
+  one('#count').textContent = matches.length ? Math.min(limit,matches.length) + ' de ' + matches.length + (referenceArea ? ' referencias ilustrativas · Productos bajo cotización' : ' piezas') : catalogPending.size ? 'Cargando productos…' : catalogErrors.size ? 'Algunas referencias no están disponibles. Puedes reintentar la carga.' : 'Sin coincidencias. Pruebe con otro nombre o área.';
   one('#more').hidden = matches.length <= limit;
 }
 function choose(value) {
@@ -97,8 +101,26 @@ function updateFilters(){
  const subset=products.filter(p=>area==='Todos'||p.area===area);
  for(const [id,key,label] of [['category','category','Todos los tipos'],['collection','collection','Todas las colecciones'],['catalogSource','sourceLabels','Todos los catálogos']]){
   const el=one('#'+id);el.replaceChildren(new Option(label,''));[...new Set(subset.flatMap(p=>p[key]||[]))].sort((a,b)=>a.localeCompare(b,'es')).forEach(x=>el.add(new Option(x,x)));
+  el.value = id === 'category' ? category : id === 'collection' ? collection : catalogSource;
  }
  one('#collectionLabel').hidden=area!=='Outdoor';one('#catalogLabel').hidden=area!=='Outdoor';
+}
+function updateCatalogStatus() {
+  one('#catalogStatus').hidden = catalogErrors.size === 0;
+  one('#catalogStatusText').textContent = products.length ? 'Parte del catálogo no se pudo cargar. El resto sigue disponible.' : 'No se pudo cargar el catálogo. Puedes reintentar o solicitar los productos desde Contacto.';
+  one('#retryCatalog').disabled = catalogPending.size > 0;
+}
+function loadCatalogSources(urls) {
+  for (const url of urls) {
+    if (catalogPending.has(url)) continue;
+    catalogPending.add(url);
+    BluSafety.fetchJSON(url).then(BluSafety.catalog).then(data => {
+      catalogBuckets.set(url, data); catalogErrors.delete(url);
+    }).catch(() => catalogErrors.add(url)).finally(() => {
+      catalogPending.delete(url); products = [...catalogBuckets.values()].flat(); updateFilters(); render();
+    });
+  }
+  render();
 }
 if (one('#products')) {
 for(const id of ['category','collection','catalogSource'])one('#'+id).onchange=e=>{if(id==='category')category=e.target.value;if(id==='collection')collection=e.target.value;if(id==='catalogSource')catalogSource=e.target.value;limit=12;render()};
@@ -108,7 +130,8 @@ all('[data-select]').forEach(btn => btn.onclick = () => {
 });
 one('#search').oninput = () => {limit=9; render()};
 one('#more').onclick = () => {limit += 12; render()};
-Promise.all(['assets/catalog.json?v=clean-20261105','assets/sourcing-products.json?v=collections-20261106'].map(url => fetch(url).then(r => {if (!r.ok) throw Error(); return r.json()}))).then(data => {products=data.flat();updateFilters();render()}).catch(() => {one('#count').textContent='No se pudo cargar el catálogo. Actualice la página para reintentar.'});
+one('#retryCatalog').onclick = () => loadCatalogSources([...catalogErrors]);
+loadCatalogSources(catalogSources);
 }
 one('#ask').onclick = () => {
   location.href='contacto.html?pieza='+encodeURIComponent([one('#name').textContent,selectedModel].filter(Boolean).join(' · '))+'#formulario';
@@ -120,17 +143,25 @@ all('[data-legal]').forEach(btn => btn.onclick = () => {
 });
 if (one('#brief')) one('#brief').onsubmit = event => {
   event.preventDefault();
-  const f = new FormData(event.target);
-  const body = ['Buen día, equipo de BLU Solutions.', '', 'Soy ' + f.get('nombre') + ', de ' + f.get('empresa') + '.', 'Tipo de negocio: ' + f.get('tipo'), 'Etapa: ' + f.get('etapa'), 'Ciudad: '+ f.get('ciudad'), 'Correo de contacto: '+f.get('correo'), '', f.get('necesidad')].join('\n');
-  location.href = 'mailto:manuel.agosto@blusolutions.com.mx?subject=' + encodeURIComponent('Consulta de equipamiento · ' + f.get('empresa')) + '&body=' + encodeURIComponent(body);
-  one('#formstatus').textContent = 'Revise el borrador en su aplicación de correo. Si no se abrió, puede escribirnos al correo de contacto.';
+  const result = BluSafety.validateContact(Object.fromEntries(new FormData(event.target)));
+  if (!result.valid) { one('#formstatus').textContent = Object.values(result.errors)[0]; event.target.elements.namedItem(Object.keys(result.errors)[0])?.focus(); return; }
+  const f = result.data;
+  const body = ['Buen día, equipo de BLU Solutions.', '', 'Soy ' + f.nombre + ', de ' + f.empresa + '.', 'Tipo de negocio: ' + f.tipo, 'Etapa: ' + f.etapa, 'Ciudad: '+ f.ciudad, 'Correo de contacto: '+f.correo, '', f.necesidad].join('\n');
+  one('#preparedMessage').value = body;
+  one('#openMail').href = 'mailto:manuel.agosto@blusolutions.com.mx?subject=' + encodeURIComponent('Consulta de equipamiento · ' + f.empresa) + '&body=' + encodeURIComponent(body);
+  one('#formFallback').hidden = false;
+  one('#formstatus').textContent = 'Solicitud preparada; todavía no se ha enviado. Abre tu correo para enviarla o copia el texto si tu aplicación no se abre.';
+};
+if (one('#copyRequest')) one('#copyRequest').onclick = async () => {
+  try { await navigator.clipboard.writeText(one('#preparedMessage').value); one('#formstatus').textContent = 'Texto copiado. Pégalo en un correo para manuel.agosto@blusolutions.com.mx y envíalo. La página no confirma la entrega.'; }
+  catch { one('#preparedMessage').focus(); one('#preparedMessage').select(); one('#formstatus').textContent = 'Selecciona y copia el texto de la solicitud. Envíalo a manuel.agosto@blusolutions.com.mx desde tu correo.'; }
 };
 const menu = one('.menuToggle');
 menu.onclick=()=>{ const open=menu.getAttribute('aria-expanded')!=='true'; menu.setAttribute('aria-expanded',String(open));menu.setAttribute('aria-label',open?'Cerrar menú':'Abrir menú');one('header').classList.toggle('menuOpen',open); };
 all('nav a').forEach(a=>a.addEventListener('click',()=>{menu.setAttribute('aria-expanded','false');menu.setAttribute('aria-label','Abrir menú');one('header').classList.remove('menuOpen')}));
 addEventListener('keydown',e=>{if(e.key==='Escape'){menu.setAttribute('aria-expanded','false');menu.setAttribute('aria-label','Abrir menú');one('header').classList.remove('menuOpen')}});
 const selected=new URLSearchParams(location.search).get('pieza');
-if(selected && one('#needs')) one('#needs').value='Me interesa: '+selected.slice(0,200)+'.';
+if(selected && one('#needs')) one('#needs').value='Me interesa: '+BluSafety.plain(selected,200)+'.';
 const reveals=all('.story p,.stepList article');
 if(!reduced.matches && 'IntersectionObserver' in window){
 const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:.12});
@@ -139,6 +170,21 @@ reveals.forEach(e=>{e.classList.add('reveal');observer.observe(e)});
 const list=one('.stepList');
 if(list){const steps=[...list.querySelectorAll('article')];let ticking=false;const progress=()=>{ticking=false;let active=0;steps.forEach((step,i)=>{if(step.getBoundingClientRect().top<innerHeight*.57)active=i});steps.forEach((step,i)=>{step.classList.toggle('current',i===active);step.classList.toggle('completed',i<active)})};addEventListener('scroll',()=>{if(!ticking){ticking=true;requestAnimationFrame(progress)}},{passive:true});progress()}
 const slide=one('#contactSlide');
-if(slide&&!reduced.matches){const scenes=[['assets/habitaciones.webp','Habitación equipada'],['assets/restaurante.webp','Restaurante'],['assets/gym.webp','Gimnasio'],['assets/nardi-terrace.webp','Terraza con mobiliario Nardi']];let i=0;setInterval(()=>{if(document.hidden)return;slide.style.opacity='0';setTimeout(()=>{i=(i+1)%scenes.length;slide.onload=()=>slide.style.opacity='1';slide.onerror=()=>slide.style.opacity='1';slide.src=scenes[i][0];slide.alt=scenes[i][1]},650)},6500)}
+if(slide){
+  const scenes=[['assets/habitaciones.webp','Habitación equipada'],['assets/restaurante.webp','Restaurante'],['assets/gym.webp','Gimnasio'],['assets/nardi-terrace.webp','Terraza con mobiliario Nardi']];
+  let i=0,busy=false;
+  setInterval(async()=>{
+    if(document.hidden||reduced.matches||busy)return;
+    busy=true;const next=(i+1)%scenes.length;
+    try{
+      const image=await BluSafety.loadImage(scenes[next][0]);
+      if(document.hidden||reduced.matches)return;
+      const incoming=document.createElement('img');incoming.src=image.src;incoming.alt=scenes[next][1];incoming.style.opacity='0';
+      const old=one('#contactSlide');old.parentElement.append(incoming);void incoming.offsetWidth;incoming.style.opacity='1';
+      await new Promise(resolve=>setTimeout(resolve,650));old.remove();incoming.id='contactSlide';i=next;
+    }catch{/* Keep the current, fully loaded image visible. */}
+    finally{busy=false;}
+  },6500);
+}
 if(!reduced.matches&&'IntersectionObserver' in window){const revealObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('isVisible');revealObserver.unobserve(entry.target)}}),{threshold:.08,rootMargin:'0px 0px -20px 0px'});all('.sectionhead,.area,.storyVisual,.story>div,.invitation h2,.invitation a,.contact h2,.person').forEach(el=>{el.classList.add('softReveal');revealObserver.observe(el)})}
 all('.catalogMenu').forEach(detail=>{document.addEventListener('click',e=>{if(!detail.contains(e.target))detail.open=false});detail.addEventListener('keydown',e=>{if(e.key==='Escape')detail.open=false})});

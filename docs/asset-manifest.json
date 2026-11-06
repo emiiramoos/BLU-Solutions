@@ -6,6 +6,16 @@
   "revision": "Procurement collections and depth introduction",
   "files": [
     {
+      "path": "dist/404.html",
+      "bytes": 2187,
+      "sha256": "ff04e2aa978abd31b55d1264e343a85e055ebd7d9abc09b88e95320edb9f28e3"
+    },
+    {
+      "path": "dist/_headers",
+      "bytes": 547,
+      "sha256": "395891e8a90c2a9f99e04761ba1f833f1a85eebc29bc82237f52e0b04de15d9f"
+    },
+    {
       "path": "dist/assets/blu.svg",
       "bytes": 18749,
       "sha256": "82a61f25568f95a2e8381da96904a1124bb29a7e1b3400e5f2d6c18be5f542f5"
@@ -1167,8 +1177,8 @@
     },
     {
       "path": "dist/assets/hero/01.webp",
-      "bytes": 534946,
-      "sha256": "41553af7601dc77509f4a399a6680f31c2dadb2deaf893e1508b2b9769b98000"
+      "bytes": 268654,
+      "sha256": "ee16e586807e1479bfecd48c9641fd71b5ee91a6b32886ff8712824751899fc0"
     },
     {
       "path": "dist/assets/hero/02.webp",
@@ -1227,8 +1237,8 @@
     },
     {
       "path": "dist/assets/nardi-outdoor.webp",
-      "bytes": 1508782,
-      "sha256": "c62c5d7d17d3a11a001429aad30331140f60b88078e27025d5246f4adc568782"
+      "bytes": 586354,
+      "sha256": "e7b3a50ff5b53a17981e95d844f0110cdfdaf01da92bb0ebf1f8da126cd683ed"
     },
     {
       "path": "dist/assets/nardi-terrace.webp",
@@ -2687,8 +2697,8 @@
     },
     {
       "path": "dist/contacto.html",
-      "bytes": 6680,
-      "sha256": "61b287dbe46d976944b44e331b2db7494c6dc10f115f94dfe6fb37b7521e2f84"
+      "bytes": 7335,
+      "sha256": "b98dd8d619c60a26d5eb380535ebce78994d75c298daea8bbfb9d216169ee994"
     },
     {
       "path": "dist/hero.css",
@@ -2697,23 +2707,28 @@
     },
     {
       "path": "dist/hero.js",
-      "bytes": 5647,
-      "sha256": "fdaa65c6844c639c362b71e015c06174d9c57a26b3e61e2d26699bbf7325727f"
+      "bytes": 5816,
+      "sha256": "76649fd00f650e59d06d89c4989ce6ad9022a26aa3da1c7f67227ea2d4e4bf3a"
     },
     {
       "path": "dist/index.html",
-      "bytes": 14324,
-      "sha256": "ce78f2dca84d347d8c790757b271bed4d442392b21ae47a2ff6691173f79b2ee"
+      "bytes": 14688,
+      "sha256": "d578bcbc506b9736c353eb489e769c114906953412055e02e20472616a97f249"
+    },
+    {
+      "path": "dist/safety.js",
+      "bytes": 4443,
+      "sha256": "ecad0b6cfdac886ee3263eec2360c61e28194f2f37612f1b0603b99f435eb2d1"
     },
     {
       "path": "dist/site.js",
-      "bytes": 12542,
-      "sha256": "55db2f7997c8c6e8a394fb10172068ed874b3fb42f26f3399b90e84755282efa"
+      "bytes": 14969,
+      "sha256": "1351fd55a76fdb50181ad971ec571bb9ef3bf7cb647bc8a96fafd38cc379bc28"
     },
     {
       "path": "dist/style.css",
-      "bytes": 27252,
-      "sha256": "ad3a5d0ba84e4e1ce385fc3c43ea508f7b4bc64a9418a08cefe10b238eeb91b9"
+      "bytes": 27947,
+      "sha256": "31ee00c00923f2d7664b50928e71a9f9ddd6cf1f510eb5504e8f6848dfc2c8fe"
     }
   ]
 }
