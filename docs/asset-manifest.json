@@ -3,6 +3,7 @@
     "version": 5,
     "commit": "e6814d07d25cad235433f8c6c84ae77bcf0b2531"
   },
+  "revision": "Procurement collections and depth introduction",
   "files": [
     {
       "path": "dist/assets/blu.svg",
@@ -93,6 +94,21 @@
       "path": "dist/assets/contact.webp",
       "bytes": 382374,
       "sha256": "6ce91a6d15f63c9337ca6e17491efb05eb77597be337a8f1b31d5c884c430744"
+    },
+    {
+      "path": "dist/assets/cristaleria-portada.webp",
+      "bytes": 279246,
+      "sha256": "a33b654ac6bdf8203f999197895c94db7c2627fa9eeb5fac5b6c354b347e6e57"
+    },
+    {
+      "path": "dist/assets/cuberteria-portada.webp",
+      "bytes": 332866,
+      "sha256": "7c2ad969782325f3a6ac1ee4a4cd54ee00096f1411813bc0678fa6e4f718a008"
+    },
+    {
+      "path": "dist/assets/ffe-portada.webp",
+      "bytes": 368050,
+      "sha256": "651d74e6a8795fce632fc860ada1fca15ad68d032c410be3e005027e05cf6038"
     },
     {
       "path": "dist/assets/gym.webp",
@@ -1200,6 +1216,11 @@
       "sha256": "14291063498943e17a5089db2daacea61dbb6e22e415a3af5f603b1251a84f5c"
     },
     {
+      "path": "dist/assets/manteleria-portada.webp",
+      "bytes": 323262,
+      "sha256": "50edece56b90cfdeb3417e223d312cdd383a45efb03d4396774036112474732b"
+    },
+    {
       "path": "dist/assets/nardi-dining.webp",
       "bytes": 924812,
       "sha256": "de8bc1ef64c019c5d51b7359fc60fbb9372df23e2c58e31e4409b35a14b77c99"
@@ -2125,6 +2146,11 @@
       "sha256": "850db0c81aab14b11d3c007e2e194d5d6014bddc4d5002d96bf815f197bb0822"
     },
     {
+      "path": "dist/assets/ose-portada.webp",
+      "bytes": 362490,
+      "sha256": "e2c3d23beaba44783fdbdaf90c02aef73267969adeb01b730984390a9b41f93b"
+    },
+    {
       "path": "dist/assets/portada.webp",
       "bytes": 252906,
       "sha256": "255fc22c44537c50308c66f02d4383f2e5553601a9af56636c237c97f9e63efe"
@@ -2605,50 +2631,89 @@
       "sha256": "4a5045a6890a663b8235a1762601049697135a54ce6216ffcf9ecc46cad942e1"
     },
     {
+      "path": "dist/assets/sourcing-products.json",
+      "bytes": 3741,
+      "sha256": "4fbbe4eb598e821eefa0f3b5354f1738f119035d92d5e2e85121ac028a5af09b"
+    },
+    {
+      "path": "dist/assets/sourcing/camino.webp",
+      "bytes": 98114,
+      "sha256": "4b241e899038d4d464436eff863692d22e5880b7affce2c05004e82e28771152"
+    },
+    {
+      "path": "dist/assets/sourcing/cocteleria.webp",
+      "bytes": 32690,
+      "sha256": "4a144415c37f74da5ebb98431d156d35e94eea457d4da6cfdf1ed7e8386dc369"
+    },
+    {
+      "path": "dist/assets/sourcing/copas.webp",
+      "bytes": 34110,
+      "sha256": "460c1fb5426eb068c5cccfdbdc6ba21ae6cc00644420f8e2ccb4951149204def"
+    },
+    {
+      "path": "dist/assets/sourcing/cubiertos-clasicos.webp",
+      "bytes": 40318,
+      "sha256": "e5f442232051c576a6ce4e604b4a8b1b3294406b77f65bea9b8b761b1f891d79"
+    },
+    {
+      "path": "dist/assets/sourcing/cubiertos-contemporaneos.webp",
+      "bytes": 26798,
+      "sha256": "f951fe43999186e11834e86b923fd0069994116529b46f37996cc6ac2d03aeed"
+    },
+    {
+      "path": "dist/assets/sourcing/cubiertos-satinados.webp",
+      "bytes": 29910,
+      "sha256": "e7a47b777d3c07b3c02f23160e3e6764d6af4d5c91b4989137d0ec46d7f793a1"
+    },
+    {
+      "path": "dist/assets/sourcing/mantel.webp",
+      "bytes": 75410,
+      "sha256": "d155ac70b551703640a6f12250c0926f40883b158876354a07c576896baad40d"
+    },
+    {
+      "path": "dist/assets/sourcing/servilletas.webp",
+      "bytes": 156852,
+      "sha256": "bce2ae87d89903c9afff6ce823744611e2d34c07dfff68150dd6f60c687a6ea2"
+    },
+    {
+      "path": "dist/assets/sourcing/vasos.webp",
+      "bytes": 46098,
+      "sha256": "a6c3c17f3932a19231a87451b8e86363798fb77e7c04e4a2210b9dd123bba320"
+    },
+    {
       "path": "dist/assets/story.webp",
       "bytes": 406698,
       "sha256": "61b4bb15e8c54be6343913cc4107ccc1c51a68adf35ddc428d000c82323f3a06"
     },
     {
       "path": "dist/contacto.html",
-      "bytes": 6777,
-      "sha256": "067e817b33e2762a4f16adb8dd41aefd3766099ca45c03af52ff35ed64263d59"
+      "bytes": 6678,
+      "sha256": "77429ab10ac9bc54c317f2f51ea2ea5590951cd365424b1113784d375e9b0974"
     },
     {
       "path": "dist/hero.css",
-      "bytes": 6160,
-      "sha256": "9d7fe1b984439a74eece1b33ba39cbc923b22d72c200cca6ed672f4aac992c63"
+      "bytes": 6379,
+      "sha256": "a279bb36f7ba6f1de34bf50cfd1005cbce270a8c55dac516b98b355942cdc6ea"
     },
     {
       "path": "dist/hero.js",
-      "bytes": 5305,
-      "sha256": "4ec786c7aa5d1769ce0e1f3022fad4b563b21e1030e6b3419cf2f00ac74147da"
+      "bytes": 5648,
+      "sha256": "dfcd535b7546ea0cf1977f90cc911be622df7216bded1ae13ffacf9dffb9fdac"
     },
     {
       "path": "dist/index.html",
-      "bytes": 11574,
-      "sha256": "4af063ea93d7415451b96ba9f012b9b487fe041092da45f076e613f80f730bd1"
+      "bytes": 14437,
+      "sha256": "af5d0a3ed48bb53f56acd5737a06e6e52176956d7513cf759879e9c52687f3a2"
     },
     {
       "path": "dist/site.js",
-      "bytes": 9105,
-      "sha256": "7c7c51910fd44e1e728203cbb8e60155d4759504472e46c72656f2534c4adfb9"
+      "bytes": 12297,
+      "sha256": "5176e3023cb6ac46e3409a9800b9c43173b1b07286434dce288934fb3a50a7ae"
     },
     {
       "path": "dist/style.css",
-      "bytes": 21982,
-      "sha256": "c2788b774d265accfe792ed446591ce316da02147b59320955aba25ac5c49da1"
+      "bytes": 24257,
+      "sha256": "634f8907abd3baaf8ae89c1e220daba3a669de0e383e850eb6a5565991044258"
     }
-  ],
-  "intro": {
-    "scenes": 10,
-    "provided": 5,
-    "generated": 5,
-    "logoSeconds": 15,
-    "phraseSeconds": 11,
-    "phrases": 3,
-    "holdSeconds": 6,
-    "crossfadeSeconds": 1.2,
-    "desktopGlass": true
-  }
+  ]
 }

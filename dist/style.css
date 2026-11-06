@@ -30,3 +30,28 @@ header{position:absolute;z-index:30;left:3vw;right:3vw;top:20px;height:104px;pad
 
 /* Give italic glyphs room inside the animated text paint area. */
 .hero h1 span{padding:.14em .16em;margin:-.14em -.16em;overflow:visible}
+
+/* Procurement collections and a consistent navigation on both pages. */
+header nav{gap:0}
+header nav>a,header nav>.catalogMenu{padding-inline:28px}
+header nav>*+*{border-left:1px solid #102e3d70}
+.areaSubtitle{font-size:14px;font-weight:400;letter-spacing:.02em;margin-top:8px;max-width:30ch}
+#piezas{scroll-margin-top:130px}
+#catalogResults{min-width:0}
+.sourcingOverview{padding:40px 0 8px}
+.sourcingOverview h3,.sourcingRequest h3{font-size:clamp(34px,3.6vw,54px);line-height:1.1;margin:16px 0}
+.sourcingOverview>p:not(.eyebrow){max-width:68ch;color:#516168;font-size:18px;line-height:1.7}
+.sourcingOverview ul{list-style:none;padding:0;margin:30px 0 12px;display:grid;grid-template-columns:1fr 1fr;gap:0 36px}
+.sourcingOverview li{padding:16px 0;border-bottom:1px solid var(--line);font-size:16px}
+.sourcingRequest{display:flex;align-items:center;justify-content:space-between;gap:32px;padding:clamp(26px,4vw,54px);margin-top:44px;border:1px solid #ccd9d5;border-radius:24px;background:linear-gradient(125deg,#e6eeea,#f0f3ec)}
+.sourcingRequest>div{max-width:62ch}
+.sourcingRequest p:not(.eyebrow){color:#516168;line-height:1.7}
+.sourcingRequest .sourcingNote{font-size:12px;margin-top:14px}
+.sourcingRequest .darkbtn{flex-shrink:0;gap:16px;background:#102e3d;color:white;border-color:#102e3d;padding:16px 22px}
+.contactIntroduction{display:flex;flex-direction:column;min-width:0}
+.contactIntroduction .contactSlides{flex:1;min-height:380px;aspect-ratio:auto;margin-top:26px}
+.contactIntroduction .contactSlides img{position:absolute;inset:0}
+.contact{align-items:stretch}
+#formulario{scroll-margin-top:30px}
+@media(min-width:761px) and (max-width:1100px){header{padding-inline:24px}header nav>a,header nav>.catalogMenu{padding-inline:14px}header nav{font-size:14px}.sourcingRequest{align-items:flex-start;flex-direction:column}}
+@media(max-width:760px){header nav>a,header nav>.catalogMenu{padding-inline:0;border:0}.areaSubtitle{font-size:13px}.sourcingOverview ul{grid-template-columns:1fr}.sourcingOverview>p:not(.eyebrow){font-size:16px}.sourcingRequest{flex-direction:column;align-items:flex-start;gap:22px}.sourcingRequest .darkbtn{font-size:13px;max-width:100%;white-space:normal}.contactIntroduction .contactSlides{min-height:0;flex:none;aspect-ratio:4/3}#piezas{scroll-margin-top:112px}}

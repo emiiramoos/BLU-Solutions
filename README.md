@@ -1,14 +1,15 @@
 # BLU Solutions
 
-Sitio y catálogo comercial de BLU Solutions. Incluye 482 referencias de habitaciones, restaurantes, gimnasios, mobiliario Outdoor y señalamientos.
+Sitio y catálogo comercial de BLU Solutions. Incluye 482 referencias originales y nueve ejemplos ilustrativos de mantelería, cristalería y cubertería. OS&E y FF&E encabezan las áreas con listas de familias de productos y solicitudes a medida.
 
 ## Estructura
 
 - `dist/index.html`: página principal y catálogo.
 - `dist/contacto.html`: formulario de contacto.
 - `dist/site.js` y `dist/style.css`: interacciones y presentación.
-- `dist/hero.js`, `dist/hero.css` y `dist/assets/hero/`: portada de diez escenas con transición continua, alternancia del logo (15 segundos) y tres frases (11 segundos cada una), cristal interactivo en escritorio y navegación al desplazarse. Respeta movimiento reducido y detiene la reproducción cuando la pestaña está oculta.
+- `dist/hero.js`, `dist/hero.css` y `dist/assets/hero/`: portada de diez escenas con transición continua, alternancia en profundidad del logo (15 segundos) y tres frases (11 segundos cada una). La capa entrante avanza desde atrás mientras la anterior crece hacia el frente y desaparece. Logo de cristal blanco en escritorio y móvil, sin cambio a azul. Respeta movimiento reducido y detiene la reproducción cuando la pestaña está oculta.
 - `dist/assets/catalog.json`: fichas de productos.
+- `dist/assets/sourcing-products.json`: nueve ejemplos ilustrativos, tres por nueva categoría; no representan modelos en stock. Los botones y el recuadro de abastecimiento llevan al formulario con el interés precargado.
 - `dist/assets/`: imágenes, tipografías y catálogos PDF.
 
 ## Vista local
@@ -29,12 +30,16 @@ La publicación actual en ChatGPT Sites se administra por separado. Subir cambio
 
 ## Verificación del respaldo
 
-Con Node.js 20 o posterior, ejecutar `npm run check`. No requiere instalar dependencias. La comprobación revisa sintaxis JavaScript, el ciclo y las transiciones de la portada, 482 fichas, imágenes, enlaces locales y las huellas SHA-256 de los 527 archivos del sitio. También se ejecuta en GitHub Actions con cada cambio.
+Con Node.js 20 o posterior, ejecutar `npm run check`. No requiere instalar dependencias. La comprobación revisa sintaxis JavaScript, el ciclo y las transiciones de la portada, las 482 fichas originales y las nueve referencias ilustrativas, imágenes, enlaces locales y huellas SHA-256. También se ejecuta en GitHub Actions con cada cambio. Tras modificar archivos de `dist`, ejecutar `node scripts/update-manifest.mjs` y después `npm run check`.
 
-`docs/asset-manifest.json` registra tamaños, huellas y procedencia de la versión 5 publicada en Sites, commit `e6814d07d25cad235433f8c6c84ae77bcf0b2531`. El respaldo contiene 494 imágenes WebP y 15 PDF. Los archivos de `dist/` se conservan completos y los atributos de Git preservan sus bytes al descargarlos.
+`docs/asset-manifest.json` registra tamaños y huellas de los archivos actuales, conservando la procedencia de la versión 5 publicada en Sites, commit `e6814d07d25cad235433f8c6c84ae77bcf0b2531`.
 
 `.openai/hosting.json` conserva la configuración del alojamiento original; no contiene credenciales. Para otros proveedores, la carpeta pública sigue siendo `dist/`.
 
 ## Contenido
 
 Las fotografías y catálogos de fabricantes conservan los derechos de sus respectivos titulares. Este repositorio no concede una licencia para reutilizarlos. Los materiales de los señalamientos deben confirmarse para cada proyecto; sus nombres describen los acabados visibles en las referencias.
+
+Las cinco nuevas portadas y las nueve referencias de abastecimiento son imágenes generadas, utilizadas como ilustraciones. Las especificaciones y la disponibilidad se confirman con el equipo comercial. Los PDF completos de cristalería y cubertería quedan pendientes de recibir; no se publican enlaces de descarga hasta disponer de esos archivos.
+
+El bloque visible de contacto personal se retiró para ampliar las escenas debajo de «Hablemos de tu proyecto». El destinatario del formulario y los datos del aviso de privacidad conservan su función.

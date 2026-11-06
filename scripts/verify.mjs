@@ -7,6 +7,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const dist = path.join(root, 'dist');
 const errors = [];
 const catalog = JSON.parse(fs.readFileSync(path.join(dist, 'assets/catalog.json'), 'utf8'));
+const references = JSON.parse(fs.readFileSync(path.join(dist, 'assets/sourcing-products.json'), 'utf8'));
 function localReference(value, from) {
   if (!value || /^(?:[a-z][a-z\d+.-]*:|\/\/|#)/i.test(value)) return;
   const clean = decodeURIComponent(value.split(/[?#]/)[0]);
@@ -15,7 +16,11 @@ function localReference(value, from) {
   if (!target.startsWith(dist + path.sep) || !fs.existsSync(target)) errors.push(`${path.relative(root, from)}: ${value}`);
 }
 if (catalog.length !== 482) errors.push(`Se esperaban 482 referencias; hay ${catalog.length}.`);
-for (const [i, product] of catalog.entries()) {
+if (references.length !== 9) errors.push('Se esperaban nueve referencias ilustrativas.');
+for (const area of ['Mantelería','Cristalería','Cubertería']) {
+  if (references.filter(p => p.area === area && p.imageKind === 'illustrative-reference').length !== 3) errors.push(`Se esperaban tres referencias ilustrativas de ${area}.`);
+}
+for (const [i, product] of [...catalog, ...references].entries()) {
   for (const key of ['name', 'category', 'area', 'description', 'image']) {
     if (!product[key]) errors.push(`Referencia ${i + 1}: falta ${key}.`);
   }
@@ -52,4 +57,4 @@ if (fs.existsSync(manifestFile)) {
   }
 }
 if (errors.length) { console.error(errors.join('\n')); process.exitCode = 1; }
-else console.log(`OK: ${catalog.length} referencias, ${files.length} archivos, enlaces locales y huellas SHA-256 verificados.`);
+else console.log(`OK: ${catalog.length} referencias originales + ${references.length} ilustrativas, ${files.length} archivos, enlaces locales y huellas SHA-256 verificados.`);

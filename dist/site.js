@@ -8,7 +8,7 @@ function moveTo(element) {
 const ribbon = one('.ticker>div');
 for (let i = 0; ribbon && i < 2; i++) {
   const text = document.createElement('span');
-  text.textContent = 'Habitaciones     ·     Restaurantes     ·     Gimnasios     ·     Outdoor     ·     Señalamientos     ·     Proyectos a medida     ·     '.repeat(2);
+  text.textContent = 'OS&E     ·     FF&E     ·     Habitaciones     ·     Restaurantes     ·     Mantelería     ·     Cristalería     ·     Cubertería     ·     Gimnasios     ·     Outdoor     ·     Señalamientos     ·     '.repeat(2);
   text.setAttribute('aria-hidden','true');
   ribbon.append(text);
 }
@@ -16,6 +16,38 @@ let products = [];let selectedModel='';
 let area = 'Todos';
 let limit = 12; let category='',collection='',catalogSource='';
 const clean = s => s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+const sourcingAreas = ['OS&E','FF&E','Mantelería','Cristalería','Cubertería'];
+const sourcingGuides = {
+  'OS&E': {
+    title: 'Todo para la operación de tu espacio.',
+    intro: 'Suministros y equipo de operación para hoteles, restaurantes y otros proyectos de hospitalidad. Comparte tu lista y te ayudamos a encontrar lo que necesitas.',
+    families: ['Vajilla y accesorios de mesa','Cristalería y coctelería','Cubertería y utensilios de servicio','Mantelería y servilletas','Blancos de cama y baño','Amenidades y accesorios de habitación','Utensilios de cocina','Equipo y accesorios para buffet','Carros de servicio y portaequipaje','Artículos de limpieza y housekeeping','Organizadores y accesorios de operación','Otros suministros según tu proyecto']
+  },
+  'FF&E': {
+    title: 'Las piezas que dan forma a tu proyecto.',
+    intro: 'Mobiliario, accesorios y equipamiento para aperturas, renovaciones y reposiciones. Buscamos alternativas de acuerdo con el espacio, el diseño y las necesidades de tu operación.',
+    families: ['Camas, bases y cabeceras','Colchones','Sofás, sillones y bancas','Sillas y mesas de restaurante','Escritorios y mobiliario de habitación','Burós, cómodas y consolas','Mobiliario de lobby y áreas comunes','Mobiliario de terraza y exterior','Luminarias y accesorios decorativos','Espejos y decoración','Equipamiento de gimnasio','Otros muebles y equipos según tu proyecto']
+  }
+};
+function renderSourcing() {
+  const guide = sourcingGuides[area];
+  one('#sourcingOverview').hidden = !guide;
+  one('.refinements').hidden = !!guide;
+  one('.search').hidden = !!guide;
+  one('#count').hidden = !!guide;
+  one('#products').hidden = !!guide;
+  one('#sourcingRequest').hidden = !sourcingAreas.includes(area);
+  one('#specificRequest').href = 'contacto.html?pieza=' + encodeURIComponent('Solicitud de producto específico · ' + area) + '#formulario';
+  if (!guide) return false;
+  one('#sourcingEyebrow').textContent = area === 'OS&E' ? 'Operating Supplies & Equipment' : 'Furniture, Fixtures & Equipment';
+  one('#sourcingTitle').textContent = guide.title;
+  one('#sourcingIntro').textContent = guide.intro;
+  one('#sourcingFamilies').replaceChildren(...guide.families.map(name => {
+    const li = document.createElement('li'); li.textContent = name; return li;
+  }));
+  one('#more').hidden = true;
+  return true;
+}
 function showDetail(p) {
   selectedModel=p.model||'';
   one('#photo').src = p.image;
@@ -30,9 +62,12 @@ function showDetail(p) {
     values.forEach(value=>{const li=document.createElement('li');li.textContent=value;ul.append(li)});section.append(h,ul);one('#specs').append(section);
   }
   one('#sourceNote').textContent=[p.brand,p.model,p.collection,p.imageKind==='technical-drawing'?'Ilustración técnica del fabricante':'',p.sources?.length?'Fuentes: '+p.sources.map(x=>x.file.replace('.pdf','')+' · pág. '+x.page).join('; '):p.sourcePage?'BH Fitness Pro 2026 · pág. '+p.sourcePage:''].filter(Boolean).join(' · ');
+  if (p.imageKind === 'illustrative-reference') one('#sourceNote').textContent = 'Imagen de referencia generada para ilustrar esta familia de productos. No representa un modelo en stock. El equipo comercial confirmará opciones, materiales, medidas y disponibilidad en la cotización.';
+  one('#ask').textContent = p.imageKind === 'illustrative-reference' ? 'Cotizar una opción como esta' : 'Consultar esta pieza';
   one('#detail').showModal();
 }
 function render() {
+  if (renderSourcing()) return;
   const term = clean(one('#search').value.trim());
   const matches = products.filter(p => (area === 'Todos' || area === p.area) && (!category||category===p.category) && (!collection||collection===p.collection) && (!catalogSource||p.sourceLabels?.includes(catalogSource)) && clean([p.name,p.model,p.brand,p.category,p.collection,p.area].filter(Boolean).join(' ')).includes(term));
   one('#products').replaceChildren(...matches.slice(0,limit).map(p => {
@@ -42,14 +77,16 @@ function render() {
     img.src = p.image; img.loading = 'lazy'; img.alt = '';
     const label = document.createElement('small'); label.textContent = p.area + ' / ' + p.category;
     const title = document.createElement('strong'); title.textContent = p.name;
-    btn.append(img,label,title);if(p.imageKind==='technical-drawing'){const note=document.createElement('span');note.className='imageKind';note.textContent='Ilustración técnica';btn.append(note)}
+    btn.append(img,label,title);if(p.imageKind==='technical-drawing'||p.imageKind==='illustrative-reference'){const note=document.createElement('span');note.className='imageKind';note.textContent=p.imageKind==='technical-drawing'?'Ilustración técnica':'Referencia · Solicita cotización';btn.append(note)}
     btn.onclick = () => showDetail(p);
     return btn;
   }));
-  one('#count').textContent = matches.length ? Math.min(limit,matches.length) + ' de ' + matches.length + ' piezas' : 'Sin coincidencias. Pruebe con otro nombre o área.';
+  const referenceArea = ['Mantelería','Cristalería','Cubertería'].includes(area);
+  one('#count').textContent = matches.length ? Math.min(limit,matches.length) + ' de ' + matches.length + (referenceArea ? ' referencias ilustrativas · Productos bajo cotización' : ' piezas') : 'Sin coincidencias. Pruebe con otro nombre o área.';
   one('#more').hidden = matches.length <= limit;
 }
 function choose(value) {
+  one('#search').value = '';
   area = value; limit = 12;category='';collection='';catalogSource='';updateFilters();
   all('.tabs button').forEach(btn => btn.setAttribute('aria-pressed',String(btn.textContent === area)));
   render();
@@ -69,10 +106,10 @@ all('[data-select]').forEach(btn => btn.onclick = () => {
 });
 one('#search').oninput = () => {limit=9; render()};
 one('#more').onclick = () => {limit += 12; render()};
-fetch('assets/catalog.json?v=clean-20261105').then(r => {if (!r.ok) throw Error(); return r.json()}).then(data => {products=data;updateFilters();render()}).catch(() => {one('#count').textContent='No se pudo cargar el catálogo. Actualice la página para reintentar.'});
+Promise.all(['assets/catalog.json?v=clean-20261105','assets/sourcing-products.json?v=collections-20261106'].map(url => fetch(url).then(r => {if (!r.ok) throw Error(); return r.json()}))).then(data => {products=data.flat();updateFilters();render()}).catch(() => {one('#count').textContent='No se pudo cargar el catálogo. Actualice la página para reintentar.'});
 }
 one('#ask').onclick = () => {
-  location.href='contacto.html?pieza='+encodeURIComponent([one('#name').textContent,selectedModel].filter(Boolean).join(' · '));
+  location.href='contacto.html?pieza='+encodeURIComponent([one('#name').textContent,selectedModel].filter(Boolean).join(' · '))+'#formulario';
 };
 all('.close').forEach(btn => btn.onclick = () => btn.closest('dialog').close());
 all('[data-legal]').forEach(btn => btn.onclick = () => {

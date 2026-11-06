@@ -64,7 +64,7 @@
     busy = false; schedule();
   }
   function runIntroClock() {
-    if (document.hidden) return;
+    if (document.hidden || media.matches) return;
     introStarted = performance.now();
     clearTimeout(revealTimer);
     revealTimer = setTimeout(() => {
@@ -74,6 +74,7 @@
         phraseIndex = (phraseIndex + 1) % phrases.length;
       }
       hero.classList.toggle('is-message', !showingLogo);
+      hero.classList.toggle('is-logo', showingLogo);
       phaseDuration = showingLogo ? 15000 : 11000;
       introElapsed = 0; introStarted = 0; runIntroClock();
     }, Math.max(0, phaseDuration - introElapsed));
@@ -91,7 +92,17 @@
     if (!queued) { queued = true; requestAnimationFrame(() => { queued = false; updateScroll(); }); }
   }, { passive: true });
   addEventListener('resize', updateScroll);
-  media.addEventListener('change', () => { paused = media.matches; schedule(); });
+  media.addEventListener('change', () => {
+    paused = media.matches;
+    clearTimeout(revealTimer);
+    introElapsed = 0; introStarted = 0;
+    if (paused) {
+      showingLogo = true; phaseDuration = 15000;
+      hero.classList.toggle('is-message', false);
+      hero.classList.toggle('is-logo', false);
+    } else runIntroClock();
+    schedule();
+  });
   const message = hero.querySelector('.heroMessage');
   message.addEventListener('pointermove', event => {
     if (event.pointerType !== 'mouse') return;

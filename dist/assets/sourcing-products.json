@@ -1,0 +1,75 @@
+[
+  {
+    "name": "Manteles para restaurante y banquetes",
+    "area": "Mantelería",
+    "category": "Manteles",
+    "description": "Una referencia para vestir mesas de restaurante, salones y banquetes. Cuéntanos la forma de tus mesas, las medidas y la cantidad que necesitas para buscar alternativas acordes con tu proyecto.",
+    "image": "assets/sourcing/mantel.webp",
+    "imageKind": "illustrative-reference",
+    "options": ["Solicita medidas, colores y tejidos según tu operación.", "Materiales y acabados sujetos a confirmación en la cotización."]
+  },
+  {
+    "name": "Caminos de mesa",
+    "area": "Mantelería",
+    "category": "Caminos de mesa",
+    "description": "Textiles para complementar la presentación de cada mesa. Comparte el largo, el ancho, los colores y la cantidad que buscas; el equipo comercial te presentará opciones.",
+    "image": "assets/sourcing/camino.webp",
+    "imageKind": "illustrative-reference"
+  },
+  {
+    "name": "Servilletas de tela",
+    "area": "Mantelería",
+    "category": "Servilletas",
+    "description": "Una referencia de servilletas para servicio de alimentos y eventos. Podemos buscar alternativas de tamaño, color, tejido y presentación según las necesidades de tu negocio.",
+    "image": "assets/sourcing/servilletas.webp",
+    "imageKind": "illustrative-reference"
+  },
+  {
+    "name": "Copas para vino",
+    "area": "Cristalería",
+    "category": "Copas",
+    "description": "Referencias de copas para servicio de vino. Indica el uso, la capacidad aproximada, el estilo y la cantidad para recibir una propuesta de modelos disponibles.",
+    "image": "assets/sourcing/copas.webp",
+    "imageKind": "illustrative-reference"
+  },
+  {
+    "name": "Vasos para agua y bebidas",
+    "area": "Cristalería",
+    "category": "Vasos",
+    "description": "Vasos altos, bajos y texturizados como punto de partida para tu selección. Cotiza el formato, la capacidad y la cantidad que requiera tu operación, o compártenos una referencia distinta.",
+    "image": "assets/sourcing/vasos.webp",
+    "imageKind": "illustrative-reference"
+  },
+  {
+    "name": "Cristalería para coctelería",
+    "area": "Cristalería",
+    "category": "Coctelería",
+    "description": "Copas tipo coupe, martini y flauta como ejemplos de presentación. Dinos qué bebidas servirás y qué estilo buscas para encontrar opciones adecuadas para tu bar o restaurante.",
+    "image": "assets/sourcing/cocteleria.webp",
+    "imageKind": "illustrative-reference"
+  },
+  {
+    "name": "Cubiertos de línea contemporánea",
+    "area": "Cubertería",
+    "category": "Línea contemporánea",
+    "description": "Referencia de cuchillo, tenedor y cucharas de líneas sencillas. Solicita las piezas, cantidades y acabados que necesites para buscar un juego acorde con tu concepto.",
+    "image": "assets/sourcing/cubiertos-contemporaneos.webp",
+    "imageKind": "illustrative-reference"
+  },
+  {
+    "name": "Cubiertos de línea clásica",
+    "area": "Cubertería",
+    "category": "Línea clásica",
+    "description": "Una referencia de cubiertos con mangos redondeados y detalles de estilo clásico. Comparte tu lista de piezas o una fotografía del diseño que buscas para preparar tu cotización.",
+    "image": "assets/sourcing/cubiertos-clasicos.webp",
+    "imageKind": "illustrative-reference"
+  },
+  {
+    "name": "Cubiertos de acabado satinado",
+    "area": "Cubertería",
+    "category": "Acabado satinado",
+    "description": "Referencia de cubiertos con apariencia satinada y líneas rectas. Consultamos alternativas de diseño, material y acabado de acuerdo con tu presupuesto y cantidades.",
+    "image": "assets/sourcing/cubiertos-satinados.webp",
+    "imageKind": "illustrative-reference"
+  }
+]
