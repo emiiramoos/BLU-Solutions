@@ -2166,6 +2166,31 @@
       "sha256": "255fc22c44537c50308c66f02d4383f2e5553601a9af56636c237c97f9e63efe"
     },
     {
+      "path": "dist/assets/portadas-limpias/cristaleria.webp",
+      "bytes": 48368,
+      "sha256": "9af944d1490589fdb49cba54d2519b5b84c514764ac29b9580bd1dee9fdb149a"
+    },
+    {
+      "path": "dist/assets/portadas-limpias/cuberteria.webp",
+      "bytes": 116778,
+      "sha256": "1581ab2983e9d0731594186b896e70a38ec3cca812b7c988d0aea90ef465cadf"
+    },
+    {
+      "path": "dist/assets/portadas-limpias/manteleria.webp",
+      "bytes": 85408,
+      "sha256": "dd28cbb0f3043fe9a8371d0691575f36d2d87c9135336053231151c8ba053b61"
+    },
+    {
+      "path": "dist/assets/portadas-limpias/ose.webp",
+      "bytes": 57534,
+      "sha256": "02cb1c43a3410b89acaba02429a3b6cfd17d2b86a9c1066d5fbdf30a2f09fae3"
+    },
+    {
+      "path": "dist/assets/portadas-limpias/restaurantes.webp",
+      "bytes": 101946,
+      "sha256": "f42617ad824972690f0a6dc6576b55c1011ad05accbd0bb65b7c1d88c11284fa"
+    },
+    {
       "path": "dist/assets/process.webp",
       "bytes": 282206,
       "sha256": "314aa9e83e2361f17a000806e5eaae76a6dff76cc8d4fcf5f0c2ae0c8389812b"
@@ -2696,24 +2721,34 @@
       "sha256": "61b4bb15e8c54be6343913cc4107ccc1c51a68adf35ddc428d000c82323f3a06"
     },
     {
+      "path": "dist/contacto-directo.css",
+      "bytes": 1815,
+      "sha256": "e6f8f77549fd244aebf19bdcbc3ce06c4511a1b2f36f08e30578d1fb8de6497b"
+    },
+    {
+      "path": "dist/contacto-directo.html",
+      "bytes": 1884,
+      "sha256": "7b7da9525c3e937752f4ccfd6ffef26eb25e207d41e2b2a892d0eccf1fca43d5"
+    },
+    {
       "path": "dist/contacto.html",
-      "bytes": 7335,
-      "sha256": "b98dd8d619c60a26d5eb380535ebce78994d75c298daea8bbfb9d216169ee994"
+      "bytes": 7383,
+      "sha256": "42378bd87f752946d5bdfd0079c746ad3981fd8b6ccd7bb97bf0b6354c5628e4"
     },
     {
       "path": "dist/hero.css",
-      "bytes": 6244,
-      "sha256": "54ff0e3237f3d5a2b82e27f817c4d871113af3119c70b7bf9eaadbf21fd37961"
+      "bytes": 5871,
+      "sha256": "3ec7a1c31203361ff7df5590bdf3b540ce8de744c8277e27f570ada955ea2b6d"
     },
     {
       "path": "dist/hero.js",
-      "bytes": 6452,
-      "sha256": "1989d8c6575a54e43f062366ab9c07a2edd873eb3e8b196a6f80dbe97701c8a9"
+      "bytes": 5816,
+      "sha256": "76649fd00f650e59d06d89c4989ce6ad9022a26aa3da1c7f67227ea2d4e4bf3a"
     },
     {
       "path": "dist/index.html",
-      "bytes": 14786,
-      "sha256": "a7a6159de8faf2f68481206bc569e5e5fbaaf577b9c5090be43507e8829745b2"
+      "bytes": 14764,
+      "sha256": "64a08f19711e8d203cdf55b156bbd19475b41f20021901f5fc902de20b13e986"
     },
     {
       "path": "dist/safety.js",
@@ -2727,8 +2762,8 @@
     },
     {
       "path": "dist/style.css",
-      "bytes": 27947,
-      "sha256": "31ee00c00923f2d7664b50928e71a9f9ddd6cf1f510eb5504e8f6848dfc2c8fe"
+      "bytes": 28037,
+      "sha256": "3e53316fb9c3748ec6838ddce2f2840b518b8b81d21f7cf5710b68914cfcb151"
     }
   ]
 }

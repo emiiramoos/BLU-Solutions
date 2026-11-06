@@ -75,7 +75,8 @@ footer button{padding:8px 13px;text-decoration:none;font-size:12px}
 .projectRequest{position:relative;isolation:isolate;overflow:hidden;min-height:640px;display:grid;place-items:center;text-align:center;background:#173d37;color:#fff}
 .projectRequestVisual{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 66%;z-index:-2}
 .projectRequest:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,#061e286b,#062b2a94 55%,#041e2d85);z-index:-1}
-.projectRequestContent{width:100%;max-width:860px;display:flex;flex-direction:column;align-items:center}
+.area.cleanCover:after{background:linear-gradient(0deg,#071b24c9,#071b2426 75%)}
+.projectRequestContent{width:100%;max-width:860px;display:flex;flex-direction:column;align-items:center;gap:32px}
 .projectRequest h2{font-size:clamp(56px,6.5vw,96px);line-height:1.02;text-shadow:0 3px 24px #061b2633}
 .projectRequest h2 em{color:#c7ded5}
 .projectRequest p{font-size:clamp(17px,1.6vw,22px);line-height:1.6;color:#f0f5f2;margin:28px 0 32px}
