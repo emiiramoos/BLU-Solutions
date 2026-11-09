@@ -148,13 +148,13 @@ if (one('#brief')) one('#brief').onsubmit = event => {
   const f = result.data;
   const body = ['Buen día, equipo de BLU Solutions.', '', 'Soy ' + f.nombre + ', de ' + f.empresa + '.', 'Tipo de negocio: ' + f.tipo, 'Etapa: ' + f.etapa, 'Ciudad: '+ f.ciudad, 'Correo de contacto: '+f.correo, '', f.necesidad].join('\n');
   one('#preparedMessage').value = body;
-  one('#openMail').href = 'mailto:manuel.agosto@blusolutions.com.mx?subject=' + encodeURIComponent('Consulta de equipamiento · ' + f.empresa) + '&body=' + encodeURIComponent(body);
+  one('#openMail').href = 'mailto:ventas@blusolutions.com.mx?subject=' + encodeURIComponent('Consulta de equipamiento · ' + f.empresa) + '&body=' + encodeURIComponent(body);
   one('#formFallback').hidden = false;
   one('#formstatus').textContent = 'Solicitud preparada; todavía no se ha enviado. Abre tu correo para enviarla o copia el texto si tu aplicación no se abre.';
 };
 if (one('#copyRequest')) one('#copyRequest').onclick = async () => {
-  try { await navigator.clipboard.writeText(one('#preparedMessage').value); one('#formstatus').textContent = 'Texto copiado. Pégalo en un correo para manuel.agosto@blusolutions.com.mx y envíalo. La página no confirma la entrega.'; }
-  catch { one('#preparedMessage').focus(); one('#preparedMessage').select(); one('#formstatus').textContent = 'Selecciona y copia el texto de la solicitud. Envíalo a manuel.agosto@blusolutions.com.mx desde tu correo.'; }
+  try { await navigator.clipboard.writeText(one('#preparedMessage').value); one('#formstatus').textContent = 'Texto copiado. Pégalo en un correo para ventas@blusolutions.com.mx y envíalo. La página no confirma la entrega.'; }
+  catch { one('#preparedMessage').focus(); one('#preparedMessage').select(); one('#formstatus').textContent = 'Selecciona y copia el texto de la solicitud. Envíalo a ventas@blusolutions.com.mx desde tu correo.'; }
 };
 const menu = one('.menuToggle');
 menu.onclick=()=>{ const open=menu.getAttribute('aria-expanded')!=='true'; menu.setAttribute('aria-expanded',String(open));menu.setAttribute('aria-label',open?'Cerrar menú':'Abrir menú');one('header').classList.toggle('menuOpen',open); };
